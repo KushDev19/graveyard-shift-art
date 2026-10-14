@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5504 3072" width="5504" height="3072">
+<g id="grow_light_pink">
+<defs><linearGradient id="grow_light_pink_v" x1="0" y1="286" x2="0" y2="1315" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#F4BBFF" stop-opacity="1"/><stop offset="1" stop-color="#F4BBFF" stop-opacity="0.15"/></linearGradient><radialGradient id="grow_light_pink_r"><stop offset="0" stop-color="#F4BBFF" stop-opacity="1"/><stop offset="1" stop-color="#F4BBFF" stop-opacity="0"/></radialGradient></defs>
+<path d="M643,286 L1592,286 L1723,1315 L512,1315Z" fill="url(#grow_light_pink_v)" opacity="0.078"/>
+<path d="M705,286 L1530,286 L1585,1315 L649,1315Z" fill="url(#grow_light_pink_v)" opacity="0.120"/>
+<path d="M787,286 L1448,286 L1448,1315 L787,1315Z" fill="url(#grow_light_pink_v)" opacity="0.055"/>
+<ellipse cx="1117" cy="1541" rx="930" ry="268" fill="url(#grow_light_pink_r)" opacity="0.115"/>
+</g>
+<g id="grow_light_green_1">
+<defs><linearGradient id="grow_light_green_1_v" x1="0" y1="286" x2="0" y2="1315" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#51FF9A" stop-opacity="1"/><stop offset="1" stop-color="#51FF9A" stop-opacity="0.15"/></linearGradient><radialGradient id="grow_light_green_1_r"><stop offset="0" stop-color="#51FF9A" stop-opacity="1"/><stop offset="1" stop-color="#51FF9A" stop-opacity="0"/></radialGradient></defs>
+<path d="M2053,286 L3209,286 L3374,1315 L1888,1315Z" fill="url(#grow_light_green_1_v)" opacity="0.005"/>
+<path d="M2156,286 L3106,286 L3236,1315 L2025,1315Z" fill="url(#grow_light_green_1_v)" opacity="0.116"/>
+<path d="M2218,286 L3044,286 L3099,1315 L2163,1315Z" fill="url(#grow_light_green_1_v)" opacity="0.141"/>
+<path d="M2301,286 L2961,286 L2961,1315 L2301,1315Z" fill="url(#grow_light_green_1_v)" opacity="0.011"/>
+<path d="M2383,286 L2879,286 L2934,1315 L2328,1315Z" fill="url(#grow_light_green_1_v)" opacity="0.009"/>
+<ellipse cx="2631" cy="1541" rx="930" ry="268" fill="url(#grow_light_green_1_r)" opacity="0.146"/>
+</g>
+<g id="grow_light_green_2">
+<defs><linearGradient id="grow_light_green_2_v" x1="0" y1="286" x2="0" y2="1315" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4EFF94" stop-opacity="1"/><stop offset="1" stop-color="#4EFF94" stop-opacity="0.15"/></linearGradient><radialGradient id="grow_light_green_2_r"><stop offset="0" stop-color="#4EFF94" stop-opacity="1"/><stop offset="1" stop-color="#4EFF94" stop-opacity="0"/></radialGradient></defs>
+<path d="M3931,286 L4881,286 L5011,1315 L3801,1315Z" fill="url(#grow_light_green_2_v)" opacity="0.099"/>
+<path d="M3993,286 L4819,286 L4874,1315 L3938,1315Z" fill="url(#grow_light_green_2_v)" opacity="0.147"/>
+<path d="M4076,286 L4736,286 L4736,1315 L4076,1315Z" fill="url(#grow_light_green_2_v)" opacity="0.029"/>
+<path d="M4158,286 L4654,286 L4709,1315 L4103,1315Z" fill="url(#grow_light_green_2_v)" opacity="0.009"/>
+<ellipse cx="4406" cy="1541" rx="930" ry="268" fill="url(#grow_light_green_2_r)" opacity="0.056"/>
+</g>
+</svg>

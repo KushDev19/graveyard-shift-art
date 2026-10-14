@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5504 3072" width="5504" height="3072">
+<g id="light_1">
+<defs><linearGradient id="light_1_v" x1="0" y1="545" x2="0" y2="1315" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FF873E" stop-opacity="1"/><stop offset="1" stop-color="#FF873E" stop-opacity="0.15"/></linearGradient><radialGradient id="light_1_r"><stop offset="0" stop-color="#FF873E" stop-opacity="1"/><stop offset="1" stop-color="#FF873E" stop-opacity="0"/></radialGradient></defs>
+<path d="M984,545 L1174,545 L1533,1315 L625,1315Z" fill="url(#light_1_v)" opacity="0.125"/>
+<path d="M996,545 L1161,545 L1430,1315 L728,1315Z" fill="url(#light_1_v)" opacity="0.060"/>
+<path d="M1013,545 L1145,545 L1326,1315 L831,1315Z" fill="url(#light_1_v)" opacity="0.035"/>
+<ellipse cx="1079" cy="1486" rx="751" ry="268" fill="url(#light_1_r)" opacity="0.017"/>
+<ellipse cx="1079" cy="1486" rx="462" ry="165" fill="url(#light_1_r)" opacity="0.073"/>
+</g>
+<g id="light_2">
+<defs><linearGradient id="light_2_v" x1="0" y1="545" x2="0" y2="1315" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFB436" stop-opacity="1"/><stop offset="1" stop-color="#FFB436" stop-opacity="0.15"/></linearGradient><radialGradient id="light_2_r"><stop offset="0" stop-color="#FFB436" stop-opacity="1"/><stop offset="1" stop-color="#FFB436" stop-opacity="0"/></radialGradient></defs>
+<path d="M2119,545 L2350,545 L2792,1315 L1677,1315Z" fill="url(#light_2_v)" opacity="0.062"/>
+<path d="M2140,545 L2330,545 L2689,1315 L1781,1315Z" fill="url(#light_2_v)" opacity="0.073"/>
+<path d="M2152,545 L2317,545 L2586,1315 L1884,1315Z" fill="url(#light_2_v)" opacity="0.025"/>
+<path d="M2169,545 L2301,545 L2482,1315 L1987,1315Z" fill="url(#light_2_v)" opacity="0.040"/>
+<path d="M2185,545 L2284,545 L2455,1315 L2014,1315Z" fill="url(#light_2_v)" opacity="0.036"/>
+<ellipse cx="2235" cy="1486" rx="751" ry="268" fill="url(#light_2_r)" opacity="0.031"/>
+<ellipse cx="2235" cy="1486" rx="462" ry="165" fill="url(#light_2_r)" opacity="0.134"/>
+</g>
+<g id="light_3">
+<defs><linearGradient id="light_3_v" x1="0" y1="545" x2="0" y2="1315" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FF931E" stop-opacity="1"/><stop offset="1" stop-color="#FF931E" stop-opacity="0.15"/></linearGradient><radialGradient id="light_3_r"><stop offset="0" stop-color="#FF931E" stop-opacity="1"/><stop offset="1" stop-color="#FF931E" stop-opacity="0"/></radialGradient></defs>
+<path d="M3151,545 L3382,545 L3824,1315 L2709,1315Z" fill="url(#light_3_v)" opacity="0.065"/>
+<path d="M3172,545 L3362,545 L3721,1315 L2813,1315Z" fill="url(#light_3_v)" opacity="0.067"/>
+<path d="M3184,545 L3349,545 L3618,1315 L2916,1315Z" fill="url(#light_3_v)" opacity="0.027"/>
+<path d="M3201,545 L3333,545 L3514,1315 L3019,1315Z" fill="url(#light_3_v)" opacity="0.010"/>
+<path d="M3217,545 L3316,545 L3487,1315 L3046,1315Z" fill="url(#light_3_v)" opacity="0.042"/>
+<ellipse cx="3267" cy="1486" rx="751" ry="268" fill="url(#light_3_r)" opacity="0.094"/>
+<ellipse cx="3267" cy="1486" rx="462" ry="165" fill="url(#light_3_r)" opacity="0.148"/>
+</g>
+<g id="light_4">
+<defs><linearGradient id="light_4_v" x1="0" y1="545" x2="0" y2="1315" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FF5705" stop-opacity="1"/><stop offset="1" stop-color="#FF5705" stop-opacity="0.15"/></linearGradient><radialGradient id="light_4_r"><stop offset="0" stop-color="#FF5705" stop-opacity="1"/><stop offset="1" stop-color="#FF5705" stop-opacity="0"/></radialGradient></defs>
+<path d="M4304,545 L4535,545 L4977,1315 L3862,1315Z" fill="url(#light_4_v)" opacity="0.028"/>
+<path d="M4325,545 L4515,545 L4874,1315 L3966,1315Z" fill="url(#light_4_v)" opacity="0.017"/>
+<path d="M4337,545 L4502,545 L4771,1315 L4069,1315Z" fill="url(#light_4_v)" opacity="0.008"/>
+<path d="M4354,545 L4486,545 L4667,1315 L4172,1315Z" fill="url(#light_4_v)" opacity="0.005"/>
+<ellipse cx="4420" cy="567" rx="193" ry="193" fill="url(#light_4_r)" opacity="0.188"/>
+</g>
+</svg>

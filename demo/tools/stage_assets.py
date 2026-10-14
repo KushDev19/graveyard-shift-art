@@ -6,8 +6,8 @@ from PIL import Image
 R = Path(__file__).resolve().parents[2]
 O = R / "art-jobs/out"
 D = Path(__file__).resolve().parents[1] / "public/assets"
-if D.exists(): shutil.rmtree(D)
-D.mkdir(parents=True)
+D.mkdir(parents=True, exist_ok=True)
+
 
 def cp(src, dst):
     dst = D / dst; dst.parent.mkdir(parents=True, exist_ok=True); shutil.copy(src, dst)
@@ -26,7 +26,7 @@ for j in ["G_rooms_galley_locker/galley.json","G_rooms_galley_locker/locker.json
     d = json.load(open(O/j)); d.pop("mae", None)
     (D/"rooms").mkdir(exist_ok=True, parents=True); json.dump(d, open(D/"rooms"/Path(j).name, "w"), separators=(",",":"))
 G = O/"G_rooms_galley_locker/objects"
-for f in ["galley_table","locker_door_frame","locker_door_leaf_left","locker_door_leaf_right","locker_clock_hand_hour","locker_clock_hand_minute","locker_beacon"]:
+for f in ["galley_table","locker_door_open","locker_door_frame","locker_door_leaf_left","locker_door_leaf_right","locker_clock_hand_hour","locker_clock_hand_minute","locker_beacon"]:
     cp(G/f"{f}.svg", f"rooms/obj/{f}.svg")
 cp(O/"G_rooms_galley_locker/locker_lights.svg", "rooms/locker_lights.svg")
 

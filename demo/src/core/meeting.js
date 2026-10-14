@@ -15,7 +15,7 @@ export class MeetingTablet {
     this.root = el('div', 'tablet', layer); gsap.set(this.root, { yPercent: 100 });
     img(A('ui/tablet_frame.svg'), 'tab-frame', this.root);
     const title = img(A('ui/tablet_title.svg'), 'tab-title', this.root); Object.assign(title.style, { left: 320 * K + 'px', top: 58 * K + 'px', width: 640 * K + 'px' });
-    this.sys = el('div', 'tab-sys', this.root, 'NIGHTJAR COMMS // MTG 03<br>BODY IN GALLEY');
+    this.sys = el('div', 'tab-sys', this.root, 'NIGHTJAR COMMS // MTG 03<br>BODY: SWITCHBOARD');
     this.callerLine = el('div', 'tab-caller', this.root);
     const chat = el('div', 'tab-chat', this.root); img(A('ui/chat_button.svg'), '', chat); img(A('ui/chat_unread_dot.svg'), 'tab-dot', chat);
     this.plates = {};
@@ -58,7 +58,7 @@ export class MeetingTablet {
     const url = A(`ui/plate_${base}.svg`); if (P.art.getAttribute('src') !== url) P.art.src = url;
     P.d.classList.toggle('dead', s.eliminated || s.disconnected);
     P.nm.classList.toggle('struck', s.eliminated);
-    P.sub.textContent = s.disconnected ? 'DISCONNECTED' : s.eliminated ? (this.foundIn || 'FOUND IN GALLEY') : sel ? 'YOUR PICK?' : id === this.you ? (s.caller ? 'YOU · CALLER' : 'YOU') : s.caller ? (this.callerRole || 'CALLER') : '';
+    P.sub.textContent = s.disconnected ? 'DISCONNECTED' : s.eliminated ? (this.foundIn || 'FOUND IN SWITCHBOARD') : sel ? 'YOUR PICK?' : id === this.you ? (s.caller ? 'YOU · CALLER' : 'YOU') : s.caller ? (this.callerRole || 'CALLER') : '';
     P.badge.style.display = s.caller ? '' : 'none'; P.xTape.style.display = s.eliminated ? '' : 'none';
     P.lamp.style.display = s.voted ? '' : 'none';
     P.btns.style.display = sel ? 'flex' : 'none';
@@ -73,8 +73,8 @@ export class MeetingTablet {
       ? `<span style="color:${PAL.seafoam}">${who}</span> reported <span style="color:${col(reportedName)}">${reportedName}</span>`
       : `<span style="color:${PAL.seafoam}">${who}</span> called an <span style="color:${PAL.coral}">emergency meeting</span>`;
     this.callerRole = reportedName ? 'REPORTER' : 'CALLER';
-    this.foundIn = 'FOUND IN GALLEY';
-    this.sys.innerHTML = reportedName ? 'NIGHTJAR COMMS // MTG 03<br>BODY IN GALLEY' : 'NIGHTJAR COMMS // MTG 04<br>EMERGENCY TABLE';
+    this.foundIn = 'FOUND IN SWITCHBOARD';
+    this.sys.innerHTML = reportedName ? 'NIGHTJAR COMMS // MTG 03<br>BODY: SWITCHBOARD' : 'NIGHTJAR COMMS // MTG 04<br>EMERGENCY TABLE';
     this.paintAll();
   }
   setEliminated(ids) { for (const k in this.plates) this.plates[k].state.eliminated = ids.includes(k); this.paintAll(); }

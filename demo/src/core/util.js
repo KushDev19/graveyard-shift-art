@@ -25,7 +25,7 @@ export const ROSTER = [
   { id: 'mustard',   name: 'Mustard',   color: 'mustard',   cos: { hat: 'hardhat' } },
   { id: 'lime',      name: 'Lime',      color: 'lime',      cos: { topper: 'top_star' } },
   { id: 'sky',       name: 'Sky',       color: 'sky',       cos: { hat: 'flowercrown' } },
-  { id: 'cobalt',    name: 'Cobalt',    color: 'cobalt',    cos: { visor: 'visor_aviator' }, impostor: true },
+  { id: 'cobalt',    name: 'Cobalt',    color: 'cobalt',    cos: { hat: 'trucker' }, impostor: true },
   { id: 'grape',     name: 'Grape',     color: 'grape',     cos: { hat: 'cowboy' }, impostor: true },
   { id: 'bubblegum', name: 'Bubblegum', color: 'bubblegum', cos: { visor: 'visor_heart' } },
   { id: 'cream',     name: 'Cream',     color: 'cream',     cos: { hat: 'chef' } },

@@ -1,0 +1,648 @@
+{
+ "walkable": [
+  [
+   [
+    540,
+    1310
+   ],
+   [
+    3900,
+    1310
+   ],
+   [
+    3900,
+    1010
+   ],
+   [
+    4780,
+    1010
+   ],
+   [
+    4780,
+    1310
+   ],
+   [
+    4960,
+    1310
+   ],
+   [
+    5400,
+    2800
+   ],
+   [
+    3245,
+    2800
+   ],
+   [
+    3245,
+    3060
+   ],
+   [
+    2260,
+    3060
+   ],
+   [
+    2260,
+    2800
+   ],
+   [
+    100,
+    2800
+   ]
+  ]
+ ],
+ "doors": [
+  {
+   "id": "left",
+   "side": "left",
+   "x": 220,
+   "y": 930,
+   "w": 240,
+   "h": 1000
+  },
+  {
+   "id": "right",
+   "side": "right",
+   "x": 5044,
+   "y": 930,
+   "w": 240,
+   "h": 1000
+  },
+  {
+   "id": "bottom",
+   "side": "bottom",
+   "x": 2260,
+   "y": 2800,
+   "w": 985,
+   "h": 272
+  }
+ ],
+ "anchors": {
+  "station_alcove": [
+   4340,
+   1180
+  ],
+  "vents": [
+   [
+    1550,
+    2600
+   ],
+   [
+    4700,
+    2450
+   ]
+  ],
+  "seats": [
+   [
+    3200,
+    1780
+   ]
+  ]
+ },
+ "room": "radio",
+ "source": "raw_originals/08_ROOM_RADIO.png",
+ "size": [
+  5504,
+  3072
+ ],
+ "shell": "radio_shell.svg",
+ "glow": "radio_lights_glow.svg",
+ "lights": [
+  {
+   "x": 700,
+   "y": 178,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 798,
+   "y": 221,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 923,
+   "y": 248,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 1058,
+   "y": 248,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 1188,
+   "y": 230,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 1306,
+   "y": 183,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 1473,
+   "y": 176,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 1574,
+   "y": 221,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 1698,
+   "y": 246,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 1834,
+   "y": 247,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 1962,
+   "y": 228,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 2083,
+   "y": 181,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 3423,
+   "y": 178,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 3647,
+   "y": 246,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 3785,
+   "y": 247,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 3914,
+   "y": 230,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 4031,
+   "y": 182,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 4198,
+   "y": 178,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 4297,
+   "y": 220,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 4422,
+   "y": 246,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 4559,
+   "y": 251,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 4688,
+   "y": 230,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 4805,
+   "y": 182,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 4909,
+   "y": 281,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 4937,
+   "y": 401,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 4985,
+   "y": 512,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 5045,
+   "y": 606,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 5131,
+   "y": 682,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 5200,
+   "y": 929,
+   "radius": 95,
+   "color": "#F5A54A",
+   "a": 0.5
+  },
+  {
+   "x": 3720,
+   "y": 1580,
+   "radius": 430,
+   "color": "#F5A54A",
+   "a": 0.4,
+   "id": "lava_lamp"
+  }
+ ],
+ "background": {
+  "id": "space",
+  "file": "radio_space.svg",
+  "x": 1893,
+  "y": 225,
+  "w": 1718,
+  "h": 898,
+  "note": "nebula + stars seen through the porthole; drawn BEHIND the shell (shell has a hole there)",
+  "layer": "behind_shell"
+ },
+ "background_children": [
+  {
+   "id": "dish",
+   "file": "objects/radio_dish.svg",
+   "x": 2170,
+   "y": 638,
+   "w": 370,
+   "h": 441,
+   "note": "radar dish outside the window, between nebula and frame",
+   "layer": "behind_shell",
+   "parent": "space"
+  }
+ ],
+ "objects": [
+  {
+   "id": "string_lights",
+   "file": "radio_string_lights.svg",
+   "x": 656,
+   "y": 135,
+   "w": 4695,
+   "h": 1024,
+   "note": "bulbs + sockets; flicker with radio_lights_glow.svg",
+   "sortY": 0
+  },
+  {
+   "id": "vu_meters",
+   "file": "objects/radio_vu_meters.svg",
+   "x": 656,
+   "y": 330,
+   "w": 617,
+   "h": 305,
+   "note": "wall unit",
+   "sortY": 0
+  },
+  {
+   "id": "tape_deck",
+   "file": "objects/radio_tape_deck.svg",
+   "x": 575,
+   "y": 689,
+   "w": 713,
+   "h": 861,
+   "sortY": 1530,
+   "collision": [
+    [
+     600,
+     1420
+    ],
+    [
+     1270,
+     1420
+    ],
+    [
+     1270,
+     1535
+    ],
+    [
+     600,
+     1535
+    ]
+   ]
+  },
+  {
+   "id": "cassette_shelf_upper",
+   "file": "objects/radio_cassette_shelf_upper.svg",
+   "x": 1279,
+   "y": 328,
+   "w": 573,
+   "h": 271,
+   "note": "wall shelf",
+   "sortY": 0
+  },
+  {
+   "id": "cassette_shelf_lower",
+   "file": "objects/radio_cassette_shelf_lower.svg",
+   "x": 1279,
+   "y": 604,
+   "w": 571,
+   "h": 252,
+   "note": "wall shelf",
+   "sortY": 0
+  },
+  {
+   "id": "cassette_crate",
+   "file": "objects/radio_cassette_crate.svg",
+   "x": 1252,
+   "y": 898,
+   "w": 632,
+   "h": 653,
+   "sortY": 1545,
+   "collision": [
+    [
+     1270,
+     1430
+    ],
+    [
+     1875,
+     1430
+    ],
+    [
+     1875,
+     1550
+    ],
+    [
+     1270,
+     1550
+    ]
+   ]
+  },
+  {
+   "id": "armchair",
+   "file": "objects/radio_armchair.svg",
+   "x": 2788,
+   "y": 1033,
+   "w": 818,
+   "h": 1068,
+   "sortY": 2085,
+   "collision": [
+    [
+     2830,
+     1760
+    ],
+    [
+     3200,
+     1640
+    ],
+    [
+     3560,
+     1720
+    ],
+    [
+     3380,
+     2070
+    ],
+    [
+     3280,
+     2080
+    ],
+    [
+     2880,
+     1930
+    ]
+   ]
+  },
+  {
+   "id": "side_table",
+   "file": "objects/radio_side_table.svg",
+   "x": 3440,
+   "y": 1718,
+   "w": 541,
+   "h": 551,
+   "sortY": 2260,
+   "collision": [
+    [
+     3460,
+     2060
+    ],
+    [
+     3760,
+     1960
+    ],
+    [
+     3990,
+     2130
+    ],
+    [
+     3760,
+     2265
+    ],
+    [
+     3480,
+     2165
+    ]
+   ]
+  },
+  {
+   "id": "lava_lamp",
+   "file": "objects/radio_lava_lamp.svg",
+   "x": 3605,
+   "y": 1359,
+   "w": 225,
+   "h": 492,
+   "note": "stands on side_table (draw right after it)",
+   "sortY": 2261
+  },
+  {
+   "id": "records",
+   "file": "objects/radio_records.svg",
+   "x": 3088,
+   "y": 2116,
+   "w": 448,
+   "h": 321,
+   "sortY": 2440,
+   "collision": [
+    [
+     3100,
+     2250
+    ],
+    [
+     3300,
+     2160
+    ],
+    [
+     3530,
+     2240
+    ],
+    [
+     3320,
+     2420
+    ]
+   ]
+  },
+  {
+   "id": "rug",
+   "file": "objects/radio_rug.svg",
+   "x": 2044,
+   "y": 1733,
+   "w": 1413,
+   "h": 799,
+   "note": "parts hidden by armchair/records mirrored from the left half (axis x=2750)",
+   "sortY": 0,
+   "layer": "floor"
+  }
+ ],
+ "children": [
+  {
+   "id": "vu_needle_1",
+   "file": "objects/radio_vu_needle_1.svg",
+   "x": 739,
+   "y": 463,
+   "w": 70,
+   "h": 89,
+   "pivot": [
+    805,
+    556
+   ],
+   "parent": "vu_meters"
+  },
+  {
+   "id": "vu_needle_2",
+   "file": "objects/radio_vu_needle_2.svg",
+   "x": 1013,
+   "y": 463,
+   "w": 63,
+   "h": 88,
+   "pivot": [
+    1071,
+    556
+   ],
+   "parent": "vu_meters"
+  },
+  {
+   "id": "reel_left",
+   "file": "objects/radio_reel_left.svg",
+   "x": 585,
+   "y": 749,
+   "w": 334,
+   "h": 346,
+   "pivot": [
+    748,
+    933
+   ],
+   "note": "spin around pivot",
+   "parent": "tape_deck"
+  },
+  {
+   "id": "reel_right",
+   "file": "objects/radio_reel_right.svg",
+   "x": 934,
+   "y": 748,
+   "w": 336,
+   "h": 350,
+   "pivot": [
+    1098,
+    933
+   ],
+   "note": "spin around pivot",
+   "parent": "tape_deck"
+  },
+  {
+   "id": "vu_needle_3",
+   "file": "objects/radio_vu_needle_3.svg",
+   "x": 747,
+   "y": 1345,
+   "w": 49,
+   "h": 63,
+   "pivot": [
+    787,
+    1405
+   ],
+   "parent": "tape_deck"
+  },
+  {
+   "id": "vu_needle_4",
+   "file": "objects/radio_vu_needle_4.svg",
+   "x": 941,
+   "y": 1345,
+   "w": 49,
+   "h": 63,
+   "pivot": [
+    981,
+    1405
+   ],
+   "parent": "tape_deck"
+  },
+  {
+   "id": "lava_blobs",
+   "file": "objects/radio_lava_blobs.svg",
+   "x": 3659,
+   "y": 1475,
+   "w": 108,
+   "h": 204,
+   "note": "animate (bob/scale) inside the glass; clip to the glass if moved far",
+   "parent": "lava_lamp"
+  }
+ ]
+}

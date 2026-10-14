@@ -1,0 +1,487 @@
+{
+ "walkable": [
+  [
+   [
+    470,
+    1700
+   ],
+   [
+    745,
+    1700
+   ],
+   [
+    745,
+    1410
+   ],
+   [
+    1370,
+    1410
+   ],
+   [
+    1370,
+    1700
+   ],
+   [
+    1630,
+    1700
+   ],
+   [
+    1900,
+    1580
+   ],
+   [
+    2700,
+    1480
+   ],
+   [
+    3500,
+    1580
+   ],
+   [
+    3820,
+    1700
+   ],
+   [
+    4140,
+    1700
+   ],
+   [
+    4140,
+    1410
+   ],
+   [
+    4775,
+    1410
+   ],
+   [
+    4775,
+    1700
+   ],
+   [
+    5030,
+    1700
+   ],
+   [
+    5400,
+    2800
+   ],
+   [
+    3245,
+    2800
+   ],
+   [
+    3245,
+    3060
+   ],
+   [
+    2260,
+    3060
+   ],
+   [
+    2260,
+    2800
+   ],
+   [
+    100,
+    2800
+   ]
+  ]
+ ],
+ "doors": [
+  {
+   "id": "left",
+   "side": "left",
+   "x": 220,
+   "y": 930,
+   "w": 240,
+   "h": 1000
+  },
+  {
+   "id": "bottom",
+   "side": "bottom",
+   "x": 2260,
+   "y": 2800,
+   "w": 985,
+   "h": 272
+  }
+ ],
+ "anchors": {
+  "station_alcove_left": [
+   1050,
+   1550
+  ],
+  "station_alcove_right": [
+   4460,
+   1550
+  ],
+  "helm": [
+   2780,
+   1640
+  ],
+  "vents": [
+   [
+    4400,
+    2500
+   ]
+  ]
+ },
+ "room": "bridge",
+ "source": "raw_originals/09_ROOM_BRIDGE.png",
+ "size": [
+  5504,
+  3072
+ ],
+ "shell": "bridge_shell.svg",
+ "glow": "bridge_lights_glow.svg",
+ "lights": [
+  {
+   "x": 1362,
+   "y": 2272,
+   "radius": 640,
+   "ry": 380,
+   "color": "#8FF0C8",
+   "a": 0.45,
+   "id": "star_chart"
+  },
+  {
+   "x": 2236,
+   "y": 1076,
+   "radius": 170,
+   "color": "#8FF0C8",
+   "a": 0.5,
+   "id": "screen_left"
+  },
+  {
+   "x": 2750,
+   "y": 1030,
+   "radius": 240,
+   "color": "#8FF0C8",
+   "a": 0.5,
+   "id": "screen_main"
+  },
+  {
+   "x": 3260,
+   "y": 1076,
+   "radius": 170,
+   "color": "#8FF0C8",
+   "a": 0.5,
+   "id": "screen_right"
+  }
+ ],
+ "light_pools": {
+  "file": "bridge_light_pools.svg",
+  "blend": "screen",
+  "layer": "above_shell_below_objects",
+  "note": "part of the faithful look (removed from the shell); keep on, may pulse",
+  "pools": [
+   {
+    "x": 520,
+    "y": 2130,
+    "poly": [
+     [
+      390,
+      1940
+     ],
+     [
+      1080,
+      1940
+     ],
+     [
+      1080,
+      2318
+     ],
+     [
+      262,
+      2318
+     ]
+    ],
+    "grad": [
+     300,
+     1080
+    ],
+    "color": "#FF3815",
+    "stops": [
+     [
+      0,
+      0.31
+     ],
+     [
+      0.23,
+      0.3
+     ],
+     [
+      0.44,
+      0.24
+     ],
+     [
+      0.64,
+      0.16
+     ],
+     [
+      0.8,
+      0.11
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "baked": false,
+    "id": "door_spill_left"
+   },
+   {
+    "x": 1362,
+    "y": 2262,
+    "radius": 700,
+    "ry": 430,
+    "color": "#8FF0C8",
+    "stops": [
+     [
+      0,
+      0.5
+     ],
+     [
+      0.5,
+      0.4
+     ],
+     [
+      0.6,
+      0.32
+     ],
+     [
+      0.7,
+      0.2
+     ],
+     [
+      0.8,
+      0.11
+     ],
+     [
+      0.9,
+      0.045
+     ],
+     [
+      1,
+      0
+     ]
+    ],
+    "baked": false,
+    "id": "star_chart_pool"
+   }
+  ]
+ },
+ "background": {
+  "id": "space",
+  "file": "bridge_space.svg",
+  "x": 670,
+  "y": 104,
+  "w": 4164,
+  "h": 951,
+  "note": "nebula, stars and ringed planet behind the panoramic window; drift slowly (padded 120 px)",
+  "layer": "behind_shell"
+ },
+ "objects": [
+  {
+   "id": "console",
+   "file": "objects/bridge_console.svg",
+   "x": 1438,
+   "y": 893,
+   "w": 2645,
+   "h": 819,
+   "sortY": 1712,
+   "collision": [
+    [
+     1450,
+     1400
+    ],
+    [
+     4070,
+     1400
+    ],
+    [
+     4070,
+     1715
+    ],
+    [
+     3820,
+     1715
+    ],
+    [
+     3500,
+     1600
+    ],
+    [
+     2700,
+     1505
+    ],
+    [
+     1900,
+     1600
+    ],
+    [
+     1630,
+     1715
+    ],
+    [
+     1450,
+     1715
+    ]
+   ]
+  },
+  {
+   "id": "chair",
+   "file": "objects/bridge_chair.svg",
+   "x": 2453,
+   "y": 1132,
+   "w": 692,
+   "h": 804,
+   "pivot": [
+    2780,
+    1830
+   ],
+   "note": "captain chair; swivel = small rotate / flipX around pivot (base centre)",
+   "sortY": 1895,
+   "collision": [
+    [
+     2620,
+     1800
+    ],
+    [
+     2780,
+     1770
+    ],
+    [
+     2950,
+     1800
+    ],
+    [
+     2950,
+     1880
+    ],
+    [
+     2780,
+     1905
+    ],
+    [
+     2620,
+     1880
+    ]
+   ]
+  },
+  {
+   "id": "thermos",
+   "file": "objects/bridge_thermos.svg",
+   "x": 3191,
+   "y": 1583,
+   "w": 171,
+   "h": 334,
+   "sortY": 1900,
+   "collision": [
+    [
+     3190,
+     1850
+    ],
+    [
+     3330,
+     1850
+    ],
+    [
+     3330,
+     1905
+    ],
+    [
+     3190,
+     1905
+    ]
+   ]
+  },
+  {
+   "id": "star_table",
+   "file": "objects/bridge_star_table.svg",
+   "x": 865,
+   "y": 1994,
+   "w": 991,
+   "h": 693,
+   "sortY": 2690,
+   "collision": [
+    [
+     1090,
+     2560
+    ],
+    [
+     1355,
+     2520
+    ],
+    [
+     1620,
+     2560
+    ],
+    [
+     1620,
+     2680
+    ],
+    [
+     1355,
+     2720
+    ],
+    [
+     1090,
+     2680
+    ]
+   ]
+  },
+  {
+   "id": "plant",
+   "file": "objects/bridge_plant.svg",
+   "x": 1816,
+   "y": 2275,
+   "w": 399,
+   "h": 500,
+   "sortY": 2765,
+   "collision": [
+    [
+     1930,
+     2690
+    ],
+    [
+     2120,
+     2690
+    ],
+    [
+     2120,
+     2765
+    ],
+    [
+     1930,
+     2765
+    ]
+   ]
+  }
+ ],
+ "children": [
+  {
+   "id": "screens",
+   "file": "objects/bridge_screens.svg",
+   "x": 1447,
+   "y": 939,
+   "w": 2636,
+   "h": 530,
+   "note": "glowing CRT faces; pulse with bridge_lights_glow.svg",
+   "parent": "console"
+  },
+  {
+   "id": "chart_disc",
+   "file": "objects/bridge_chart_disc.svg",
+   "x": 911,
+   "y": 2028,
+   "w": 895,
+   "h": 483,
+   "pivot": [
+    1358,
+    2269
+   ],
+   "note": "hologram chart; rotate group #chart_disc_spin (already inside the perspective squash)",
+   "parent": "star_table"
+  }
+ ]
+}

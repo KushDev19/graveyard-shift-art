@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5504 3072" width="5504" height="3072">
+<defs><linearGradient id="bridge_light_pools_g0" gradientUnits="userSpaceOnUse" x1="300" y1="0" x2="1080" y2="0"><stop offset="0" stop-color="#FF3815" stop-opacity="0.31"/><stop offset="0.23" stop-color="#FF3815" stop-opacity="0.3"/><stop offset="0.44" stop-color="#FF3815" stop-opacity="0.24"/><stop offset="0.64" stop-color="#FF3815" stop-opacity="0.16"/><stop offset="0.8" stop-color="#FF3815" stop-opacity="0.11"/><stop offset="1" stop-color="#FF3815" stop-opacity="0"/></linearGradient><radialGradient id="bridge_light_pools_g1"><stop offset="0" stop-color="#8FF0C8" stop-opacity="0.5"/><stop offset="0.5" stop-color="#8FF0C8" stop-opacity="0.4"/><stop offset="0.6" stop-color="#8FF0C8" stop-opacity="0.32"/><stop offset="0.7" stop-color="#8FF0C8" stop-opacity="0.2"/><stop offset="0.8" stop-color="#8FF0C8" stop-opacity="0.11"/><stop offset="0.9" stop-color="#8FF0C8" stop-opacity="0.045"/><stop offset="1" stop-color="#8FF0C8" stop-opacity="0"/></radialGradient></defs>
+<g id="bridge_light_pools" style="mix-blend-mode:screen">
+<path d="M390 1940L1080 1940L1080 2318L262 2318Z" fill="url(#bridge_light_pools_g0)"/>
+<ellipse cx="1362" cy="2262" rx="700" ry="430" fill="url(#bridge_light_pools_g1)"/>
+</g>
+</svg>

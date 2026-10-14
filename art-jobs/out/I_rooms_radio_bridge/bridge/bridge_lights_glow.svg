@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5504 3072" width="5504" height="3072">
+<defs><radialGradient id="bridge_lights_glow_g0"><stop offset="0" stop-color="#8FF0C8" stop-opacity="0.45"/><stop offset="1" stop-color="#8FF0C8" stop-opacity="0"/></radialGradient><radialGradient id="bridge_lights_glow_g1"><stop offset="0" stop-color="#8FF0C8" stop-opacity="0.5"/><stop offset="1" stop-color="#8FF0C8" stop-opacity="0"/></radialGradient><radialGradient id="bridge_lights_glow_g2"><stop offset="0" stop-color="#8FF0C8" stop-opacity="0.5"/><stop offset="1" stop-color="#8FF0C8" stop-opacity="0"/></radialGradient><radialGradient id="bridge_lights_glow_g3"><stop offset="0" stop-color="#8FF0C8" stop-opacity="0.5"/><stop offset="1" stop-color="#8FF0C8" stop-opacity="0"/></radialGradient></defs>
+<g id="bridge_lights_glow" style="mix-blend-mode:screen">
+<ellipse cx="1362" cy="2272" rx="640" ry="380" fill="url(#bridge_lights_glow_g0)"/>
+<circle cx="2236" cy="1076" r="170" fill="url(#bridge_lights_glow_g1)"/>
+<circle cx="2750" cy="1030" r="240" fill="url(#bridge_lights_glow_g2)"/>
+<circle cx="3260" cy="1076" r="170" fill="url(#bridge_lights_glow_g3)"/>
+</g>
+</svg>

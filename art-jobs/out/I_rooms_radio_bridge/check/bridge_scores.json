@@ -1,0 +1,121 @@
+[
+ {
+  "id": "FULL_COMPOSITE",
+  "mae": 3.17
+ },
+ {
+  "id": "shell",
+  "kind": "shell",
+  "file": "bridge/bridge_shell.svg",
+  "x": 0,
+  "y": 0,
+  "w": 5504,
+  "h": 3072,
+  "mae": 3.14,
+  "kb": 682
+ },
+ {
+  "id": "space",
+  "kind": "space",
+  "file": "bridge/bridge_space.svg",
+  "x": 670,
+  "y": 104,
+  "w": 4164,
+  "h": 951,
+  "mae": 4.57,
+  "edge_med": 1.9,
+  "edge_p90": 17.4,
+  "kb": 166
+ },
+ {
+  "id": "console",
+  "kind": "object",
+  "file": "bridge/objects/bridge_console.svg",
+  "x": 1438,
+  "y": 893,
+  "w": 2645,
+  "h": 819,
+  "mae": 4.46,
+  "edge_med": 1.0,
+  "edge_p90": 1.9,
+  "kb": 473
+ },
+ {
+  "id": "screens",
+  "kind": "object",
+  "file": "bridge/objects/bridge_screens.svg",
+  "x": 1447,
+  "y": 939,
+  "w": 2636,
+  "h": 530,
+  "mae": 6.12,
+  "edge_med": 1.4,
+  "edge_p90": 5.5,
+  "kb": 56
+ },
+ {
+  "id": "chair",
+  "kind": "object",
+  "file": "bridge/objects/bridge_chair.svg",
+  "x": 2453,
+  "y": 1132,
+  "w": 692,
+  "h": 804,
+  "mae": 4.07,
+  "edge_med": 1.0,
+  "edge_p90": 2.7,
+  "kb": 123
+ },
+ {
+  "id": "thermos",
+  "kind": "object",
+  "file": "bridge/objects/bridge_thermos.svg",
+  "x": 3191,
+  "y": 1583,
+  "w": 171,
+  "h": 334,
+  "mae": 4.78,
+  "edge_med": 1.0,
+  "edge_p90": 1.9,
+  "kb": 24
+ },
+ {
+  "id": "star_table",
+  "kind": "object",
+  "file": "bridge/objects/bridge_star_table.svg",
+  "x": 865,
+  "y": 1994,
+  "w": 991,
+  "h": 693,
+  "mae": 5.05,
+  "edge_med": 0.0,
+  "edge_p90": 1.9,
+  "kb": 56
+ },
+ {
+  "id": "chart_disc",
+  "kind": "object",
+  "file": "bridge/objects/bridge_chart_disc.svg",
+  "x": 911,
+  "y": 2028,
+  "w": 895,
+  "h": 483,
+  "mae": 3.68,
+  "edge_med": 0.0,
+  "edge_p90": 1.0,
+  "kb": 218
+ },
+ {
+  "id": "plant",
+  "kind": "object",
+  "file": "bridge/objects/bridge_plant.svg",
+  "x": 1816,
+  "y": 2275,
+  "w": 399,
+  "h": 500,
+  "mae": 4.44,
+  "edge_med": 1.0,
+  "edge_p90": 1.0,
+  "kb": 51
+ }
+]

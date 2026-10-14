@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <clipPath id="sky-clip"><circle cx="256" cy="256" r="190"/></clipPath>
+    <radialGradient id="visor-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#F5A54A" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#F5A54A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="rim">
+    <circle cx="256" cy="256" r="250" fill="#2A1E35"/>
+    <circle cx="256" cy="256" r="240" fill="#F4E6C8"/>
+    <circle cx="256" cy="256" r="221" fill="#F5A54A"/>
+    <circle cx="256" cy="256" r="209" fill="#E8574A"/>
+    <circle cx="256" cy="256" r="198" fill="#2A1E35"/>
+  </g>
+  <g id="screws" stroke="#2A1E35" stroke-linecap="round">
+    <g fill="#9AA1B4" stroke-width="5"><circle cx="93" cy="93" r="10"/><circle cx="419" cy="93" r="10"/><circle cx="93" cy="419" r="10"/><circle cx="419" cy="419" r="10"/></g>
+    <path d="M87 99l12-12M413 87l12 12M87 413l12 12M413 425l12-12" stroke-width="4"/>
+  </g>
+  <g id="sky" clip-path="url(#sky-clip)">
+    <rect x="0" y="0" width="512" height="512" fill="#1B1830"/>
+    <g id="stars" fill="#F4E6C8">
+      <path d="M150 120l7 18 18 7-18 7-7 18-7-18-18-7 18-7z"/>
+      <path d="M232 92l5 12 12 5-12 5-5 12-5-12-12-5 12-5z" fill="#F5A54A"/>
+      <path d="M118 236l5 13 13 5-13 5-5 13-5-13-13-5 13-5z" fill="#7FC8B8"/>
+      <circle cx="200" cy="170" r="5"/><circle cx="96" cy="190" r="4"/>
+      <circle cx="270" cy="148" r="4" fill="#D9738C"/><circle cx="414" cy="290" r="5"/>
+      <circle cx="388" cy="96" r="4"/><circle cx="180" cy="62" r="4"/>
+    </g>
+    <g id="moon">
+      <clipPath id="moon-clip"><path d="M353.7 93.4A86 86 0 1 1 261.9 218.1A78 78 0 0 0 353.7 93.4Z"/></clipPath>
+      <g clip-path="url(#moon-clip)">
+        <circle cx="338" cy="178" r="90" fill="#D9C6A0"/>
+        <circle cx="326" cy="166" r="88" fill="#F4E6C8"/>
+        <circle cx="392" cy="196" r="10" fill="#D9C6A0"/><circle cx="366" cy="232" r="7" fill="#D9C6A0"/><circle cx="400" cy="140" r="6" fill="#D9C6A0"/>
+      </g>
+      <path d="M353.7 93.4A86 86 0 1 1 261.9 218.1A78 78 0 0 0 353.7 93.4Z" fill="none" stroke="#2A1E35" stroke-width="8" stroke-linejoin="round"/>
+    </g>
+    <g id="helmet">
+      <path d="M256 280c0-34-4-54-22-72" fill="none" stroke="#2A1E35" stroke-width="16" stroke-linecap="round"/>
+      <path d="M256 280c0-34-4-54-22-72" fill="none" stroke="#9AA1B4" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="230" cy="202" r="17" fill="#CDCCD4" stroke="#2A1E35" stroke-width="8"/>
+      <circle cx="225" cy="197" r="5" fill="#FFFFFF"/>
+      <path d="M232 272a24 24 0 0 1 48 0z" fill="#CDCCD4" stroke="#2A1E35" stroke-width="8" stroke-linejoin="round"/>
+      <circle cx="256" cy="430" r="166" fill="#2A1E35"/>
+      <circle cx="256" cy="430" r="158" fill="#C9D0DE"/>
+      <path d="M256 272a158 158 0 0 1 158 158h-158z" fill="#9AA3B8"/>
+      <circle cx="256" cy="430" r="140" fill="#2A1E35"/>
+      <circle cx="256" cy="430" r="134" fill="#241F3E"/>
+      <ellipse cx="256" cy="392" rx="112" ry="74" fill="url(#visor-glow)"/>
+      <rect x="176" y="346" width="160" height="96" rx="38" fill="#2A1E35"/>
+      <rect x="183" y="353" width="146" height="82" rx="32" fill="#F5A54A"/>
+      <path d="M183 404h146c0 17-14 31-32 31h-82c-18 0-32-14-32-31z" fill="#E08D35"/>
+      <rect x="200" y="364" width="44" height="12" rx="6" fill="#FFD9A0"/>
+      <path d="M170 356c10-34 36-58 70-66" fill="none" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" opacity="0.85"/>
+      <circle cx="160" cy="388" r="8" fill="#FFFFFF" opacity="0.85"/>
+    </g>
+  </g>
+  <circle cx="256" cy="256" r="194" fill="none" stroke="#2A1E35" stroke-width="8"/>
+</svg>

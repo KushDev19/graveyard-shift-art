@@ -1,0 +1,411 @@
+{
+ "room": "reactor",
+ "source": "raw_originals/06_ROOM_REACTOR.png",
+ "size": [
+  5508,
+  3072
+ ],
+ "shell": "reactor_shell.svg",
+ "lights_file": "reactor_lights.svg",
+ "layer_order": "shell, wall, floor, sorted (by sortY, with players), lights",
+ "objects": [
+  {
+   "id": "valve_wall",
+   "file": "objects/reactor_valve_wall.svg",
+   "x": 296,
+   "y": 2120,
+   "w": 176,
+   "h": 216,
+   "layer": "wall",
+   "sortY": 2336,
+   "collision": [],
+   "pivot": [
+    415,
+    2250
+   ],
+   "mae": 11.12
+  },
+  {
+   "id": "tool_rack",
+   "file": "objects/reactor_tool_rack.svg",
+   "x": 4016,
+   "y": 692,
+   "w": 512,
+   "h": 416,
+   "layer": "wall",
+   "sortY": 1108,
+   "collision": [],
+   "mae": 4.64
+  },
+  {
+   "id": "pipes_wall",
+   "file": "objects/reactor_pipes_wall.svg",
+   "x": 120,
+   "y": 84,
+   "w": 4828,
+   "h": 2240,
+   "layer": "wall",
+   "sortY": 2324,
+   "collision": [],
+   "mae": 8.04
+  },
+  {
+   "id": "floor_grates",
+   "file": "objects/reactor_floor_grates.svg",
+   "x": 1600,
+   "y": 1296,
+   "w": 2320,
+   "h": 972,
+   "layer": "floor",
+   "sortY": 2268,
+   "collision": [],
+   "mae": 11.41
+  },
+  {
+   "id": "extinguisher",
+   "file": "objects/reactor_extinguisher.svg",
+   "x": 4548,
+   "y": 880,
+   "w": 304,
+   "h": 444,
+   "layer": "sorted",
+   "sortY": 1290,
+   "collision": [
+    [
+     4610,
+     1230
+    ],
+    [
+     4790,
+     1230
+    ],
+    [
+     4790,
+     1300
+    ],
+    [
+     4610,
+     1300
+    ]
+   ],
+   "mae": 5.23
+  },
+  {
+   "id": "core",
+   "file": "objects/reactor_core.svg",
+   "x": 1736,
+   "y": 236,
+   "w": 2020,
+   "h": 1812,
+   "layer": "sorted",
+   "sortY": 1960,
+   "collision": [
+    [
+     1790,
+     1310
+    ],
+    [
+     3700,
+     1310
+    ],
+    [
+     3700,
+     1730
+    ],
+    [
+     3420,
+     1730
+    ],
+    [
+     3400,
+     1900
+    ],
+    [
+     3200,
+     1980
+    ],
+    [
+     2740,
+     2000
+    ],
+    [
+     2280,
+     1980
+    ],
+    [
+     2080,
+     1900
+    ],
+    [
+     2060,
+     1730
+    ],
+    [
+     1790,
+     1730
+    ]
+   ],
+   "layers": {
+    "core_housing": "objects/reactor_core_housing.svg",
+    "core_sphere": "objects/reactor_core_sphere.svg",
+    "core_cage": "objects/reactor_core_cage.svg",
+    "core_glow": "objects/reactor_core_glow.svg"
+   },
+   "glow_box": [
+    2004,
+    418,
+    1508,
+    1420
+   ],
+   "pulse_center": [
+    2758,
+    1128
+   ],
+   "mae": 6.47
+  },
+  {
+   "id": "valve_floor_left",
+   "file": "objects/reactor_valve_floor_left.svg",
+   "x": 800,
+   "y": 2460,
+   "w": 180,
+   "h": 176,
+   "layer": "sorted",
+   "sortY": 2790,
+   "collision": [],
+   "pivot": [
+    893,
+    2512
+   ],
+   "mae": 8.03
+  },
+  {
+   "id": "valve_floor_right",
+   "file": "objects/reactor_valve_floor_right.svg",
+   "x": 4532,
+   "y": 2460,
+   "w": 180,
+   "h": 184,
+   "layer": "sorted",
+   "sortY": 2790,
+   "collision": [],
+   "pivot": [
+    4625,
+    2515
+   ],
+   "mae": 8.26
+  },
+  {
+   "id": "pipes_floor_left",
+   "file": "objects/reactor_pipes_floor_left.svg",
+   "x": 40,
+   "y": 2256,
+   "w": 2316,
+   "h": 680,
+   "layer": "sorted",
+   "sortY": 2790,
+   "collision": [
+    [
+     150,
+     2600
+    ],
+    [
+     2290,
+     2600
+    ],
+    [
+     2290,
+     2800
+    ],
+    [
+     110,
+     2800
+    ]
+   ],
+   "mae": 6.11
+  },
+  {
+   "id": "pipes_floor_right",
+   "file": "objects/reactor_pipes_floor_right.svg",
+   "x": 3264,
+   "y": 2576,
+   "w": 2168,
+   "h": 360,
+   "layer": "sorted",
+   "sortY": 2790,
+   "collision": [
+    [
+     3330,
+     2610
+    ],
+    [
+     5310,
+     2610
+    ],
+    [
+     5330,
+     2800
+    ],
+    [
+     3330,
+     2800
+    ]
+   ],
+   "mae": 5.44
+  }
+ ],
+ "walkable": [
+  [
+   640,
+   1310
+  ],
+  [
+   4900,
+   1310
+  ],
+  [
+   5300,
+   2600
+  ],
+  [
+   5300,
+   2700
+  ],
+  [
+   3240,
+   2700
+  ],
+  [
+   3240,
+   3000
+  ],
+  [
+   2290,
+   3000
+  ],
+  [
+   2290,
+   2700
+  ],
+  [
+   150,
+   2700
+  ],
+  [
+   150,
+   2600
+  ]
+ ],
+ "doors": [
+  {
+   "id": "left",
+   "side": "left",
+   "x": 470,
+   "y": 860,
+   "w": 130,
+   "h": 520
+  },
+  {
+   "id": "right",
+   "side": "right",
+   "x": 5050,
+   "y": 930,
+   "w": 250,
+   "h": 1490
+  },
+  {
+   "id": "bottom",
+   "side": "bottom",
+   "x": 2290,
+   "y": 2800,
+   "w": 950,
+   "h": 272
+  }
+ ],
+ "anchors": {
+  "keypad_alcove": [
+   1150,
+   1000
+  ],
+  "keypad_floor_mark": [
+   1150,
+   1500
+  ],
+  "vents": [
+   [
+    1300,
+    1980
+   ],
+   [
+    4350,
+    1750
+   ]
+  ],
+  "steam_emitters": [
+   [
+    600,
+    2060
+   ],
+   [
+    1090,
+    2350
+   ],
+   [
+    4420,
+    2400
+   ]
+  ]
+ },
+ "lights": [
+  {
+   "id": "core",
+   "x": 2742,
+   "y": 1110,
+   "radius": 1300,
+   "color": "#FF8A5C"
+  },
+  {
+   "id": "alcove",
+   "x": 1150,
+   "y": 1050,
+   "radius": 500,
+   "color": "#F5A54A"
+  },
+  {
+   "id": "right_door_spill",
+   "x": 4800,
+   "y": 2100,
+   "radius": 550,
+   "color": "#E8907A"
+  }
+ ],
+ "sprites": {
+  "steam_puff": {
+   "file": "objects/steam_puff.svg",
+   "w": 214,
+   "h": 214,
+   "source_xy": [
+    1007,
+    2233
+   ],
+   "pivot": [
+    107,
+    107
+   ]
+  }
+ },
+ "mae": {
+  "valve_wall": 11.12,
+  "valve_floor_left": 8.03,
+  "valve_floor_right": 8.26,
+  "tool_rack": 4.64,
+  "extinguisher": 5.23,
+  "pipes_floor_left": 6.11,
+  "pipes_floor_right": 5.44,
+  "pipes_wall": 8.04,
+  "core": 6.47,
+  "floor_grates": 11.41,
+  "_shell_visible": 3.94,
+  "_room_total": 5.18
+ }
+}

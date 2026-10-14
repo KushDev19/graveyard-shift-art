@@ -1,0 +1,10 @@
+{
+ "nametag": {"side": {"src": "decal_nametag_s", "c": [424, 522], "dome": "tag_s", "k": 1.25},
+             "front": {"src": "decal_nametag_f", "c": [321, 536], "dome": "tag_f", "k": 1.2}},
+ "bolt":    {"side": {"src": "decal_bolt_s", "c": [416, 530], "dome": "bolt_s", "k": 1.6},
+             "front": {"src": "decal_bolt_s", "c": [321, 540], "dome": "bolt_s", "k": 1.6, "sx": 1.15}},
+ "smiley":  {"side": {"src": "decal_smiley_s", "c": [414, 536], "dome": "smiley_f", "k": 1.35, "sx": 0.8},
+             "front": {"src": "decal_smiley_s", "c": [321, 548], "dome": "smiley_f", "k": 1.35}},
+ "flames":  {"side": {"src": "decal_flames_s", "c": [410, 590], "dome": "flames_s"},
+             "front": {"src": "decal_flames_f", "c": [321, 610], "dome": "flames_f"}}
+}

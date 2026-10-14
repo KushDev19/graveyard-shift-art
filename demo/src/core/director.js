@@ -31,7 +31,7 @@ export class Director {
   }
   key(e) {
     if (e.metaKey || e.ctrlKey || e.altKey) return;
-    const k = e.key;
+    const k = e.key; document.activeElement?.blur?.();
     if (k === 'ArrowRight' || k === ' ' || k === 'Enter' || k === 'PageDown') { e.preventDefault(); this.next(); }
     else if (k === 'ArrowLeft' || k === 'PageUp') { e.preventDefault(); this.prev(); }
     else if (/^[0-9]$/.test(k)) this.goto(parseInt(k, 10));

@@ -31,7 +31,8 @@ export function createContext(root) {
   ctx.play = (tl) => new Promise((res) => {
     if (!tl || (tl.duration && tl.duration() === 0 && !tl.isActive?.())) { res(); return; }
     ctx.active.add(tl);
-    const done = () => { ctx.active.delete(tl); res(); };
+    const prev = tl.eventCallback('onComplete'); let fired = false;
+    const done = () => { if (fired) return; fired = true; ctx.active.delete(tl); try { prev?.call(tl); } catch (e) { console.error(e); } res(); };
     tl.eventCallback('onComplete', done);
     if (ctx.instant) tl.progress(1, false);
   });

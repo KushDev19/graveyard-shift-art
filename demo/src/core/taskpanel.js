@@ -51,8 +51,10 @@ export function createKeypad(layer, { onWrong, onProgress } = {}) {
     wrong(K); return false;
   }
   function wrong(K) {
-    setKey(K, 'wrong'); paintDisp('WRONG KEY: RESET', true); f.shake(); onWrong?.();
-    gsap.delayedCall(0.55, () => { for (const x of keys) setKey(x, 'idle'); next = 1; setNeedle(); paintDisp('PRESS 1'); });
+    // logic resets immediately (so rapid or scripted presses can't pile up); the red flash is cosmetic
+    for (const x of keys) if (x !== K) setKey(x, 'idle');
+    next = 1; setNeedle(); setKey(K, 'wrong'); paintDisp('WRONG KEY: RESET', true); f.shake(); onWrong?.();
+    gsap.delayedCall(0.55, () => { if (K.state === 'wrong') setKey(K, 'idle'); if (next === 1) paintDisp('PRESS 1'); });
   }
   keys.forEach((K) => K.k.addEventListener('click', () => press(K.n)));
   /** presenter fallback: one deliberate wrong press, then the full sequence */

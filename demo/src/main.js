@@ -5,6 +5,7 @@ import { Director } from './core/director.js';
 import { preloadCosmetics } from './core/util.js';
 import { preloadMeeting } from './core/meeting.js';
 import { SCENES } from './scenes/index.js';
+import { startMusic } from './core/music.js';
 
 async function boot() {
   const root = document.getElementById('app');
@@ -15,4 +16,5 @@ async function boot() {
   await d.start(params.has('scene') ? +params.get('scene') : 0);
   if (params.has('step')) { /* debug: ?scene=8&step=3 */ await d.goto(+params.get('scene') || 0, +params.get('step')); }
 }
+window.addEventListener('pointerdown', () => startMusic(), { once: true }); // browsers need a gesture before audio can play
 boot().catch((e) => { console.error(e); document.body.insertAdjacentHTML('beforeend', `<pre style="color:#fff;padding:20px">${e.stack}</pre>`); });

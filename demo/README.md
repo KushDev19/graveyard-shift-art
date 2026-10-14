@@ -29,6 +29,7 @@ Refresh the staged art (only needed if `art-jobs/out` changes): `python3 tools/s
 | `I` | scene 10, alternate ending: **Impostors win** (living crew <= impostors) |
 | `P` | presenter notes: the acceptance criteria the current scene demonstrates |
 | `C` | toggle captions |
+| `M` | mute / unmute the background music (a soft lo-fi loop generated in the browser; starts on your first key press or click. To use a real track instead, drop it at `public/assets/audio/music.mp3`) |
 | `R` | restart the current scene |
 | `A` | autoplay (advances beats by itself) |
 | `F` | fullscreen |

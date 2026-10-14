@@ -1,5 +1,6 @@
 import gsap from 'gsap';
 import { A, el, img } from './util.js';
+import { startMusic, toggleMusic } from './music.js';
 
 /** Runs scenes -> steps. A step is {label, run(ctx), hold?}. Pressing next while a step runs finishes it instantly, then starts the next. */
 export class Director {
@@ -19,7 +20,7 @@ export class Director {
       const p = el('div', 'pip', this.group); p.title = s.title; p.addEventListener('click', () => this.goto(i)); p.style.cursor = 'pointer'; p.style.pointerEvents = 'auto'; this.pips.push(p);
     });
     this.nowEl = el('div', 'now', this.bar); this.bar.style.pointerEvents = 'none';
-    this.hintEl = el('div', 'hint', this.bar, '→ next · ← back · P notes · C captions');
+    this.hintEl = el('div', 'hint', this.bar, '→ next · ← back · P notes · C captions · M music');
     this.bar.style.pointerEvents = 'auto';
     this.notes = el('div', 'notes', L); gsap.set(this.notes, { autoAlpha: 0 });
   }
@@ -27,11 +28,11 @@ export class Director {
     const s = this.scenes[this.si];
     this.pips.forEach((p, i) => { p.classList.toggle('on', i === this.si); p.classList.toggle('done', i < this.si); });
     this.nowEl.textContent = `${this.si}. ${s.title.toUpperCase()}  ·  beat ${Math.min(this.step + 1, s.steps.length)}/${s.steps.length}`;
-    this.notes.innerHTML = `<h2>${this.si}. ${s.title}</h2><div class="story">${s.story}</div><ul>${s.criteria.map((c) => { const m = c.match(/^\[(.*?)\]\s*(.*)$/); return `<li>${m ? `<i>${m[1]}</i>${m[2]}` : c}</li>`; }).join('')}</ul><div class="keys">P close · C captions · R restart scene · 1-9 jump · 0 title · W win · I impostors win · A autoplay</div>`;
+    this.notes.innerHTML = `<h2>${this.si}. ${s.title}</h2><div class="story">${s.story}</div><ul>${s.criteria.map((c) => { const m = c.match(/^\[(.*?)\]\s*(.*)$/); return `<li>${m ? `<i>${m[1]}</i>${m[2]}` : c}</li>`; }).join('')}</ul><div class="keys">P close · C captions · M music · R restart scene · 1-9 jump · 0 title · W win · I impostors win · A autoplay</div>`;
   }
   key(e) {
     if (e.metaKey || e.ctrlKey || e.altKey) return;
-    const k = e.key; document.activeElement?.blur?.();
+    const k = e.key; document.activeElement?.blur?.(); startMusic();
     if (k === 'ArrowRight' || k === ' ' || k === 'Enter' || k === 'PageDown') { e.preventDefault(); this.next(); }
     else if (k === 'ArrowLeft' || k === 'PageUp') { e.preventDefault(); this.prev(); }
     else if (/^[0-9]$/.test(k)) this.goto(parseInt(k, 10));
@@ -41,6 +42,7 @@ export class Director {
     else if (k === 'c' || k === 'C') { const on = this.ctx.captions.toggle(); this.ctx.hud.toast(on ? 'Captions on' : 'Captions off', 'info', 1); }
     else if (k === 'r' || k === 'R') this.goto(this.si);
     else if (k === 'a' || k === 'A') { this.auto = !this.auto; this.ctx.hud.toast(this.auto ? 'Autoplay on' : 'Autoplay off', 'info', 1); if (this.auto && !this.busy) this.next(); }
+    else if (k === 'm' || k === 'M') { const on = toggleMusic(); this.ctx.hud.toast(on ? 'Music on' : 'Music off', 'info', 1); }
     else if (k === 'f' || k === 'F') { document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen?.(); }
   }
   toggleNotes() { this.notesOpen = !this.notesOpen; const on = this.notesOpen; gsap.to(this.notes, { autoAlpha: on ? 1 : 0, y: on ? 0 : 20, duration: 0.25, overwrite: true }); }

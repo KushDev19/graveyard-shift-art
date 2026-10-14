@@ -1,0 +1,373 @@
+{
+  "_note": "Insets in px at 1x; multiply by 2 for @2x textures. Phaser: this.add.nineslice(x, y, key, null, w, h, left, right, top, bottom). top/bottom 0 means 3-slice (height fixed).",
+  "panel_crt_lg": {
+    "file": "panel_crt_lg.svg",
+    "size": [
+      480,
+      320
+    ],
+    "insets": {
+      "left": 40,
+      "right": 40,
+      "top": 40,
+      "bottom": 56
+    },
+    "content": [
+      24,
+      24,
+      432,
+      256
+    ]
+  },
+  "panel_crt_sm": {
+    "file": "panel_crt_sm.svg",
+    "size": [
+      240,
+      160
+    ],
+    "insets": {
+      "left": 28,
+      "right": 28,
+      "top": 28,
+      "bottom": 36
+    },
+    "content": [
+      18,
+      18,
+      204,
+      116
+    ]
+  },
+  "toast_banner": {
+    "file": "toast_banner.svg",
+    "size": [
+      360,
+      64
+    ],
+    "insets": {
+      "left": 60,
+      "right": 34,
+      "top": 0,
+      "bottom": 0
+    }
+  },
+  "speech_bubble": {
+    "file": "speech_bubble.svg",
+    "size": [
+      280,
+      150
+    ],
+    "insets": {
+      "left": 80,
+      "right": 30,
+      "top": 30,
+      "bottom": 64
+    },
+    "tail_tip": [
+      24,
+      147
+    ]
+  },
+  "progress_trough": {
+    "file": "progress_trough.svg",
+    "size": [
+      400,
+      40
+    ],
+    "insets": {
+      "left": 20,
+      "right": 20,
+      "top": 0,
+      "bottom": 0
+    }
+  },
+  "chat_drawer": {
+    "file": "chat_drawer.svg",
+    "size": [
+      360,
+      540
+    ],
+    "insets": {
+      "left": 104,
+      "right": 40,
+      "top": 64,
+      "bottom": 90
+    },
+    "zones": {
+      "title": [
+        16,
+        8,
+        328,
+        40
+      ],
+      "messages": [
+        16,
+        52,
+        328,
+        410
+      ],
+      "input": [
+        16,
+        476,
+        328,
+        44
+      ]
+    }
+  },
+  "btn_pill_idle": {
+    "file": "btn_pill_idle.svg",
+    "size": [
+      200,
+      64
+    ],
+    "insets": {
+      "left": 32,
+      "right": 32,
+      "top": 0,
+      "bottom": 0
+    },
+    "label": {
+      "font": "Bungee",
+      "size": 22,
+      "colors": {
+        "idle": "#2A1E35",
+        "pressed": "#2A1E35",
+        "disabled": "#5A4E66",
+        "danger": "#FFF4E0"
+      },
+      "pressed_offset_y": 3,
+      "note": "label is live text, centered; nudge +3px when pressed"
+    }
+  },
+  "btn_pill_pressed": {
+    "file": "btn_pill_pressed.svg",
+    "size": [
+      200,
+      64
+    ],
+    "insets": {
+      "left": 32,
+      "right": 32,
+      "top": 0,
+      "bottom": 0
+    }
+  },
+  "btn_pill_disabled": {
+    "file": "btn_pill_disabled.svg",
+    "size": [
+      200,
+      64
+    ],
+    "insets": {
+      "left": 32,
+      "right": 32,
+      "top": 0,
+      "bottom": 0
+    }
+  },
+  "btn_pill_danger": {
+    "file": "btn_pill_danger.svg",
+    "size": [
+      200,
+      64
+    ],
+    "insets": {
+      "left": 32,
+      "right": 32,
+      "top": 0,
+      "bottom": 0
+    }
+  },
+  "progress": {
+    "fill_offset_in_trough": [
+      10,
+      10
+    ],
+    "fill_max_size": [
+      380,
+      20
+    ],
+    "note": "Crop progress_fill (setCrop) to the progress width, or use progress_fill_tile as a TileSprite with a rounded mask; do not scale the stripes."
+  },
+  "timer_dial": {
+    "layers": [
+      "timer_dial_ring",
+      "timer_dial_arc",
+      "timer_dial_center"
+    ],
+    "size": [
+      112,
+      112
+    ],
+    "arc": {
+      "cx": 56,
+      "cy": 56,
+      "r": 37,
+      "width": 8,
+      "start_deg": -90,
+      "clockwise": true,
+      "colors": {
+        "discuss": "#7FC8B8",
+        "voting": "#F5A54A",
+        "last10s": "#E8574A"
+      }
+    },
+    "note": "Draw the arc with Phaser Graphics (lineStyle 8, arc r 37) between ring and center, or mask timer_dial_arc."
+  },
+  "vote_plate": {
+    "svg_size": [
+      552,
+      94
+    ],
+    "body_offset": [
+      8,
+      8
+    ],
+    "body_size": [
+      536,
+      78
+    ],
+    "portrait_well": {
+      "cx": 50,
+      "cy": 47,
+      "r": 26
+    },
+    "name": {
+      "x": 98,
+      "baseline": 45,
+      "font": "Space Grotesk 700",
+      "size": 25,
+      "sub_baseline": 70,
+      "sub_font": "VT323 22"
+    },
+    "status_area": [
+      374,
+      20,
+      156,
+      54
+    ],
+    "caller_badge_center": [
+      72,
+      69
+    ],
+    "selected_buttons": {
+      "cancel": [
+        396,
+        27
+      ],
+      "confirm": [
+        460,
+        27
+      ],
+      "size": 40
+    },
+    "states": [
+      "alive",
+      "you",
+      "selected",
+      "voted",
+      "caller",
+      "eliminated",
+      "disconnected"
+    ],
+    "fixed_size": true
+  },
+  "meeting_tablet": {
+    "canvas": [
+      1280,
+      720
+    ],
+    "body": [
+      40,
+      14,
+      1200,
+      698
+    ],
+    "screen": [
+      72,
+      46,
+      1136,
+      610
+    ],
+    "title": {
+      "file": "tablet_title.svg",
+      "pos": [
+        320,
+        58
+      ]
+    },
+    "caller_line": {
+      "x": 640,
+      "baseline": 130,
+      "font": "Space Grotesk 700 21",
+      "anchor": "middle"
+    },
+    "chat_button": [
+      1122,
+      62
+    ],
+    "unread_dot": [
+      1170,
+      56
+    ],
+    "plates": [
+      [
+        88,
+        140
+      ],
+      [
+        640,
+        140
+      ],
+      [
+        88,
+        225
+      ],
+      [
+        640,
+        225
+      ],
+      [
+        88,
+        310
+      ],
+      [
+        640,
+        310
+      ],
+      [
+        88,
+        395
+      ],
+      [
+        640,
+        395
+      ],
+      [
+        88,
+        480
+      ],
+      [
+        640,
+        480
+      ]
+    ],
+    "skip_button": [
+      96,
+      582,
+      200,
+      64
+    ],
+    "timer_dial": [
+      1116,
+      578,
+      72,
+      72
+    ],
+    "timer_text_right": [
+      1100,
+      632
+    ],
+    "slide_in": "place at (0,0); tween y from 720 to 0 (Back.easeOut, ~450 ms) over a 60% #101326 dim layer"
+  }
+}

@@ -1,0 +1,706 @@
+{
+ "about": "GRAVEYARD SHIFT Job C task panels. All coordinates are pixels in the 2048x1536 panel space. Socket x,y = CENTER of the socket; w,h = its size. Place a part by putting its anchor on the socket center and scaling by socket.scale (parts are drawn at panel scale, so scale is 1.0 unless given). If the panel is displayed at another size, multiply everything by displayWidth/2048.",
+ "panels": {
+  "panel_keypad": {
+   "title": "Reactor Override",
+   "svg": "panel_keypad.svg",
+   "png": "panel_keypad.png",
+   "size": [
+    2048,
+    1536
+   ],
+   "sockets": {
+    "gauge_needle": {
+     "kind": "needle",
+     "x": 520,
+     "y": 472,
+     "w": 56,
+     "h": 190,
+     "pivot": [
+      520,
+      472
+     ],
+     "part": "vu_needle",
+     "scale": 0.714,
+     "note": "rotate around pivot; -88 deg (left) .. +88 deg (right), coral zone = +58..+88"
+    },
+    "display": {
+     "kind": "text",
+     "x": 1500.0,
+     "y": 377.0,
+     "w": 660,
+     "h": 238,
+     "note": "live VT323 amber text (#F5A54A), glow optional"
+    },
+    "key_0": {
+     "kind": "key",
+     "x": 364.0,
+     "y": 795.0,
+     "w": 260,
+     "h": 260,
+     "part": "key_idle",
+     "scale": 1.0,
+     "note": "row 0 col 0; states key_idle/pressed/correct/wrong"
+    },
+    "key_1": {
+     "kind": "key",
+     "x": 694.0,
+     "y": 795.0,
+     "w": 260,
+     "h": 260,
+     "part": "key_idle",
+     "scale": 1.0,
+     "note": "row 0 col 1; states key_idle/pressed/correct/wrong"
+    },
+    "key_2": {
+     "kind": "key",
+     "x": 1024.0,
+     "y": 795.0,
+     "w": 260,
+     "h": 260,
+     "part": "key_idle",
+     "scale": 1.0,
+     "note": "row 0 col 2; states key_idle/pressed/correct/wrong"
+    },
+    "key_3": {
+     "kind": "key",
+     "x": 1354.0,
+     "y": 795.0,
+     "w": 260,
+     "h": 260,
+     "part": "key_idle",
+     "scale": 1.0,
+     "note": "row 0 col 3; states key_idle/pressed/correct/wrong"
+    },
+    "key_4": {
+     "kind": "key",
+     "x": 1684.0,
+     "y": 795.0,
+     "w": 260,
+     "h": 260,
+     "part": "key_idle",
+     "scale": 1.0,
+     "note": "row 0 col 4; states key_idle/pressed/correct/wrong"
+    },
+    "key_5": {
+     "kind": "key",
+     "x": 364.0,
+     "y": 1145.0,
+     "w": 260,
+     "h": 260,
+     "part": "key_idle",
+     "scale": 1.0,
+     "note": "row 1 col 0; states key_idle/pressed/correct/wrong"
+    },
+    "key_6": {
+     "kind": "key",
+     "x": 694.0,
+     "y": 1145.0,
+     "w": 260,
+     "h": 260,
+     "part": "key_idle",
+     "scale": 1.0,
+     "note": "row 1 col 1; states key_idle/pressed/correct/wrong"
+    },
+    "key_7": {
+     "kind": "key",
+     "x": 1024.0,
+     "y": 1145.0,
+     "w": 260,
+     "h": 260,
+     "part": "key_idle",
+     "scale": 1.0,
+     "note": "row 1 col 2; states key_idle/pressed/correct/wrong"
+    },
+    "key_8": {
+     "kind": "key",
+     "x": 1354.0,
+     "y": 1145.0,
+     "w": 260,
+     "h": 260,
+     "part": "key_idle",
+     "scale": 1.0,
+     "note": "row 1 col 3; states key_idle/pressed/correct/wrong"
+    },
+    "key_9": {
+     "kind": "key",
+     "x": 1684.0,
+     "y": 1145.0,
+     "w": 260,
+     "h": 260,
+     "part": "key_idle",
+     "scale": 1.0,
+     "note": "row 1 col 4; states key_idle/pressed/correct/wrong"
+    },
+    "lamp": {
+     "kind": "lamp",
+     "x": 1850,
+     "y": 1422,
+     "w": 56,
+     "h": 56,
+     "part": "lamp_lit_amber",
+     "scale": 0.824
+    }
+   }
+  },
+  "panel_switchboard": {
+   "title": "Patch the Switchboard",
+   "svg": "panel_switchboard.svg",
+   "png": "panel_switchboard.png",
+   "size": [
+    2048,
+    1536
+   ],
+   "sockets": {
+    "felt": {
+     "kind": "area",
+     "x": 1042.0,
+     "y": 790.0,
+     "w": 892,
+     "h": 1080,
+     "note": "cables are drawn here by code"
+    },
+    "jack_out_0": {
+     "kind": "jack",
+     "x": 330,
+     "y": 350,
+     "w": 64,
+     "h": 64,
+     "color": "red",
+     "ring_r": 80,
+     "part": "plug_red",
+     "note": "plug start; put plug anchor here"
+    },
+    "lamp_out_0": {
+     "kind": "lamp",
+     "x": 470,
+     "y": 350,
+     "w": 60,
+     "h": 60,
+     "color": "red",
+     "part": "lamp_lit_red",
+     "scale": 0.882
+    },
+    "jack_out_1": {
+     "kind": "jack",
+     "x": 330,
+     "y": 630,
+     "w": 64,
+     "h": 64,
+     "color": "yellow",
+     "ring_r": 80,
+     "part": "plug_yellow",
+     "note": "plug start; put plug anchor here"
+    },
+    "lamp_out_1": {
+     "kind": "lamp",
+     "x": 470,
+     "y": 630,
+     "w": 60,
+     "h": 60,
+     "color": "yellow",
+     "part": "lamp_lit_yellow",
+     "scale": 0.882
+    },
+    "jack_out_2": {
+     "kind": "jack",
+     "x": 330,
+     "y": 910,
+     "w": 64,
+     "h": 64,
+     "color": "blue",
+     "ring_r": 80,
+     "part": "plug_blue",
+     "note": "plug start; put plug anchor here"
+    },
+    "lamp_out_2": {
+     "kind": "lamp",
+     "x": 470,
+     "y": 910,
+     "w": 60,
+     "h": 60,
+     "color": "blue",
+     "part": "lamp_lit_blue",
+     "scale": 0.882
+    },
+    "jack_out_3": {
+     "kind": "jack",
+     "x": 330,
+     "y": 1190,
+     "w": 64,
+     "h": 64,
+     "color": "green",
+     "ring_r": 80,
+     "part": "plug_green",
+     "note": "plug start; put plug anchor here"
+    },
+    "lamp_out_3": {
+     "kind": "lamp",
+     "x": 470,
+     "y": 1190,
+     "w": 60,
+     "h": 60,
+     "color": "green",
+     "part": "lamp_lit_green",
+     "scale": 0.882
+    },
+    "jack_in_0": {
+     "kind": "jack",
+     "x": 1640,
+     "y": 350,
+     "w": 64,
+     "h": 64,
+     "color": "green",
+     "ring_r": 80,
+     "part": "jack_ring",
+     "note": "target jack"
+    },
+    "lamp_in_0": {
+     "kind": "lamp",
+     "x": 1790,
+     "y": 350,
+     "w": 60,
+     "h": 60,
+     "color": "green",
+     "part": "lamp_lit_green",
+     "scale": 0.882
+    },
+    "jack_in_1": {
+     "kind": "jack",
+     "x": 1640,
+     "y": 630,
+     "w": 64,
+     "h": 64,
+     "color": "red",
+     "ring_r": 80,
+     "part": "jack_ring",
+     "note": "target jack"
+    },
+    "lamp_in_1": {
+     "kind": "lamp",
+     "x": 1790,
+     "y": 630,
+     "w": 60,
+     "h": 60,
+     "color": "red",
+     "part": "lamp_lit_red",
+     "scale": 0.882
+    },
+    "jack_in_2": {
+     "kind": "jack",
+     "x": 1640,
+     "y": 910,
+     "w": 64,
+     "h": 64,
+     "color": "blue",
+     "ring_r": 80,
+     "part": "jack_ring",
+     "note": "target jack"
+    },
+    "lamp_in_2": {
+     "kind": "lamp",
+     "x": 1790,
+     "y": 910,
+     "w": 60,
+     "h": 60,
+     "color": "blue",
+     "part": "lamp_lit_blue",
+     "scale": 0.882
+    },
+    "jack_in_3": {
+     "kind": "jack",
+     "x": 1640,
+     "y": 1190,
+     "w": 64,
+     "h": 64,
+     "color": "yellow",
+     "ring_r": 80,
+     "part": "jack_ring",
+     "note": "target jack"
+    },
+    "lamp_in_3": {
+     "kind": "lamp",
+     "x": 1790,
+     "y": 1190,
+     "w": 60,
+     "h": 60,
+     "color": "yellow",
+     "part": "lamp_lit_yellow",
+     "scale": 0.882
+    },
+    "lamp_power": {
+     "kind": "lamp",
+     "x": 1024.0,
+     "y": 1460,
+     "w": 48,
+     "h": 48,
+     "part": "lamp_lit_amber",
+     "scale": 0.706
+    }
+   }
+  },
+  "panel_tape": {
+   "title": "Tape Transfer",
+   "svg": "panel_tape.svg",
+   "png": "panel_tape.png",
+   "size": [
+    2048,
+    1536
+   ],
+   "sockets": {
+    "reel_left": {
+     "kind": "reel",
+     "x": 560,
+     "y": 520,
+     "w": 560,
+     "h": 560,
+     "part": "reel_full",
+     "scale": 1.0,
+     "note": "rotate around center; swap reel_full/reel_empty as tape transfers"
+    },
+    "reel_right": {
+     "kind": "reel",
+     "x": 1488,
+     "y": 520,
+     "w": 560,
+     "h": 560,
+     "part": "reel_empty",
+     "scale": 1.0,
+     "note": "rotate around center; swap reel_full/reel_empty as tape transfers"
+    },
+    "lamp_power": {
+     "kind": "lamp",
+     "x": 1024.0,
+     "y": 320,
+     "w": 52,
+     "h": 52,
+     "part": "lamp_lit_amber",
+     "scale": 0.765
+    },
+    "vu_needle": {
+     "kind": "needle",
+     "x": 480.0,
+     "y": 1250,
+     "w": 56,
+     "h": 250,
+     "pivot": [
+      480.0,
+      1250
+     ],
+     "part": "vu_needle",
+     "scale": 0.94,
+     "note": "rotate -50 deg (left) .. +50 deg (right); coral = +16..+50"
+    },
+    "progress": {
+     "kind": "bar",
+     "x": 1130.0,
+     "y": 1064.0,
+     "w": 556,
+     "h": 72,
+     "note": "fill left to right with amber rect (rx 14); slider_knob may ride on it"
+    },
+    "big_button": {
+     "kind": "button",
+     "x": 1648,
+     "y": 1080,
+     "w": 320,
+     "h": 320,
+     "part": "btn_big_amber",
+     "scale": 1.0,
+     "note": "pressed state: btn_big_amber_pressed at the same spot"
+    }
+   }
+  }
+ },
+ "parts": {
+  "key_idle": {
+   "size": [
+    240,
+    240
+   ],
+   "anchor": [
+    120,
+    120
+   ]
+  },
+  "key_pressed": {
+   "size": [
+    240,
+    240
+   ],
+   "anchor": [
+    120,
+    120
+   ]
+  },
+  "key_correct": {
+   "size": [
+    240,
+    240
+   ],
+   "anchor": [
+    120,
+    120
+   ]
+  },
+  "key_wrong": {
+   "size": [
+    240,
+    240
+   ],
+   "anchor": [
+    120,
+    120
+   ]
+  },
+  "plug_red": {
+   "size": [
+    380,
+    124
+   ],
+   "anchor": [
+    340,
+    62
+   ],
+   "cable_attach": [
+    10,
+    64
+   ]
+  },
+  "cable_seg_red": {
+   "size": [
+    64,
+    48
+   ],
+   "anchor": [
+    0,
+    24
+   ],
+   "tile": "x"
+  },
+  "plug_yellow": {
+   "size": [
+    380,
+    124
+   ],
+   "anchor": [
+    340,
+    62
+   ],
+   "cable_attach": [
+    10,
+    64
+   ]
+  },
+  "cable_seg_yellow": {
+   "size": [
+    64,
+    48
+   ],
+   "anchor": [
+    0,
+    24
+   ],
+   "tile": "x"
+  },
+  "plug_blue": {
+   "size": [
+    380,
+    124
+   ],
+   "anchor": [
+    340,
+    62
+   ],
+   "cable_attach": [
+    10,
+    64
+   ]
+  },
+  "cable_seg_blue": {
+   "size": [
+    64,
+    48
+   ],
+   "anchor": [
+    0,
+    24
+   ],
+   "tile": "x"
+  },
+  "plug_green": {
+   "size": [
+    380,
+    124
+   ],
+   "anchor": [
+    340,
+    62
+   ],
+   "cable_attach": [
+    10,
+    64
+   ]
+  },
+  "cable_seg_green": {
+   "size": [
+    64,
+    48
+   ],
+   "anchor": [
+    0,
+    24
+   ],
+   "tile": "x"
+  },
+  "lamp_lit_red": {
+   "size": [
+    120,
+    120
+   ],
+   "anchor": [
+    60,
+    60
+   ],
+   "dome": 68
+  },
+  "lamp_lit_yellow": {
+   "size": [
+    120,
+    120
+   ],
+   "anchor": [
+    60,
+    60
+   ],
+   "dome": 68
+  },
+  "lamp_lit_blue": {
+   "size": [
+    120,
+    120
+   ],
+   "anchor": [
+    60,
+    60
+   ],
+   "dome": 68
+  },
+  "lamp_lit_green": {
+   "size": [
+    120,
+    120
+   ],
+   "anchor": [
+    60,
+    60
+   ],
+   "dome": 68
+  },
+  "lamp_lit_amber": {
+   "size": [
+    120,
+    120
+   ],
+   "anchor": [
+    60,
+    60
+   ],
+   "dome": 68
+  },
+  "lamp_unlit": {
+   "size": [
+    120,
+    120
+   ],
+   "anchor": [
+    60,
+    60
+   ],
+   "dome": 68
+  },
+  "reel_full": {
+   "size": [
+    560,
+    560
+   ],
+   "anchor": [
+    280,
+    280
+   ],
+   "pivot": [
+    280,
+    280
+   ]
+  },
+  "reel_empty": {
+   "size": [
+    560,
+    560
+   ],
+   "anchor": [
+    280,
+    280
+   ],
+   "pivot": [
+    280,
+    280
+   ]
+  },
+  "vu_needle": {
+   "size": [
+    60,
+    320
+   ],
+   "anchor": [
+    30,
+    280
+   ],
+   "pivot": [
+    30,
+    280
+   ],
+   "length": 266
+  },
+  "btn_big_amber": {
+   "size": [
+    320,
+    320
+   ],
+   "anchor": [
+    160,
+    160
+   ]
+  },
+  "btn_big_amber_pressed": {
+   "size": [
+    320,
+    320
+   ],
+   "anchor": [
+    160,
+    160
+   ]
+  },
+  "slider_knob": {
+   "size": [
+    84,
+    132
+   ],
+   "anchor": [
+    42,
+    66
+   ]
+  },
+  "jack_ring": {
+   "size": [
+    180,
+    180
+   ],
+   "anchor": [
+    90,
+    90
+   ]
+  }
+ }
+}

@@ -1,0 +1,82 @@
+{
+ "reveal_hands_on_hips": {
+  "sheet": "raw_originals/04A_POSES_REVEAL.png",
+  "x": 601,
+  "y": 32,
+  "w": 1839,
+  "h": 2934,
+  "png_scale": 0.5
+ },
+ "reveal_arms_crossed_smug": {
+  "sheet": "raw_originals/04A_POSES_REVEAL.png",
+  "x": 3247,
+  "y": 197,
+  "w": 1618,
+  "h": 2790,
+  "png_scale": 0.5
+ },
+ "meeting_point_accuse": {
+  "sheet": "raw_originals/04B_POSES_MEETING.png",
+  "x": 301,
+  "y": 15,
+  "w": 2301,
+  "h": 2962,
+  "png_scale": 0.5
+ },
+ "meeting_shrug": {
+  "sheet": "raw_originals/04B_POSES_MEETING.png",
+  "x": 2807,
+  "y": 202,
+  "w": 2554,
+  "h": 2810,
+  "png_scale": 0.5
+ },
+ "win_jump_cheer": {
+  "sheet": "raw_originals/04C_POSES_WIN.png",
+  "x": 586,
+  "y": 35,
+  "w": 2133,
+  "h": 2843,
+  "png_scale": 0.5
+ },
+ "win_wave": {
+  "sheet": "raw_originals/04C_POSES_WIN.png",
+  "x": 2719,
+  "y": 140,
+  "w": 2249,
+  "h": 2730,
+  "png_scale": 0.5
+ },
+ "fallen_headless": {
+  "sheet": "raw_originals/04D_POSES_FALLEN_GHOST.png",
+  "x": 281,
+  "y": 266,
+  "w": 2977,
+  "h": 2665,
+  "png_scale": 0.5
+ },
+ "ghost_halo": {
+  "sheet": "raw_originals/04D_POSES_FALLEN_GHOST.png",
+  "x": 3634,
+  "y": 58,
+  "w": 1390,
+  "h": 2955,
+  "png_scale": 0.5
+ },
+ "eject_tumble": {
+  "sheet": "raw_originals/04E_POSES_EJECT_SNEAK.png",
+  "x": 211,
+  "y": 319,
+  "w": 2505,
+  "h": 2459,
+  "png_scale": 0.5
+ },
+ "sneak_tiptoe": {
+  "sheet": "raw_originals/04E_POSES_EJECT_SNEAK.png",
+  "x": 3170,
+  "y": 363,
+  "w": 2021,
+  "h": 2497,
+  "png_scale": 0.5
+ }
+}

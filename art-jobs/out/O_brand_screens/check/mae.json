@@ -1,0 +1,50 @@
+{
+ "logo": {
+  "mae": 4.68,
+  "bbox": [
+   0,
+   243,
+   5504,
+   2726
+  ]
+ },
+ "arcade": {
+  "mae": 3.93,
+  "bbox": [
+   623,
+   219,
+   3460,
+   3992
+  ]
+ },
+ "logo (whole)": {
+  "mae": 4.68
+ },
+ "logo/racing_stripe": {
+  "mae": 5.08
+ },
+ "logo/moon": {
+  "mae": 8.47
+ },
+ "logo/letters": {
+  "mae": 4.15
+ },
+ "logo/helmet_dot": {
+  "mae": 7.2
+ },
+ "arcade (whole)": {
+  "mae": 3.93
+ },
+ "arcade/marquee": {
+  "mae": 3.94
+ },
+ "arcade/screen": {
+  "mae": 5.73
+ },
+ "arcade/coin_door": {
+  "mae": 7.08
+ },
+ "arcade/controls": {
+  "mae": 5.97
+ }
+}

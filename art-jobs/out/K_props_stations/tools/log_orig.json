@@ -1,0 +1,193 @@
+{
+ "station_keypad.highlight.tint": [
+  0.102,
+  [
+   255,
+   183,
+   0
+  ]
+ ],
+ "station_keypad.done.tint": [
+  0.0,
+  [
+   0,
+   0,
+   0
+  ]
+ ],
+ "station_keypad.done.beacon_center": [
+  1013,
+  115
+ ],
+ "station_keypad_orig": {
+  "mae": {
+   "idle": 4.78,
+   "highlight": 5.77,
+   "done": 6.15
+  },
+  "kb": 377,
+  "viewBox": [
+   186,
+   0,
+   1066,
+   1096
+  ]
+ },
+ "station_keypad.highlight.mode": "full",
+ "station_switchboard.highlight.tint": [
+  0.0,
+  [
+   255,
+   217,
+   94
+  ]
+ ],
+ "station_switchboard.done.tint": [
+  0.0,
+  [
+   128,
+   135,
+   130
+  ]
+ ],
+ "station_switchboard.done.beacon_center": [
+  1007,
+  1196
+ ],
+ "station_switchboard_orig": {
+  "mae": {
+   "idle": 6.5,
+   "highlight": 8.28,
+   "done": 10.68
+  },
+  "kb": 756,
+  "viewBox": [
+   128,
+   987,
+   1138,
+   1122
+  ]
+ },
+ "station_tape.highlight.tint": [
+  0.0,
+  [
+   255,
+   255,
+   29
+  ]
+ ],
+ "station_tape.done.tint": [
+  0.0,
+  [
+   0,
+   0,
+   0
+  ]
+ ],
+ "station_tape_orig": {
+  "mae": {
+   "idle": 5.55,
+   "highlight": 8.51,
+   "done": 5.58
+  },
+  "kb": 373,
+  "viewBox": [
+   120,
+   1998,
+   1174,
+   1133
+  ]
+ },
+ "station_scope.highlight.tint": [
+  0.0,
+  [
+   255,
+   221,
+   99
+  ]
+ ],
+ "station_scope.done.tint": [
+  0.0,
+  [
+   0,
+   0,
+   0
+  ]
+ ],
+ "station_scope.done.beacon_center": [
+  803,
+  3157
+ ],
+ "station_scope_orig": {
+  "mae": {
+   "idle": 3.82,
+   "highlight": 5.44,
+   "done": 6.74
+  },
+  "kb": 298,
+  "viewBox": [
+   125,
+   3046,
+   1102,
+   1050
+  ]
+ },
+ "table_clutter_orig": {
+  "mae": 6.3,
+  "kb": 138,
+  "viewBox": [
+   3958,
+   40,
+   1363,
+   965
+  ]
+ },
+ "vent_orig": {
+  "mae": {
+   "open": 5.78,
+   "closed_trace": 6.7,
+   "closed_on_frame": 4.49
+  },
+  "affine_corner_residual_px": 6.9,
+  "kb": 65,
+  "viewBox": [
+   1576,
+   1017,
+   1275,
+   1025
+  ],
+  "lid_closed_transform": "matrix(1.00170 0.01606 -0.02172 0.99938 1456.16234 126.16191)",
+  "pivot": "2331,1696"
+ },
+ "timeclock.ready.tint": [
+  0.0,
+  [
+   255,
+   191,
+   96
+  ]
+ ],
+ "timeclock.ready.mode": "full",
+ "timeclock_orig": {
+  "mae": {
+   "idle": 5.91,
+   "ready": 8.19
+  },
+  "kb": 301,
+  "viewBox": [
+   3031,
+   983,
+   1007,
+   1107
+  ]
+ },
+ "timeclock.ready.changed_frac": 0.099,
+ "station_keypad.highlight.changed_frac": 0.468,
+ "station_keypad.done.changed_frac": 0.041,
+ "station_switchboard.highlight.changed_frac": 0.081,
+ "station_switchboard.done.changed_frac": 0.109,
+ "station_tape.highlight.changed_frac": 0.07,
+ "station_tape.done.changed_frac": 0.033,
+ "station_scope.highlight.changed_frac": 0.026,
+ "station_scope.done.changed_frac": 0.055
+}

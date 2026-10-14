@@ -1,0 +1,65 @@
+{
+ "station_keypad_front": {
+  "viewBox": [
+   222,
+   72,
+   727,
+   993
+  ],
+  "kb": 370
+ },
+ "station_switchboard_front": {
+  "viewBox": [
+   175,
+   1185,
+   814,
+   892
+  ],
+  "kb": 743
+ },
+ "station_tape_front": {
+  "viewBox": [
+   157,
+   2395,
+   841,
+   687
+  ],
+  "kb": 367
+ },
+ "station_scope_front": {
+  "viewBox": [
+   163,
+   3109,
+   688,
+   1007
+  ],
+  "kb": 293
+ },
+ "timeclock_front": {
+  "viewBox": [
+   3183,
+   1162,
+   864,
+   916
+  ],
+  "kb": 298
+ },
+ "table_clutter_front": {
+  "viewBox": [
+   3999,
+   -79,
+   1280,
+   1002
+  ],
+  "kb": 137
+ },
+ "vent_front": {
+  "viewBox": [
+   1555,
+   1274,
+   821,
+   698
+  ],
+  "kb": 66
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "station_keypad_orig": {
+  "svg_to_orig_mean_px": 0.02,
+  "svg_to_orig_p95_px": 0.0,
+  "orig_to_svg_mean_px": 0.12,
+  "orig_to_svg_p95_px": 1.0
+ },
+ "station_switchboard_orig": {
+  "svg_to_orig_mean_px": 0.02,
+  "svg_to_orig_p95_px": 0.0,
+  "orig_to_svg_mean_px": 0.16,
+  "orig_to_svg_p95_px": 1.0
+ },
+ "station_tape_orig": {
+  "svg_to_orig_mean_px": 0.03,
+  "svg_to_orig_p95_px": 0.0,
+  "orig_to_svg_mean_px": 0.32,
+  "orig_to_svg_p95_px": 1.0
+ },
+ "station_scope_orig": {
+  "svg_to_orig_mean_px": 0.02,
+  "svg_to_orig_p95_px": 0.0,
+  "orig_to_svg_mean_px": 0.12,
+  "orig_to_svg_p95_px": 1.0
+ },
+ "timeclock_orig": {
+  "svg_to_orig_mean_px": 0.02,
+  "svg_to_orig_p95_px": 0.0,
+  "orig_to_svg_mean_px": 0.13,
+  "orig_to_svg_p95_px": 1.0
+ },
+ "table_clutter_orig": {
+  "svg_to_orig_mean_px": 0.02,
+  "svg_to_orig_p95_px": 0.0,
+  "orig_to_svg_mean_px": 0.21,
+  "orig_to_svg_p95_px": 1.0
+ }
+}

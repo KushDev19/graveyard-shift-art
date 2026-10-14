@@ -36,7 +36,7 @@ img { display: block; -webkit-user-drag: none; }
 .teambar { position: absolute; left: 50%; top: 24px; width: 600px; transform: translateX(-50%); padding: 10px 18px 14px; background: rgba(27,24,48,.82); border: 3px solid var(--outline); border-radius: 18px; box-shadow: 0 0 0 3px rgba(127,200,184,.25); }
 .teambar-label { font: 400 22px 'Bungee'; color: var(--cream); letter-spacing: 1px; }
 .teambar-pct { position: absolute; right: 20px; top: 8px; font: 400 36px 'VT323'; color: var(--amber); }
-.teambar-trough { position: relative; width: 100%; height: 44px; margin-top: 4px; }
+.teambar-trough { position: relative; width: 100%; aspect-ratio: 10 / 1; height: auto; margin-top: 4px; }
 .trough-img { position: absolute; inset: 0; width: 100%; height: 100%; }
 .teambar-fill { position: absolute; left: 2.5%; top: 25%; height: 50%; width: 0; overflow: hidden; border-radius: 12px; }
 .teambar-fill img { height: 100%; width: auto; max-width: none; }
@@ -184,8 +184,9 @@ img { display: block; -webkit-user-drag: none; }
 .town-canvas { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; image-rendering: pixelated; }
 .town-layer { position: absolute; inset: 0; }
 .px-avatar { position: absolute; left: 0; top: 0; image-rendering: pixelated; filter: drop-shadow(0 6px 0 rgba(0,0,0,.25)); }
-.arc-glow { position: absolute; left: 1410px; top: 540px; width: 260px; height: 260px; margin: -60px 0 0 -35px; border-radius: 50%; background: radial-gradient(circle, rgba(245,165,74,.8), rgba(245,165,74,0) 70%); mix-blend-mode: screen; pointer-events: none; }
-.arc-tag { position: absolute; left: 1410px; top: 380px; width: 260px; text-align: center; font: 400 26px 'Bungee'; color: var(--amber); -webkit-text-stroke: 6px var(--outline); paint-order: stroke fill; letter-spacing: 2px; margin-left: -50px; }
+.arc-glow { position: absolute; width: 300px; height: 300px; margin: -150px 0 0 -150px; border-radius: 50%; background: radial-gradient(circle, rgba(245,165,74,.8), rgba(245,165,74,0) 70%); mix-blend-mode: screen; pointer-events: none; }
+.arc-tag { position: absolute; width: 360px; margin-left: -180px; text-align: center; font: 400 26px 'Bungee'; color: var(--amber); -webkit-text-stroke: 6px var(--outline); paint-order: stroke fill; letter-spacing: 2px; }
+.px-name { position: absolute; left: 50%; bottom: 100%; transform: translateX(-50%); margin-bottom: 4px; white-space: nowrap; font: 600 19px 'Space Grotesk', sans-serif; color: #fff; -webkit-text-stroke: 4px #000; paint-order: stroke fill; letter-spacing: .3px; pointer-events: none; }
 .arc-modal { position: absolute; inset: 0; background: rgba(13,11,25,.62); display: grid; place-items: center; z-index: 9; }
 .arc-card { position: relative; width: 1180px; height: 600px; display: flex; align-items: center; gap: 30px; padding: 70px 80px 100px 40px; border-style: solid; border-width: 60px 60px 84px 60px; border-image: url('/assets/ui/panel_crt_lg.svg') 40 40 56 40 fill; border-image-width: 60px 60px 84px 60px; padding: 0; }
 .arc-art { width: 380px; height: 380px; object-fit: contain; margin-left: 16px; filter: drop-shadow(0 0 30px rgba(245,165,74,.35)); }

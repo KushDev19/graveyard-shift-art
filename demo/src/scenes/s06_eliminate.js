@@ -17,6 +17,7 @@ export default {
     '[US3 error] An Impostor in range of a living Crewmate can Eliminate: leaves a fallen-avatar marker, starts the Impostor\'s cooldown. The server rejects out-of-range or on-cooldown attempts.',
     '[US3 race] Two Impostors target the same player at once: only one elimination registers, only that cooldown starts.',
     '[US3] Eliminated players become ghosts; living players cannot see or hear ghosts.',
+    '[US2] A living player (including the Impostor who just made the kill) can report a fallen avatar within range to trigger a meeting.',
   ],
   async enter(ctx) {
     const hud = ctx.hud; const room = await ctx.room('switchboard'); const s = ctx.state = { room };
@@ -59,7 +60,10 @@ export default {
           .add(ctx.flash('#E8574A', 0.45), '<').to(s.ring, { autoAlpha: 0, duration: 0.3 }, '<');
         await ctx.play(tl);
         hud.cooldown('eliminate', 20); hud.onClick('eliminate', null);
-        await ctx.wait(1.2);
+        await ctx.wait(0.6);
+        ctx.caption('The body is right there: Report lights up for the Impostor too. A self-report calls a meeting while looking innocent.');
+        hud.setBtn('report', true); await ctx.play(gsap.fromTo(hud.btn.report.b, { scale: 1 }, { scale: 1.22, yoyo: true, repeat: 3, duration: 0.22, ease: 'power2.inOut' }));
+        await ctx.wait(0.8);
       } },
     { label: 'Click again → on cooldown; simultaneous strike rejected',
       async run(ctx) {

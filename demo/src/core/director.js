@@ -43,7 +43,7 @@ export class Director {
     else if (k === 'a' || k === 'A') { this.auto = !this.auto; this.ctx.hud.toast(this.auto ? 'Autoplay on' : 'Autoplay off', 'info', 1); if (this.auto && !this.busy) this.next(); }
     else if (k === 'f' || k === 'F') { document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen?.(); }
   }
-  toggleNotes() { const on = this.notes.style.visibility !== 'visible'; gsap.to(this.notes, { autoAlpha: on ? 1 : 0, y: on ? 0 : 20, duration: 0.25 }); }
+  toggleNotes() { this.notesOpen = !this.notesOpen; const on = this.notesOpen; gsap.to(this.notes, { autoAlpha: on ? 1 : 0, y: on ? 0 : 20, duration: 0.25, overwrite: true }); }
 
   // ---------- navigation
   async start(i = 0) { await this.goto(i); }

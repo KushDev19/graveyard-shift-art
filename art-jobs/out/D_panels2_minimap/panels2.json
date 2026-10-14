@@ -1,0 +1,476 @@
+{
+  "space": "pixels in the 2048x1536 panel image; parts are drawn at the same scale and anchored at their center",
+  "angles": "degrees clockwise from straight up",
+  "panels": {
+    "panel_thrusters": {
+      "file": "panel_thrusters.svg",
+      "size": [
+        2048,
+        1536
+      ],
+      "sockets": [
+        {
+          "id": "crt_screen",
+          "shape": "rect",
+          "x": 196,
+          "y": 314,
+          "w": 1108,
+          "h": 960,
+          "cx": 750.0,
+          "cy": 794.0,
+          "note": "area for thrust_marker; nozzle drawn on the left"
+        },
+        {
+          "id": "target_line",
+          "shape": "hline",
+          "x1": 276,
+          "x2": 1224,
+          "y": 794.0
+        },
+        {
+          "id": "thrust_marker_path",
+          "shape": "vline",
+          "x": 980,
+          "y1": 404,
+          "y2": 1184,
+          "part": "thrust_marker",
+          "note": "marker center x fixed, y moves; aligned when y == target_line.y"
+        },
+        {
+          "id": "slider_track",
+          "shape": "rect",
+          "x": 1622,
+          "y": 330,
+          "w": 80,
+          "h": 928,
+          "cx": 1662.0,
+          "cy": 794.0
+        },
+        {
+          "id": "slider_knob_path",
+          "shape": "vline",
+          "x": 1662.0,
+          "y1": 380,
+          "y2": 1208,
+          "part": "slider_knob",
+          "note": "knob center travels between y1 and y2; amber tick at cy is the target"
+        },
+        {
+          "id": "power_lamp",
+          "shape": "circle",
+          "cx": 1848,
+          "cy": 1450,
+          "r": 22,
+          "part": "lamp_small_unlit / lamp_small_lit_amber"
+        }
+      ]
+    },
+    "panel_gyro": {
+      "file": "panel_gyro.svg",
+      "size": [
+        2048,
+        1536
+      ],
+      "sockets": [
+        {
+          "id": "groove_0",
+          "shape": "ring",
+          "cx": 1024,
+          "cy": 682,
+          "r": 392,
+          "width": 46,
+          "notch_angle_deg": 38,
+          "notch_x": 1265.3,
+          "notch_y": 373.1,
+          "part": "gyro_bead / gyro_bead_locked",
+          "note": "bead center at (cx + r*sin(a), cy - r*cos(a)), a clockwise from up; aligned when a == notch_angle_deg"
+        },
+        {
+          "id": "groove_1",
+          "shape": "ring",
+          "cx": 1024,
+          "cy": 682,
+          "r": 282,
+          "width": 46,
+          "notch_angle_deg": 150,
+          "notch_x": 1165.0,
+          "notch_y": 926.2,
+          "part": "gyro_bead / gyro_bead_locked",
+          "note": "bead center at (cx + r*sin(a), cy - r*cos(a)), a clockwise from up; aligned when a == notch_angle_deg"
+        },
+        {
+          "id": "groove_2",
+          "shape": "ring",
+          "cx": 1024,
+          "cy": 682,
+          "r": 172,
+          "width": 46,
+          "notch_angle_deg": 262,
+          "notch_x": 853.7,
+          "notch_y": 705.9,
+          "part": "gyro_bead / gyro_bead_locked",
+          "note": "bead center at (cx + r*sin(a), cy - r*cos(a)), a clockwise from up; aligned when a == notch_angle_deg"
+        },
+        {
+          "id": "dial_face",
+          "shape": "circle",
+          "cx": 1024,
+          "cy": 682,
+          "r": 446
+        },
+        {
+          "id": "button_big",
+          "shape": "circle",
+          "cx": 1024,
+          "cy": 1300,
+          "r": 118,
+          "part": "btn_big_round_idle / _pressed"
+        },
+        {
+          "id": "lamp_left",
+          "shape": "circle",
+          "cx": 774,
+          "cy": 1300,
+          "r": 34,
+          "part": "lamp_small_*"
+        },
+        {
+          "id": "lamp_right",
+          "shape": "circle",
+          "cx": 1274,
+          "cy": 1300,
+          "r": 34,
+          "part": "lamp_small_*"
+        },
+        {
+          "id": "power_lamp",
+          "shape": "circle",
+          "cx": 1848,
+          "cy": 1450,
+          "r": 22,
+          "part": "lamp_small_unlit / lamp_small_lit_amber"
+        }
+      ]
+    },
+    "panel_memory": {
+      "file": "panel_memory.svg",
+      "size": [
+        2048,
+        1536
+      ],
+      "sockets": [
+        {
+          "id": "lamp_00",
+          "shape": "circle",
+          "cx": 330,
+          "cy": 524,
+          "r": 86,
+          "part": "lamp_round_unlit / lamp_round_lit"
+        },
+        {
+          "id": "lamp_01",
+          "shape": "circle",
+          "cx": 572,
+          "cy": 524,
+          "r": 86,
+          "part": "lamp_round_unlit / lamp_round_lit"
+        },
+        {
+          "id": "lamp_02",
+          "shape": "circle",
+          "cx": 814,
+          "cy": 524,
+          "r": 86,
+          "part": "lamp_round_unlit / lamp_round_lit"
+        },
+        {
+          "id": "lamp_10",
+          "shape": "circle",
+          "cx": 330,
+          "cy": 766,
+          "r": 86,
+          "part": "lamp_round_unlit / lamp_round_lit"
+        },
+        {
+          "id": "lamp_11",
+          "shape": "circle",
+          "cx": 572,
+          "cy": 766,
+          "r": 86,
+          "part": "lamp_round_unlit / lamp_round_lit"
+        },
+        {
+          "id": "lamp_12",
+          "shape": "circle",
+          "cx": 814,
+          "cy": 766,
+          "r": 86,
+          "part": "lamp_round_unlit / lamp_round_lit"
+        },
+        {
+          "id": "lamp_20",
+          "shape": "circle",
+          "cx": 330,
+          "cy": 1008,
+          "r": 86,
+          "part": "lamp_round_unlit / lamp_round_lit"
+        },
+        {
+          "id": "lamp_21",
+          "shape": "circle",
+          "cx": 572,
+          "cy": 1008,
+          "r": 86,
+          "part": "lamp_round_unlit / lamp_round_lit"
+        },
+        {
+          "id": "lamp_22",
+          "shape": "circle",
+          "cx": 814,
+          "cy": 1008,
+          "r": 86,
+          "part": "lamp_round_unlit / lamp_round_lit"
+        },
+        {
+          "id": "button_00",
+          "shape": "rect",
+          "x": 1142,
+          "y": 434,
+          "w": 180,
+          "h": 180,
+          "cx": 1232,
+          "cy": 524,
+          "part": "btn_square_idle / _pressed / _correct / _wrong"
+        },
+        {
+          "id": "button_01",
+          "shape": "rect",
+          "x": 1384,
+          "y": 434,
+          "w": 180,
+          "h": 180,
+          "cx": 1474,
+          "cy": 524,
+          "part": "btn_square_idle / _pressed / _correct / _wrong"
+        },
+        {
+          "id": "button_02",
+          "shape": "rect",
+          "x": 1626,
+          "y": 434,
+          "w": 180,
+          "h": 180,
+          "cx": 1716,
+          "cy": 524,
+          "part": "btn_square_idle / _pressed / _correct / _wrong"
+        },
+        {
+          "id": "button_10",
+          "shape": "rect",
+          "x": 1142,
+          "y": 676,
+          "w": 180,
+          "h": 180,
+          "cx": 1232,
+          "cy": 766,
+          "part": "btn_square_idle / _pressed / _correct / _wrong"
+        },
+        {
+          "id": "button_11",
+          "shape": "rect",
+          "x": 1384,
+          "y": 676,
+          "w": 180,
+          "h": 180,
+          "cx": 1474,
+          "cy": 766,
+          "part": "btn_square_idle / _pressed / _correct / _wrong"
+        },
+        {
+          "id": "button_12",
+          "shape": "rect",
+          "x": 1626,
+          "y": 676,
+          "w": 180,
+          "h": 180,
+          "cx": 1716,
+          "cy": 766,
+          "part": "btn_square_idle / _pressed / _correct / _wrong"
+        },
+        {
+          "id": "button_20",
+          "shape": "rect",
+          "x": 1142,
+          "y": 918,
+          "w": 180,
+          "h": 180,
+          "cx": 1232,
+          "cy": 1008,
+          "part": "btn_square_idle / _pressed / _correct / _wrong"
+        },
+        {
+          "id": "button_21",
+          "shape": "rect",
+          "x": 1384,
+          "y": 918,
+          "w": 180,
+          "h": 180,
+          "cx": 1474,
+          "cy": 1008,
+          "part": "btn_square_idle / _pressed / _correct / _wrong"
+        },
+        {
+          "id": "button_22",
+          "shape": "rect",
+          "x": 1626,
+          "y": 918,
+          "w": 180,
+          "h": 180,
+          "cx": 1716,
+          "cy": 1008,
+          "part": "btn_square_idle / _pressed / _correct / _wrong"
+        },
+        {
+          "id": "progress_0",
+          "shape": "circle",
+          "cx": 744,
+          "cy": 1340,
+          "r": 30,
+          "part": "lamp_small_unlit / lamp_small_lit_seafoam"
+        },
+        {
+          "id": "progress_1",
+          "shape": "circle",
+          "cx": 884,
+          "cy": 1340,
+          "r": 30,
+          "part": "lamp_small_unlit / lamp_small_lit_seafoam"
+        },
+        {
+          "id": "progress_2",
+          "shape": "circle",
+          "cx": 1024,
+          "cy": 1340,
+          "r": 30,
+          "part": "lamp_small_unlit / lamp_small_lit_seafoam"
+        },
+        {
+          "id": "progress_3",
+          "shape": "circle",
+          "cx": 1164,
+          "cy": 1340,
+          "r": 30,
+          "part": "lamp_small_unlit / lamp_small_lit_seafoam"
+        },
+        {
+          "id": "progress_4",
+          "shape": "circle",
+          "cx": 1304,
+          "cy": 1340,
+          "r": 30,
+          "part": "lamp_small_unlit / lamp_small_lit_seafoam"
+        },
+        {
+          "id": "power_lamp",
+          "shape": "circle",
+          "cx": 1848,
+          "cy": 1450,
+          "r": 22,
+          "part": "lamp_small_unlit / lamp_small_lit_amber"
+        }
+      ]
+    }
+  },
+  "parts": {
+    "slider_knob": {
+      "w": 300,
+      "h": 170,
+      "anchor": "center",
+      "file": "parts/slider_knob.svg"
+    },
+    "thrust_marker": {
+      "w": 560,
+      "h": 140,
+      "anchor": "center",
+      "file": "parts/thrust_marker.svg"
+    },
+    "gyro_bead": {
+      "w": 96,
+      "h": 96,
+      "anchor": "center",
+      "file": "parts/gyro_bead.svg"
+    },
+    "gyro_bead_locked": {
+      "w": 96,
+      "h": 96,
+      "anchor": "center",
+      "file": "parts/gyro_bead_locked.svg"
+    },
+    "btn_big_round_idle": {
+      "w": 280,
+      "h": 280,
+      "anchor": "center",
+      "file": "parts/btn_big_round_idle.svg"
+    },
+    "btn_big_round_pressed": {
+      "w": 280,
+      "h": 280,
+      "anchor": "center",
+      "file": "parts/btn_big_round_pressed.svg"
+    },
+    "lamp_small_unlit": {
+      "w": 100,
+      "h": 100,
+      "anchor": "center",
+      "file": "parts/lamp_small_unlit.svg"
+    },
+    "lamp_small_lit_amber": {
+      "w": 100,
+      "h": 100,
+      "anchor": "center",
+      "file": "parts/lamp_small_lit_amber.svg"
+    },
+    "lamp_small_lit_seafoam": {
+      "w": 100,
+      "h": 100,
+      "anchor": "center",
+      "file": "parts/lamp_small_lit_seafoam.svg"
+    },
+    "lamp_round_unlit": {
+      "w": 240,
+      "h": 240,
+      "anchor": "center",
+      "file": "parts/lamp_round_unlit.svg"
+    },
+    "lamp_round_lit": {
+      "w": 240,
+      "h": 240,
+      "anchor": "center",
+      "file": "parts/lamp_round_lit.svg"
+    },
+    "btn_square_idle": {
+      "w": 220,
+      "h": 220,
+      "anchor": "center",
+      "file": "parts/btn_square_idle.svg"
+    },
+    "btn_square_pressed": {
+      "w": 220,
+      "h": 220,
+      "anchor": "center",
+      "file": "parts/btn_square_pressed.svg"
+    },
+    "btn_square_correct": {
+      "w": 220,
+      "h": 220,
+      "anchor": "center",
+      "file": "parts/btn_square_correct.svg"
+    },
+    "btn_square_wrong": {
+      "w": 220,
+      "h": 220,
+      "anchor": "center",
+      "file": "parts/btn_square_wrong.svg"
+    }
+  }
+}

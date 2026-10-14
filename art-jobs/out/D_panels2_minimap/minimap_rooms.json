@@ -1,0 +1,203 @@
+{
+  "size": [
+    1600,
+    900
+  ],
+  "small_size": [
+    320,
+    180
+  ],
+  "small_scale": 0.2,
+  "rooms": {
+    "hydroponics": {
+      "group_id": "room_hydroponics",
+      "cx": 440.0,
+      "cy": 208.0,
+      "x": 330,
+      "y": 128,
+      "w": 220,
+      "h": 160,
+      "connected": true
+    },
+    "galley": {
+      "group_id": "room_galley",
+      "cx": 840.0,
+      "cy": 222.0,
+      "x": 630,
+      "y": 92,
+      "w": 420,
+      "h": 260,
+      "connected": true
+    },
+    "bridge": {
+      "group_id": "room_bridge",
+      "cx": 1280.0,
+      "cy": 225.0,
+      "x": 1130,
+      "y": 112,
+      "w": 330,
+      "h": 226,
+      "connected": true
+    },
+    "reactor": {
+      "group_id": "room_reactor",
+      "cx": 205.0,
+      "cy": 490.0,
+      "x": 110,
+      "y": 356,
+      "w": 190,
+      "h": 268,
+      "connected": true
+    },
+    "sick_bay": {
+      "group_id": "room_sick_bay",
+      "cx": 445.0,
+      "cy": 480.0,
+      "x": 340,
+      "y": 392,
+      "w": 210,
+      "h": 176,
+      "connected": true
+    },
+    "radio_room": {
+      "group_id": "room_radio_room",
+      "cx": 830.0,
+      "cy": 510.0,
+      "x": 680,
+      "y": 420,
+      "w": 300,
+      "h": 180,
+      "connected": true
+    },
+    "cargo_hold": {
+      "group_id": "room_cargo_hold",
+      "cx": 1275.0,
+      "cy": 573.0,
+      "x": 1080,
+      "y": 408,
+      "w": 390,
+      "h": 330,
+      "connected": true
+    },
+    "switchboard": {
+      "group_id": "room_switchboard",
+      "cx": 228.0,
+      "cy": 762.0,
+      "x": 110,
+      "y": 694,
+      "w": 236,
+      "h": 136,
+      "connected": true
+    },
+    "locker_room": {
+      "group_id": "room_locker_room",
+      "cx": 835.0,
+      "cy": 762.0,
+      "x": 720,
+      "y": 694,
+      "w": 230,
+      "h": 136,
+      "connected": false
+    }
+  },
+  "corridors": {
+    "hydroponics-galley": [
+      [
+        550,
+        208
+      ],
+      [
+        630,
+        208
+      ]
+    ],
+    "galley-bridge": [
+      [
+        1050,
+        225
+      ],
+      [
+        1130,
+        225
+      ]
+    ],
+    "hydroponics-sick_bay": [
+      [
+        440,
+        288
+      ],
+      [
+        440,
+        392
+      ]
+    ],
+    "sick_bay-reactor": [
+      [
+        300,
+        480
+      ],
+      [
+        340,
+        480
+      ]
+    ],
+    "galley-radio_room": [
+      [
+        830,
+        352
+      ],
+      [
+        830,
+        420
+      ]
+    ],
+    "radio_room-cargo_hold": [
+      [
+        980,
+        510
+      ],
+      [
+        1080,
+        510
+      ]
+    ],
+    "bridge-cargo_hold": [
+      [
+        1275,
+        338
+      ],
+      [
+        1275,
+        408
+      ]
+    ],
+    "reactor-switchboard": [
+      [
+        205,
+        624
+      ],
+      [
+        205,
+        694
+      ]
+    ],
+    "switchboard-radio_room": [
+      [
+        346,
+        762
+      ],
+      [
+        610,
+        762
+      ],
+      [
+        610,
+        540
+      ],
+      [
+        680,
+        540
+      ]
+    ]
+  }
+}

@@ -5,9 +5,9 @@ import { chip } from '../core/meeting.js';
 import { createStation } from '../core/station.js';
 
 const ARRIVE = [1010, 1050]; // bottom door (stage px)
-const SPOT = { tangerine: [760, 760], mustard: [1130, 760], mint: [960, 860], lime: [600, 820], sky: [1360, 840], bubblegum: [1230, 900], tomato: [480, 900], cream: [1480, 770], cobalt: [820, 910], grape: [1600, 900] };
+export const SPOT = { tangerine: [760, 760], mustard: [1130, 760], mint: [960, 860], lime: [600, 820], sky: [1360, 840], bubblegum: [1230, 900], tomato: [480, 900], cream: [1480, 770], cobalt: [820, 910], grape: [1600, 900] };
 
-class Lobby {
+export class Lobby {
   constructor(layer) {
     this.root = el('div', 'lobby', layer); this.ids = []; this.host = null;
     const head = el('div', 'lobby-head', this.root); el('b', '', head, 'LOBBY · NIGHTJAR'); this.count = el('span', '', head, '0/10');

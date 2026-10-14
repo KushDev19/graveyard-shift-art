@@ -19,7 +19,7 @@ export function lineup(ctx, entries) {
   for (const e of entries) {
     const p = new Puppet({ color: P[e.id].color, name: P[e.id].name, cos: P[e.id].cos, view: 'front', k: e.k, impostor: !!e.impostor });
     p.smug = !!e.smug; p.attach(ctx.world).place(e.x, e.y); p.setMode(e.mode || 'idle');
-    const lab = el('div', 'lineup-label' + (e.you ? ' you' : ''), ctx.world); lab.style.left = e.x + 'px'; lab.style.top = e.y + 16 + 'px'; lab.style.zIndex = Math.round(e.y) + 1;
+    const lab = el('div', 'lineup-label' + (e.you ? ' you' : '') + (e.small ? ' sm' : ''), ctx.world); lab.style.left = e.x + 'px'; lab.style.top = e.y + 16 + 'px'; lab.style.zIndex = Math.round(e.y) + 1;
     lab.innerHTML = `<b>${e.you ? 'YOU · ' : ''}${P[e.id].name}</b>${e.sub ? `<i class="${e.subTone || ''}">${e.sub}</i>` : ''}`;
     out[e.id] = { p, lab, e };
   }

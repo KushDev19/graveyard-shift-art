@@ -177,3 +177,5 @@ img { display: block; -webkit-user-drag: none; }
 .door-clip { position: absolute; overflow: hidden; }
 .beacon { position: absolute; width: 440px; height: 440px; border-radius: 50%; background: conic-gradient(from 0deg, rgba(245,165,74,.85) 0deg 24deg, transparent 24deg 180deg, rgba(245,165,74,.85) 180deg 204deg, transparent 204deg 360deg); filter: blur(16px); mix-blend-mode: screen; pointer-events: none; }
 .rangering { position: absolute; width: 540px; height: 240px; border-radius: 50%; border: 5px dashed rgba(232,87,74,.85); background: radial-gradient(ellipse, rgba(232,87,74,.18), rgba(232,87,74,.04) 70%); pointer-events: none; }
+.returning { position: absolute; left: 50%; bottom: 150px; transform: translateX(-50%); padding: 6px 40px 10px; background: rgba(21,18,42,.92); border: 3px solid var(--seafoam); border-radius: 99px; font: 400 56px 'VT323'; letter-spacing: 4px; color: var(--seafoam); z-index: 14; }
+.lineup-label.sm b { font-size: 21px; padding: 0 10px 2px; } .lineup-label.sm i { font-size: 21px; padding: 0 8px; letter-spacing: 1px; }

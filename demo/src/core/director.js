@@ -35,8 +35,8 @@ export class Director {
     if (k === 'ArrowRight' || k === ' ' || k === 'Enter' || k === 'PageDown') { e.preventDefault(); this.next(); }
     else if (k === 'ArrowLeft' || k === 'PageUp') { e.preventDefault(); this.prev(); }
     else if (/^[0-9]$/.test(k)) this.goto(parseInt(k, 10));
-    else if (k === 'w' || k === 'W') this.goto(10);
-    else if (k === 'i' || k === 'I') this.ctx.altEnding?.();
+    else if (k === 'w' || k === 'W') { this.ctx.winMode = 'crew'; this.goto(10); }
+    else if (k === 'i' || k === 'I') { this.ctx.winMode = 'imp'; this.goto(10); }
     else if (k === 'p' || k === 'P') this.toggleNotes();
     else if (k === 'c' || k === 'C') { const on = this.ctx.captions.toggle(); this.ctx.hud.toast(on ? 'Captions on' : 'Captions off', 'info', 1); }
     else if (k === 'r' || k === 'R') this.goto(this.si);

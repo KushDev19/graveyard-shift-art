@@ -1,0 +1,362 @@
+{
+ "viewBox": [
+  640,
+  800
+ ],
+ "note": "Side view faces right; mirror for left. Place each part at (x, y) in viewBox units; rotate around pivot. tint=true parts are drawn on a light-grey base: multiply-tint them with the player color.",
+ "order": {
+  "side": [
+   "leg_back",
+   "arm_back",
+   "leg_front",
+   "backpack",
+   "body",
+   "stripe",
+   "dome",
+   "visor_glow",
+   "visor",
+   "glass_highlight",
+   "collar",
+   "antenna",
+   "arm_front"
+  ],
+  "front": [
+   "f_leg_l",
+   "f_leg_r",
+   "f_body",
+   "f_stripe",
+   "f_collar",
+   "f_dome",
+   "f_visor_glow",
+   "f_visor",
+   "glass_highlight",
+   "f_antenna",
+   "f_arm_l",
+   "f_arm_r"
+  ]
+ },
+ "swaps": {
+  "ghost": {
+   "hide": [
+    "leg_back",
+    "leg_front"
+   ],
+   "show": [
+    "ghost_tail"
+   ],
+   "visor": "visor_ghost"
+  },
+  "impostorPartner": {
+   "visor": "visor_coral"
+  },
+  "blink": {
+   "visor": "visor_blink"
+  },
+  "surprised": {
+   "visor": "visor_surprised"
+  }
+ },
+ "colors": {
+  "tomato": "#E4483C",
+  "tangerine": "#F28A2E",
+  "mustard": "#E9C046",
+  "lime": "#A6D64A",
+  "mint": "#6FD6B0",
+  "sky": "#6EC3F0",
+  "cobalt": "#3F5FD9",
+  "grape": "#8E5AC8",
+  "bubblegum": "#F07BB5",
+  "cream": "#F4E6C8"
+ },
+ "parts": {
+  "leg_back": {
+   "x": 340,
+   "y": 637,
+   "w": 92,
+   "h": 141,
+   "pivot": [
+    380,
+    655
+   ],
+   "tint": true
+  },
+  "arm_back": {
+   "x": 280,
+   "y": 475,
+   "w": 118,
+   "h": 195,
+   "pivot": [
+    334,
+    486
+   ],
+   "tint": true
+  },
+  "leg_front": {
+   "x": 228,
+   "y": 637,
+   "w": 147,
+   "h": 163,
+   "pivot": [
+    285,
+    660
+   ],
+   "tint": true
+  },
+  "backpack": {
+   "x": 35,
+   "y": 415,
+   "w": 126,
+   "h": 212,
+   "pivot": null,
+   "tint": true
+  },
+  "body": {
+   "x": 134,
+   "y": 439,
+   "w": 350,
+   "h": 244,
+   "pivot": null,
+   "tint": true
+  },
+  "stripe": {
+   "x": 413,
+   "y": 467,
+   "w": 67,
+   "h": 110,
+   "pivot": null,
+   "tint": false
+  },
+  "dome": {
+   "x": 104,
+   "y": 95,
+   "w": 432,
+   "h": 371,
+   "pivot": null,
+   "tint": false
+  },
+  "visor_glow": {
+   "x": 336,
+   "y": 215,
+   "w": 162,
+   "h": 199,
+   "pivot": null,
+   "tint": false
+  },
+  "visor": {
+   "x": 352,
+   "y": 231,
+   "w": 129,
+   "h": 166,
+   "pivot": [
+    416,
+    314
+   ],
+   "tint": false
+  },
+  "glass_highlight": {
+   "x": 157,
+   "y": 157,
+   "w": 98,
+   "h": 116,
+   "pivot": null,
+   "tint": false
+  },
+  "collar": {
+   "x": 131,
+   "y": 402,
+   "w": 357,
+   "h": 83,
+   "pivot": null,
+   "tint": true
+  },
+  "antenna": {
+   "x": 240,
+   "y": 0,
+   "w": 114,
+   "h": 121,
+   "pivot": [
+    300,
+    104
+   ],
+   "tint": true
+  },
+  "arm_front": {
+   "x": 236,
+   "y": 483,
+   "w": 118,
+   "h": 193,
+   "pivot": [
+    290,
+    492
+   ],
+   "tint": true
+  },
+  "ghost_tail": {
+   "x": 159,
+   "y": 627,
+   "w": 296,
+   "h": 173,
+   "pivot": null,
+   "tint": true
+  },
+  "visor_coral": {
+   "x": 352,
+   "y": 231,
+   "w": 129,
+   "h": 166,
+   "pivot": null,
+   "tint": false
+  },
+  "visor_ghost": {
+   "x": 352,
+   "y": 231,
+   "w": 129,
+   "h": 166,
+   "pivot": null,
+   "tint": false
+  },
+  "visor_blink": {
+   "x": 351,
+   "y": 299,
+   "w": 134,
+   "h": 59,
+   "pivot": null,
+   "tint": false
+  },
+  "visor_surprised": {
+   "x": 361,
+   "y": 247,
+   "w": 114,
+   "h": 130,
+   "pivot": null,
+   "tint": false
+  },
+  "f_leg_l": {
+   "x": 175,
+   "y": 671,
+   "w": 139,
+   "h": 129,
+   "pivot": [
+    250,
+    690
+   ],
+   "tint": true
+  },
+  "f_leg_r": {
+   "x": 326,
+   "y": 671,
+   "w": 139,
+   "h": 129,
+   "pivot": [
+    390,
+    690
+   ],
+   "tint": true
+  },
+  "f_body": {
+   "x": 148,
+   "y": 459,
+   "w": 344,
+   "h": 252,
+   "pivot": null,
+   "tint": true
+  },
+  "f_stripe": {
+   "x": 267,
+   "y": 477,
+   "w": 108,
+   "h": 116,
+   "pivot": null,
+   "tint": false
+  },
+  "f_collar": {
+   "x": 137,
+   "y": 411,
+   "w": 368,
+   "h": 90,
+   "pivot": null,
+   "tint": true
+  },
+  "f_dome": {
+   "x": 104,
+   "y": 95,
+   "w": 432,
+   "h": 374,
+   "pivot": null,
+   "tint": false
+  },
+  "f_visor_glow": {
+   "x": 178,
+   "y": 219,
+   "w": 286,
+   "h": 209,
+   "pivot": null,
+   "tint": false
+  },
+  "f_visor": {
+   "x": 195,
+   "y": 236,
+   "w": 252,
+   "h": 175,
+   "pivot": null,
+   "tint": false
+  },
+  "f_antenna": {
+   "x": 268,
+   "y": 2,
+   "w": 105,
+   "h": 123,
+   "pivot": [
+    320,
+    108
+   ],
+   "tint": true
+  },
+  "f_arm_l": {
+   "x": 79,
+   "y": 473,
+   "w": 97,
+   "h": 200,
+   "pivot": [
+    148,
+    490
+   ],
+   "tint": true
+  },
+  "f_arm_r": {
+   "x": 464,
+   "y": 473,
+   "w": 97,
+   "h": 200,
+   "pivot": [
+    492,
+    490
+   ],
+   "tint": true
+  },
+  "fallen_suit": {
+   "x": 73,
+   "y": 691,
+   "w": 565,
+   "h": 109,
+   "pivot": null,
+   "tint": true
+  },
+  "fallen_fx": {
+   "x": 160,
+   "y": 589,
+   "w": 327,
+   "h": 180,
+   "pivot": null,
+   "tint": false
+  },
+  "fallen_helmet": {
+   "x": 108,
+   "y": 384,
+   "w": 375,
+   "h": 405,
+   "pivot": null,
+   "tint": false
+  }
+ }
+}

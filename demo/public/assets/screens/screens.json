@@ -1,0 +1,217 @@
+{
+ "_coords": "source pixels of raw_originals/<file>; *_norm values are 0..1 of width/height so they work for any export size",
+ "screens": {
+  "27_screen_title": {
+   "source": "raw_originals/27_SCREEN_TITLE.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "webp": [
+    "screens/27_screen_title_1920.webp",
+    "screens/27_screen_title_3840.webp"
+   ],
+   "crop_16x9": {
+    "x": 0,
+    "y": 1720,
+    "w": 4096,
+    "h": 2304,
+    "webp": [
+     "screens/27_screen_title_16x9_1920.webp",
+     "screens/27_screen_title_16x9_3840.webp"
+    ]
+   }
+  },
+  "28_screen_reveal_crew": {
+   "source": "raw_originals/28_SCREEN_REVEAL_CREW.png",
+   "size": [
+    6336,
+    2688
+   ],
+   "webp": [
+    "screens/28_screen_reveal_crew_1920.webp",
+    "screens/28_screen_reveal_crew_3840.webp"
+   ],
+   "podium_top": {
+    "cx": 3149,
+    "cy": 2067,
+    "rx": 1797,
+    "ry": 239,
+    "cx_norm": 0.497,
+    "cy_norm": 0.769,
+    "rx_norm": 0.2836,
+    "ry_norm": 0.0889
+   },
+   "stage_line": {
+    "y": 2067,
+    "x0": 1711,
+    "x1": 4587,
+    "y_norm": 0.769,
+    "x0_norm": 0.27,
+    "x1_norm": 0.724,
+    "note": "feet of standing characters go on this line (centre of the podium top); spread lineups between x0 and x1"
+   }
+  },
+  "29_screen_reveal_impostor": {
+   "source": "raw_originals/29_SCREEN_REVEAL_IMPOSTOR.png",
+   "size": [
+    4096,
+    4096
+   ],
+   "webp": [
+    "screens/29_screen_reveal_impostor_1920.webp",
+    "screens/29_screen_reveal_impostor_3840.webp"
+   ],
+   "podium_top": {
+    "cx": 2046,
+    "cy": 3494,
+    "rx": 1717,
+    "ry": 222,
+    "cx_norm": 0.4995,
+    "cy_norm": 0.853,
+    "rx_norm": 0.4192,
+    "ry_norm": 0.0542
+   },
+   "stage_line": {
+    "y": 3494,
+    "x0": 672,
+    "x1": 3420,
+    "y_norm": 0.853,
+    "x0_norm": 0.1641,
+    "x1_norm": 0.835,
+    "note": "feet of standing characters go on this line (centre of the podium top); spread lineups between x0 and x1"
+   }
+  },
+  "30_screen_splash_emergency": {
+   "source": "raw_originals/30_SCREEN_SPLASH_EMERGENCY.png",
+   "size": [
+    5504,
+    3072
+   ],
+   "webp": [
+    "screens/30_screen_splash_emergency_1920.webp",
+    "screens/30_screen_splash_emergency_3840.webp"
+   ],
+   "burst": {
+    "svg": "screens/30_rays.svg",
+    "group": "rays",
+    "backing": "backing",
+    "pivot": [
+     1378,
+     1530
+    ],
+    "pivot_norm": [
+     0.2504,
+     0.498
+    ],
+    "foreground_webp": [
+     "screens/30_screen_splash_emergency_fg_1920.webp",
+     "screens/30_screen_splash_emergency_fg_3840.webp"
+    ],
+    "ray_count": 32,
+    "stack": "backing rect, then rotate #rays about pivot, then the foreground WebP on top"
+   }
+  },
+  "31_screen_splash_body": {
+   "source": "raw_originals/31_SCREEN_SPLASH_BODY.png",
+   "size": [
+    5504,
+    3072
+   ],
+   "webp": [
+    "screens/31_screen_splash_body_1920.webp",
+    "screens/31_screen_splash_body_3840.webp"
+   ],
+   "burst": {
+    "svg": "screens/31_rays.svg",
+    "group": "rays",
+    "backing": "backing",
+    "pivot": [
+     1416,
+     1536
+    ],
+    "pivot_norm": [
+     0.2573,
+     0.5
+    ],
+    "foreground_webp": [
+     "screens/31_screen_splash_body_fg_1920.webp",
+     "screens/31_screen_splash_body_fg_3840.webp"
+    ],
+    "ray_count": 26,
+    "stack": "backing rect, then rotate #rays about pivot, then the foreground WebP on top"
+   }
+  },
+  "32_screen_eject": {
+   "source": "raw_originals/32_SCREEN_EJECT.png",
+   "size": [
+    6336,
+    2688
+   ],
+   "webp": [
+    "screens/32_screen_eject_1920.webp",
+    "screens/32_screen_eject_3840.webp"
+   ]
+  },
+  "33_screen_win_crew": {
+   "source": "raw_originals/33_SCREEN_WIN_CREW.png",
+   "size": [
+    5504,
+    3072
+   ],
+   "webp": [
+    "screens/33_screen_win_crew_1920.webp",
+    "screens/33_screen_win_crew_3840.webp"
+   ],
+   "podium_top": {
+    "cx": 2752,
+    "cy": 2531,
+    "rx": 1545,
+    "ry": 204,
+    "cx_norm": 0.5,
+    "cy_norm": 0.8239,
+    "rx_norm": 0.2807,
+    "ry_norm": 0.0664
+   },
+   "stage_line": {
+    "y": 2531,
+    "x0": 1516,
+    "x1": 3988,
+    "y_norm": 0.8239,
+    "x0_norm": 0.2754,
+    "x1_norm": 0.7246,
+    "note": "feet of standing characters go on this line (centre of the podium top); spread lineups between x0 and x1"
+   }
+  },
+  "34_screen_win_impostor": {
+   "source": "raw_originals/34_SCREEN_WIN_IMPOSTOR.png",
+   "size": [
+    5504,
+    3072
+   ],
+   "webp": [
+    "screens/34_screen_win_impostor_1920.webp",
+    "screens/34_screen_win_impostor_3840.webp"
+   ],
+   "podium_top": {
+    "cx": 2755,
+    "cy": 2514,
+    "rx": 1585,
+    "ry": 220,
+    "cx_norm": 0.5005,
+    "cy_norm": 0.8184,
+    "rx_norm": 0.288,
+    "ry_norm": 0.0716
+   },
+   "stage_line": {
+    "y": 2514,
+    "x0": 1487,
+    "x1": 4023,
+    "y_norm": 0.8184,
+    "x0_norm": 0.2702,
+    "x1_norm": 0.7309,
+    "note": "feet of standing characters go on this line (centre of the podium top); spread lineups between x0 and x1"
+   }
+  }
+ }
+}

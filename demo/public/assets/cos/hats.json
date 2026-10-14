@@ -1,0 +1,384 @@
+{
+ "note": "Hats for crew_puppet.svg (viewBox 640x800). Draw file with its top-left at (x,y) in puppet units, same scale as the puppet. pivot = the dome centre (320,300) in file-local units: rotate/bob the hat with the head around it. Side view faces right (mirror the whole puppet+hat for left). Z-order: back layer before #dome (side) / before #f_leg_l (front); front file after #collar, before #arm_front (side) / before #f_arm_l (front). hidesAntenna: hide #antenna / #f_antenna.",
+ "slot": "hat",
+ "items": [
+  {
+   "id": "trucker",
+   "name": "Trucker cap",
+   "slot": "hat",
+   "hidesAntenna": true,
+   "side": {
+    "file": "svg/hat_trucker_side.svg",
+    "x": 105.0,
+    "y": -44.0,
+    "pivot": [
+     215.0,
+     344.0
+    ]
+   },
+   "front": {
+    "file": "svg/hat_trucker_front.svg",
+    "x": 127.0,
+    "y": -69.0,
+    "pivot": [
+     193.0,
+     369.0
+    ]
+   },
+   "layers": {
+    "back": null,
+    "front": null
+   }
+  },
+  {
+   "id": "diner",
+   "name": "Diner hat",
+   "slot": "hat",
+   "hidesAntenna": true,
+   "side": {
+    "file": "svg/hat_diner_side.svg",
+    "x": 104.0,
+    "y": -11.0,
+    "pivot": [
+     216.0,
+     311.0
+    ]
+   },
+   "front": {
+    "file": "svg/hat_diner_front.svg",
+    "x": 127.0,
+    "y": -36.0,
+    "pivot": [
+     193.0,
+     336.0
+    ]
+   },
+   "layers": {
+    "back": null,
+    "front": null
+   }
+  },
+  {
+   "id": "hardhat",
+   "name": "Hard hat",
+   "slot": "hat",
+   "hidesAntenna": true,
+   "side": {
+    "file": "svg/hat_hardhat_side.svg",
+    "x": 93.0,
+    "y": -64.0,
+    "pivot": [
+     227.0,
+     364.0
+    ]
+   },
+   "front": {
+    "file": "svg/hat_hardhat_front.svg",
+    "x": 105.0,
+    "y": -65.0,
+    "pivot": [
+     215.0,
+     365.0
+    ]
+   },
+   "layers": {
+    "back": null,
+    "front": null
+   }
+  },
+  {
+   "id": "beanie",
+   "name": "Beanie",
+   "slot": "hat",
+   "hidesAntenna": true,
+   "side": {
+    "file": "svg/hat_beanie_side.svg",
+    "x": 103.0,
+    "y": -123.0,
+    "pivot": [
+     217.0,
+     423.0
+    ]
+   },
+   "front": {
+    "file": "svg/hat_beanie_front.svg",
+    "x": 108.0,
+    "y": -148.0,
+    "pivot": [
+     212.0,
+     448.0
+    ]
+   },
+   "layers": {
+    "back": null,
+    "front": null
+   }
+  },
+  {
+   "id": "cowboy",
+   "name": "Cowboy hat",
+   "slot": "hat",
+   "hidesAntenna": true,
+   "side": {
+    "file": "svg/hat_cowboy_side.svg",
+    "x": 47.0,
+    "y": -30.0,
+    "pivot": [
+     273.0,
+     330.0
+    ]
+   },
+   "front": {
+    "file": "svg/hat_cowboy_front.svg",
+    "x": 54.0,
+    "y": -56.0,
+    "pivot": [
+     266.0,
+     356.0
+    ]
+   },
+   "layers": {
+    "back": null,
+    "front": null
+   }
+  },
+  {
+   "id": "chef",
+   "name": "Chef toque",
+   "slot": "hat",
+   "hidesAntenna": true,
+   "side": {
+    "file": "svg/hat_chef_side.svg",
+    "x": 65.0,
+    "y": -198.0,
+    "pivot": [
+     255.0,
+     498.0
+    ]
+   },
+   "front": {
+    "file": "svg/hat_chef_front.svg",
+    "x": 76.0,
+    "y": -214.0,
+    "pivot": [
+     244.0,
+     514.0
+    ]
+   },
+   "layers": {
+    "back": null,
+    "front": null
+   }
+  },
+  {
+   "id": "nightcap",
+   "name": "Nightcap",
+   "slot": "hat",
+   "hidesAntenna": true,
+   "side": {
+    "file": "svg/hat_nightcap_side.svg",
+    "x": 5.0,
+    "y": -16.0,
+    "pivot": [
+     315.0,
+     316.0
+    ]
+   },
+   "front": {
+    "file": "svg/hat_nightcap_front.svg",
+    "x": 35.0,
+    "y": -5.0,
+    "pivot": [
+     285.0,
+     305.0
+    ]
+   },
+   "layers": {
+    "back": null,
+    "front": null
+   }
+  },
+  {
+   "id": "party",
+   "name": "Party hat",
+   "slot": "hat",
+   "hidesAntenna": true,
+   "side": {
+    "file": "svg/hat_party_side.svg",
+    "x": 143.0,
+    "y": -67.0,
+    "pivot": [
+     177.0,
+     367.0
+    ]
+   },
+   "front": {
+    "file": "svg/hat_party_front.svg",
+    "x": 229.0,
+    "y": -79.0,
+    "pivot": [
+     91.0,
+     379.0
+    ]
+   },
+   "layers": {
+    "back": null,
+    "front": null
+   }
+  },
+  {
+   "id": "headphones",
+   "name": "Headphones",
+   "slot": "hat",
+   "hidesAntenna": false,
+   "side": {
+    "file": "svg/hat_headphones_side_front.svg",
+    "x": 87.0,
+    "y": 66.0,
+    "pivot": [
+     233.0,
+     234.0
+    ],
+    "back": {
+     "file": "svg/hat_headphones_side_back.svg",
+     "x": 494.0,
+     "y": 282.0
+    }
+   },
+   "front": {
+    "file": "svg/hat_headphones_front.svg",
+    "x": 50.0,
+    "y": 61.0,
+    "pivot": [
+     270.0,
+     239.0
+    ]
+   },
+   "layers": {
+    "back": {
+     "side": "svg/hat_headphones_side_back.svg"
+    },
+    "front": {
+     "side": "svg/hat_headphones_side_front.svg",
+     "front": "svg/hat_headphones_front.svg"
+    }
+   }
+  },
+  {
+   "id": "flowercrown",
+   "name": "Flower crown",
+   "slot": "hat",
+   "hidesAntenna": false,
+   "side": {
+    "file": "svg/hat_flowercrown_side_front.svg",
+    "x": 77.0,
+    "y": 97.0,
+    "pivot": [
+     243.0,
+     203.0
+    ],
+    "back": {
+     "file": "svg/hat_flowercrown_side_back.svg",
+     "x": 77.0,
+     "y": 84.0
+    }
+   },
+   "front": {
+    "file": "svg/hat_flowercrown_front_front.svg",
+    "x": 79.0,
+    "y": 107.0,
+    "pivot": [
+     241.0,
+     193.0
+    ],
+    "back": {
+     "file": "svg/hat_flowercrown_front_back.svg",
+     "x": 79.0,
+     "y": 84.0
+    }
+   },
+   "layers": {
+    "back": {
+     "side": "svg/hat_flowercrown_side_back.svg",
+     "front": "svg/hat_flowercrown_front_back.svg"
+    },
+    "front": {
+     "side": "svg/hat_flowercrown_side_front.svg",
+     "front": "svg/hat_flowercrown_front_front.svg"
+    }
+   }
+  },
+  {
+   "id": "afro",
+   "name": "Afro",
+   "slot": "hat",
+   "hidesAntenna": true,
+   "side": {
+    "file": "svg/hat_afro_side_front.svg",
+    "x": -3.0,
+    "y": -45.0,
+    "pivot": [
+     323.0,
+     345.0
+    ],
+    "back": {
+     "file": "svg/hat_afro_side_back.svg",
+     "x": -3.0,
+     "y": -45.0
+    }
+   },
+   "front": {
+    "file": "svg/hat_afro_front_front.svg",
+    "x": 25.0,
+    "y": -45.0,
+    "pivot": [
+     295.0,
+     345.0
+    ],
+    "back": {
+     "file": "svg/hat_afro_front_back.svg",
+     "x": 25.0,
+     "y": -45.0
+    }
+   },
+   "layers": {
+    "back": {
+     "side": "svg/hat_afro_side_back.svg",
+     "front": "svg/hat_afro_front_back.svg"
+    },
+    "front": {
+     "side": "svg/hat_afro_side_front.svg",
+     "front": "svg/hat_afro_front_front.svg"
+    }
+   }
+  },
+  {
+   "id": "propeller",
+   "name": "Propeller beanie",
+   "slot": "hat",
+   "hidesAntenna": true,
+   "side": {
+    "file": "svg/hat_propeller_side.svg",
+    "x": 86.0,
+    "y": -57.0,
+    "pivot": [
+     234.0,
+     357.0
+    ]
+   },
+   "front": {
+    "file": "svg/hat_propeller_front.svg",
+    "x": 165.0,
+    "y": -7.0,
+    "pivot": [
+     155.0,
+     307.0
+    ]
+   },
+   "layers": {
+    "back": null,
+    "front": null
+   }
+  }
+ ]
+}

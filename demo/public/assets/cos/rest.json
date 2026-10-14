@@ -1,0 +1,883 @@
+{
+ "puppet": "frontend/public/assets/ship/crew/crew_puppet.svg",
+ "coords": "puppet viewBox units (640x800). Draw file at (x,y) with size (w,h) in puppet space; files use the same units in their viewBox.",
+ "tint": "grey parts use var(--suit), var(--suit-shade), var(--suit-back), var(--suit-light) like the puppet",
+ "items": [
+  {
+   "id": "top_star",
+   "slot": "topper",
+   "side": {
+    "file": "top_star_side.svg",
+    "x": 197,
+    "y": -81,
+    "w": 146,
+    "h": 203,
+    "pivot": [
+     300,
+     104
+    ]
+   },
+   "front": {
+    "file": "top_star_front.svg",
+    "x": 247,
+    "y": -77,
+    "w": 146,
+    "h": 199,
+    "pivot": [
+     320,
+     108
+    ]
+   },
+   "hidesAntenna": true,
+   "replaces": {
+    "side": [
+     "antenna"
+    ],
+    "front": [
+     "f_antenna"
+    ]
+   },
+   "z": {
+    "side": "antenna",
+    "front": "f_antenna"
+   },
+   "layers": {
+    "back": false,
+    "front": true
+   }
+  },
+  {
+   "id": "top_heart",
+   "slot": "topper",
+   "side": {
+    "file": "top_heart_side.svg",
+    "x": 191,
+    "y": -81,
+    "w": 157,
+    "h": 203,
+    "pivot": [
+     300,
+     104
+    ]
+   },
+   "front": {
+    "file": "top_heart_front.svg",
+    "x": 241,
+    "y": -77,
+    "w": 157,
+    "h": 199,
+    "pivot": [
+     320,
+     108
+    ]
+   },
+   "hidesAntenna": true,
+   "replaces": {
+    "side": [
+     "antenna"
+    ],
+    "front": [
+     "f_antenna"
+    ]
+   },
+   "z": {
+    "side": "antenna",
+    "front": "f_antenna"
+   },
+   "layers": {
+    "back": false,
+    "front": true
+   }
+  },
+  {
+   "id": "top_moon",
+   "slot": "topper",
+   "side": {
+    "file": "top_moon_side.svg",
+    "x": 203,
+    "y": -81,
+    "w": 133,
+    "h": 203,
+    "pivot": [
+     300,
+     104
+    ]
+   },
+   "front": {
+    "file": "top_moon_front.svg",
+    "x": 253,
+    "y": -77,
+    "w": 133,
+    "h": 199,
+    "pivot": [
+     320,
+     108
+    ]
+   },
+   "hidesAntenna": true,
+   "replaces": {
+    "side": [
+     "antenna"
+    ],
+    "front": [
+     "f_antenna"
+    ]
+   },
+   "z": {
+    "side": "antenna",
+    "front": "f_antenna"
+   },
+   "layers": {
+    "back": false,
+    "front": true
+   }
+  },
+  {
+   "id": "top_cherries",
+   "slot": "topper",
+   "side": {
+    "file": "top_cherries_side.svg",
+    "x": 201,
+    "y": -81,
+    "w": 138,
+    "h": 203,
+    "pivot": [
+     300,
+     104
+    ]
+   },
+   "front": {
+    "file": "top_cherries_front.svg",
+    "x": 251,
+    "y": -77,
+    "w": 138,
+    "h": 199,
+    "pivot": [
+     320,
+     108
+    ]
+   },
+   "hidesAntenna": true,
+   "replaces": {
+    "side": [
+     "antenna"
+    ],
+    "front": [
+     "f_antenna"
+    ]
+   },
+   "z": {
+    "side": "antenna",
+    "front": "f_antenna"
+   },
+   "layers": {
+    "back": false,
+    "front": true
+   }
+  },
+  {
+   "id": "top_bulb",
+   "slot": "topper",
+   "side": {
+    "file": "top_bulb_side.svg",
+    "x": 214,
+    "y": -80,
+    "w": 112,
+    "h": 202,
+    "pivot": [
+     300,
+     104
+    ]
+   },
+   "front": {
+    "file": "top_bulb_front.svg",
+    "x": 264,
+    "y": -76,
+    "w": 112,
+    "h": 198,
+    "pivot": [
+     320,
+     108
+    ]
+   },
+   "hidesAntenna": true,
+   "replaces": {
+    "side": [
+     "antenna"
+    ],
+    "front": [
+     "f_antenna"
+    ]
+   },
+   "z": {
+    "side": "antenna",
+    "front": "f_antenna"
+   },
+   "layers": {
+    "back": false,
+    "front": true
+   }
+  },
+  {
+   "id": "top_eyeball",
+   "slot": "topper",
+   "side": {
+    "file": "top_eyeball_side.svg",
+    "x": 200,
+    "y": -81,
+    "w": 140,
+    "h": 203,
+    "pivot": [
+     300,
+     104
+    ]
+   },
+   "front": {
+    "file": "top_eyeball_front.svg",
+    "x": 250,
+    "y": -77,
+    "w": 140,
+    "h": 199,
+    "pivot": [
+     320,
+     108
+    ]
+   },
+   "hidesAntenna": true,
+   "replaces": {
+    "side": [
+     "antenna"
+    ],
+    "front": [
+     "f_antenna"
+    ]
+   },
+   "z": {
+    "side": "antenna",
+    "front": "f_antenna"
+   },
+   "layers": {
+    "back": false,
+    "front": true
+   }
+  },
+  {
+   "id": "top_dish",
+   "slot": "topper",
+   "side": {
+    "file": "top_dish_side.svg",
+    "x": 214,
+    "y": -81,
+    "w": 111,
+    "h": 203,
+    "pivot": [
+     300,
+     104
+    ]
+   },
+   "front": {
+    "file": "top_dish_front.svg",
+    "x": 264,
+    "y": -77,
+    "w": 111,
+    "h": 199,
+    "pivot": [
+     320,
+     108
+    ]
+   },
+   "hidesAntenna": true,
+   "replaces": {
+    "side": [
+     "antenna"
+    ],
+    "front": [
+     "f_antenna"
+    ]
+   },
+   "z": {
+    "side": "antenna",
+    "front": "f_antenna"
+   },
+   "layers": {
+    "back": false,
+    "front": true
+   }
+  },
+  {
+   "id": "top_planet",
+   "slot": "topper",
+   "side": {
+    "file": "top_planet_side.svg",
+    "x": 185,
+    "y": -55,
+    "w": 170,
+    "h": 177,
+    "pivot": [
+     300,
+     104
+    ]
+   },
+   "front": {
+    "file": "top_planet_front.svg",
+    "x": 235,
+    "y": -51,
+    "w": 170,
+    "h": 173,
+    "pivot": [
+     320,
+     108
+    ]
+   },
+   "hidesAntenna": true,
+   "replaces": {
+    "side": [
+     "antenna"
+    ],
+    "front": [
+     "f_antenna"
+    ]
+   },
+   "z": {
+    "side": "antenna",
+    "front": "f_antenna"
+   },
+   "layers": {
+    "back": false,
+    "front": true
+   }
+  },
+  {
+   "id": "pack_jetpack",
+   "slot": "backpack",
+   "side": {
+    "file": "pack_jetpack_side.svg",
+    "x": -16,
+    "y": 398,
+    "w": 206,
+    "h": 263,
+    "pivot": null
+   },
+   "front": null,
+   "hidesAntenna": false,
+   "replaces": {
+    "side": [
+     "backpack"
+    ],
+    "front": []
+   },
+   "z": {
+    "side": "backpack",
+    "front": null
+   },
+   "layers": {
+    "back": true,
+    "front": false
+   }
+  },
+  {
+   "id": "pack_thermos",
+   "slot": "backpack",
+   "side": {
+    "file": "pack_thermos_side.svg",
+    "x": 24,
+    "y": 398,
+    "w": 166,
+    "h": 263,
+    "pivot": null
+   },
+   "front": null,
+   "hidesAntenna": false,
+   "replaces": {
+    "side": [
+     "backpack"
+    ],
+    "front": []
+   },
+   "z": {
+    "side": "backpack",
+    "front": null
+   },
+   "layers": {
+    "back": true,
+    "front": false
+   }
+  },
+  {
+   "id": "pack_lunchbox",
+   "slot": "backpack",
+   "side": {
+    "file": "pack_lunchbox_side.svg",
+    "x": -32,
+    "y": 436,
+    "w": 221,
+    "h": 189,
+    "pivot": null
+   },
+   "front": null,
+   "hidesAntenna": false,
+   "replaces": {
+    "side": [
+     "backpack"
+    ],
+    "front": []
+   },
+   "z": {
+    "side": "backpack",
+    "front": null
+   },
+   "layers": {
+    "back": true,
+    "front": false
+   }
+  },
+  {
+   "id": "pack_walkman",
+   "slot": "backpack",
+   "side": {
+    "file": "pack_walkman_side.svg",
+    "x": -32,
+    "y": 427,
+    "w": 220,
+    "h": 206,
+    "pivot": null
+   },
+   "front": null,
+   "hidesAntenna": false,
+   "replaces": {
+    "side": [
+     "backpack"
+    ],
+    "front": []
+   },
+   "z": {
+    "side": "backpack",
+    "front": null
+   },
+   "layers": {
+    "back": true,
+    "front": false
+   }
+  },
+  {
+   "id": "pack_plant",
+   "slot": "backpack",
+   "side": {
+    "file": "pack_plant_side.svg",
+    "x": -17,
+    "y": 398,
+    "w": 207,
+    "h": 264,
+    "pivot": null
+   },
+   "front": null,
+   "hidesAntenna": false,
+   "replaces": {
+    "side": [
+     "backpack"
+    ],
+    "front": []
+   },
+   "z": {
+    "side": "backpack",
+    "front": null
+   },
+   "layers": {
+    "back": true,
+    "front": false
+   }
+  },
+  {
+   "id": "pack_heater",
+   "slot": "backpack",
+   "side": {
+    "file": "pack_heater_side.svg",
+    "x": -33,
+    "y": 419,
+    "w": 223,
+    "h": 221,
+    "pivot": null
+   },
+   "front": null,
+   "hidesAntenna": false,
+   "replaces": {
+    "side": [
+     "backpack"
+    ],
+    "front": []
+   },
+   "z": {
+    "side": "backpack",
+    "front": null
+   },
+   "layers": {
+    "back": true,
+    "front": false
+   }
+  },
+  {
+   "id": "pack_bedroll",
+   "slot": "backpack",
+   "side": {
+    "file": "pack_bedroll_side.svg",
+    "x": -34,
+    "y": 398,
+    "w": 224,
+    "h": 263,
+    "pivot": null
+   },
+   "front": null,
+   "hidesAntenna": false,
+   "replaces": {
+    "side": [
+     "backpack"
+    ],
+    "front": []
+   },
+   "z": {
+    "side": "backpack",
+    "front": null
+   },
+   "layers": {
+    "back": true,
+    "front": false
+   }
+  },
+  {
+   "id": "pack_toolbox",
+   "slot": "backpack",
+   "side": {
+    "file": "pack_toolbox_side.svg",
+    "x": -32,
+    "y": 457,
+    "w": 220,
+    "h": 145,
+    "pivot": null
+   },
+   "front": null,
+   "hidesAntenna": false,
+   "replaces": {
+    "side": [
+     "backpack"
+    ],
+    "front": []
+   },
+   "z": {
+    "side": "backpack",
+    "front": null
+   },
+   "layers": {
+    "back": true,
+    "front": false
+   }
+  },
+  {
+   "id": "visor_led",
+   "slot": "visor",
+   "side": {
+    "file": "visor_led_side.svg",
+    "x": 315,
+    "y": 209,
+    "w": 230,
+    "h": 243,
+    "pivot": [
+     416,
+     314
+    ]
+   },
+   "front": {
+    "file": "visor_led_front.svg",
+    "x": 161,
+    "y": 189,
+    "w": 325,
+    "h": 225
+   },
+   "hidesAntenna": false,
+   "replaces": {
+    "side": [
+     "visor",
+     "visor_glow"
+    ],
+    "front": [
+     "f_visor",
+     "f_visor_glow"
+    ]
+   },
+   "z": {
+    "side": "visor",
+    "front": "f_visor"
+   },
+   "layers": {
+    "back": false,
+    "front": true
+   }
+  },
+  {
+   "id": "visor_star",
+   "slot": "visor",
+   "side": {
+    "file": "visor_star_side.svg",
+    "x": 313,
+    "y": 202,
+    "w": 267,
+    "h": 247,
+    "pivot": [
+     416,
+     314
+    ]
+   },
+   "front": {
+    "file": "visor_star_front.svg",
+    "x": 126,
+    "y": 194,
+    "w": 450,
+    "h": 240
+   },
+   "hidesAntenna": false,
+   "replaces": {
+    "side": [
+     "visor",
+     "visor_glow"
+    ],
+    "front": [
+     "f_visor",
+     "f_visor_glow"
+    ]
+   },
+   "z": {
+    "side": "visor",
+    "front": "f_visor"
+   },
+   "layers": {
+    "back": false,
+    "front": true
+   }
+  },
+  {
+   "id": "visor_heart",
+   "slot": "visor",
+   "side": {
+    "file": "visor_heart_side.svg",
+    "x": 312,
+    "y": 224,
+    "w": 278,
+    "h": 236,
+    "pivot": [
+     416,
+     314
+    ]
+   },
+   "front": {
+    "file": "visor_heart_front.svg",
+    "x": 181,
+    "y": 225,
+    "w": 280,
+    "h": 203
+   },
+   "hidesAntenna": false,
+   "replaces": {
+    "side": [
+     "visor",
+     "visor_glow"
+    ],
+    "front": [
+     "f_visor",
+     "f_visor_glow"
+    ]
+   },
+   "z": {
+    "side": "visor",
+    "front": "f_visor"
+   },
+   "layers": {
+    "back": false,
+    "front": true
+   }
+  },
+  {
+   "id": "visor_aviator",
+   "slot": "visor",
+   "side": {
+    "file": "visor_aviator_side.svg",
+    "x": 220,
+    "y": 214,
+    "w": 370,
+    "h": 210,
+    "pivot": [
+     416,
+     314
+    ]
+   },
+   "front": {
+    "file": "visor_aviator_front.svg",
+    "x": 158,
+    "y": 236,
+    "w": 325,
+    "h": 176
+   },
+   "hidesAntenna": false,
+   "replaces": {
+    "side": [
+     "visor",
+     "visor_glow"
+    ],
+    "front": [
+     "f_visor",
+     "f_visor_glow"
+    ]
+   },
+   "z": {
+    "side": "visor",
+    "front": "f_visor"
+   },
+   "layers": {
+    "back": false,
+    "front": true
+   }
+  },
+  {
+   "id": "decal_nametag",
+   "slot": "decal",
+   "side": {
+    "file": "decal_nametag_side.svg",
+    "x": 337,
+    "y": 446,
+    "w": 174,
+    "h": 151,
+    "pivot": null
+   },
+   "front": {
+    "file": "decal_nametag_front.svg",
+    "x": 216,
+    "y": 465,
+    "w": 209,
+    "h": 141
+   },
+   "hidesAntenna": false,
+   "replaces": {
+    "side": [
+     "stripe"
+    ],
+    "front": [
+     "f_stripe"
+    ]
+   },
+   "z": {
+    "side": "stripe",
+    "front": "f_stripe"
+   },
+   "layers": {
+    "back": false,
+    "front": true
+   }
+  },
+  {
+   "id": "decal_bolt",
+   "slot": "decal",
+   "side": {
+    "file": "decal_bolt_side.svg",
+    "x": 307,
+    "y": 431,
+    "w": 218,
+    "h": 199,
+    "pivot": null
+   },
+   "front": {
+    "file": "decal_bolt_front.svg",
+    "x": 197,
+    "y": 441,
+    "w": 248,
+    "h": 199
+   },
+   "hidesAntenna": false,
+   "replaces": {
+    "side": [
+     "stripe"
+    ],
+    "front": [
+     "f_stripe"
+    ]
+   },
+   "z": {
+    "side": "stripe",
+    "front": "f_stripe"
+   },
+   "layers": {
+    "back": false,
+    "front": true
+   }
+  },
+  {
+   "id": "decal_smiley",
+   "slot": "decal",
+   "side": {
+    "file": "decal_smiley_side.svg",
+    "x": 316,
+    "y": 414,
+    "w": 197,
+    "h": 243,
+    "pivot": null
+   },
+   "front": {
+    "file": "decal_smiley_front.svg",
+    "x": 199,
+    "y": 426,
+    "w": 243,
+    "h": 243
+   },
+   "hidesAntenna": false,
+   "replaces": {
+    "side": [
+     "stripe"
+    ],
+    "front": [
+     "f_stripe"
+    ]
+   },
+   "z": {
+    "side": "stripe",
+    "front": "f_stripe"
+   },
+   "layers": {
+    "back": false,
+    "front": true
+   }
+  },
+  {
+   "id": "decal_flames",
+   "slot": "decal",
+   "side": {
+    "file": "decal_flames_side.svg",
+    "x": 302,
+    "y": 477,
+    "w": 215,
+    "h": 227,
+    "pivot": null
+   },
+   "front": {
+    "file": "decal_flames_front.svg",
+    "x": 125,
+    "y": 490,
+    "w": 393,
+    "h": 239
+   },
+   "hidesAntenna": false,
+   "replaces": {
+    "side": [
+     "stripe"
+    ],
+    "front": [
+     "f_stripe"
+    ]
+   },
+   "z": {
+    "side": "stripe",
+    "front": "f_stripe"
+   },
+   "layers": {
+    "back": false,
+    "front": true
+   }
+  }
+ ]
+}

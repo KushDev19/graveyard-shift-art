@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 320" width="60" height="320">
+<!-- vu_needle: points straight up, pivot 30,280 (length 266 from pivot to tip) -->
+<g id="needle" data-pivot="30,280"><path d="M30 14 L37 270 L23 270 Z" fill="#3D2A4F" stroke="#2A1E35" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" /><circle cx="30" cy="280" r="26" fill="#2F2140" stroke="#2A1E35" stroke-width="8" /><circle cx="30" cy="276" r="16" fill="#56406C" /><circle cx="30" cy="280" r="7" fill="#2A1E35" /></g>
+</svg>

@@ -1,0 +1,454 @@
+{
+ "units": "pixels of the 5504 px wide room paintings (scale by roomDisplayWidth / 5504)",
+ "emergency_button": {
+  "canvas": [
+   570,
+   530
+  ],
+  "anchor": {
+   "base_top_center": [
+    330,
+    380
+   ],
+   "floor_contact": [
+    330,
+    450
+   ],
+   "note": "place base_top_center on the Galley table pedestal top (about 1.3x pedestal width)"
+  },
+  "pivots": {
+   "base": [
+    330,
+    380
+   ],
+   "button": [
+    330,
+    386
+   ],
+   "dome": [
+    244.0,
+    340.7
+   ],
+   "padlock": [
+    462,
+    420
+   ],
+   "glow_ring": [
+    330,
+    382
+   ],
+   "flash_ring": [
+    330,
+    374
+   ]
+  },
+  "parts": {
+   "base": {
+    "file": "parts/base.png",
+    "rect": [
+     109,
+     309,
+     442,
+     221
+    ]
+   },
+   "glow_ring_off": {
+    "file": "parts/glow_ring_off.png",
+    "rect": [
+     246,
+     350,
+     168,
+     66
+    ]
+   },
+   "glow_ring_on": {
+    "file": "parts/glow_ring_on.png",
+    "rect": [
+     123,
+     225,
+     414,
+     282
+    ]
+   },
+   "glow_ring_bright": {
+    "file": "parts/glow_ring_bright.png",
+    "rect": [
+     79,
+     195,
+     491,
+     335
+    ]
+   },
+   "button_idle": {
+    "file": "parts/button_idle.png",
+    "rect": [
+     260,
+     319,
+     140,
+     95
+    ]
+   },
+   "button_lit": {
+    "file": "parts/button_lit.png",
+    "rect": [
+     260,
+     319,
+     140,
+     95
+    ]
+   },
+   "button_pressed": {
+    "file": "parts/button_pressed.png",
+    "rect": [
+     260,
+     333,
+     140,
+     81
+    ]
+   },
+   "button_disabled": {
+    "file": "parts/button_disabled.png",
+    "rect": [
+     260,
+     319,
+     140,
+     95
+    ]
+   },
+   "padlock": {
+    "file": "parts/padlock.png",
+    "rect": [
+     425,
+     404,
+     74,
+     103
+    ]
+   },
+   "dome_back": {
+    "file": "parts/dome_back_strip.png",
+    "rect": [
+     22,
+     31,
+     469,
+     401
+    ],
+    "frameWidth": 469,
+    "frameHeight": 401,
+    "angles": [
+     0,
+     10,
+     20,
+     30,
+     40,
+     50,
+     60,
+     70,
+     80,
+     90,
+     100,
+     110,
+     120
+    ]
+   },
+   "dome_front": {
+    "file": "parts/dome_front_strip.png",
+    "rect": [
+     18,
+     27,
+     470,
+     409
+    ],
+    "frameWidth": 470,
+    "frameHeight": 409,
+    "angles": [
+     0,
+     10,
+     20,
+     30,
+     40,
+     50,
+     60,
+     70,
+     80,
+     90,
+     100,
+     110,
+     120
+    ]
+   }
+  },
+  "draw_order": {
+   "dome_angle_le_30": [
+    "base",
+    "glow_ring",
+    "flash_ring",
+    "dome_back",
+    "button",
+    "dome_front",
+    "padlock"
+   ],
+   "dome_angle_gt_30": [
+    "base",
+    "glow_ring",
+    "flash_ring",
+    "dome_back",
+    "dome_front",
+    "button",
+    "padlock"
+   ]
+  },
+  "dome": {
+   "hinge": "back-left of the rim (azimuth 235 deg), real 3D flip",
+   "open_angle": 110,
+   "how": "set strip frame = round(angle/10); angles above 110 are for the overshoot"
+  },
+  "button": {
+   "press_depth": 14,
+   "squash": {
+    "scaleX": 1.12,
+    "scaleY": 0.78,
+    "pivot": "button"
+   }
+  },
+  "flash_ring": {
+   "shape": "ellipse stroke #E8574A, ry = rx * 0.336",
+   "rx_from": 90,
+   "rx_to": 240,
+   "stroke_from": 16,
+   "stroke_to": 4,
+   "alpha_from": 1,
+   "alpha_to": 0,
+   "duration_ms": 650,
+   "second_ring_delay_ms": 120
+  },
+  "states": {
+   "idle": "emergency_button_idle.png",
+   "open": "emergency_button_open.png",
+   "pressed": "emergency_button_pressed.png",
+   "disabled": "emergency_button_disabled.png"
+  },
+  "tweens_ms": [
+   {
+    "at": 0,
+    "dur": 650,
+    "target": "dome",
+    "prop": "angle",
+    "from": 0,
+    "to": 110,
+    "ease": "Back.easeOut(1.25)",
+    "note": "peaks near 117 deg"
+   },
+   {
+    "at": 300,
+    "dur": 350,
+    "target": "glow_ring",
+    "swap": "glow_ring_off -> glow_ring_on",
+    "ease": "Sine.easeInOut"
+   },
+   {
+    "at": 200,
+    "dur": 300,
+    "target": "button",
+    "swap": "button_idle -> button_lit (crossfade)"
+   },
+   {
+    "at": 900,
+    "dur": 100,
+    "target": "button",
+    "props": {
+     "y": "+18",
+     "scaleX": 1.12,
+     "scaleY": 0.78
+    },
+    "ease": "Cubic.easeIn"
+   },
+   {
+    "at": 1000,
+    "dur": 180,
+    "target": "button",
+    "props": {
+     "y": "-4",
+     "scaleX": 1,
+     "scaleY": 1
+    },
+    "ease": "Back.easeOut(2)",
+    "swap": "button_pressed"
+   },
+   {
+    "at": 950,
+    "dur": 650,
+    "target": "flash_ring",
+    "note": "see flash_ring"
+   },
+   {
+    "at": 950,
+    "dur": 100,
+    "target": "glow_ring",
+    "swap": "glow_ring_bright"
+   },
+   {
+    "at": 1900,
+    "dur": 500,
+    "target": "button",
+    "swap": "button_lit -> button_disabled (crossfade)",
+    "props": {
+     "y": 0
+    }
+   },
+   {
+    "at": 1900,
+    "dur": 500,
+    "target": "glow_ring",
+    "swap": "glow_ring_off (crossfade)"
+   },
+   {
+    "at": 2100,
+    "dur": 450,
+    "target": "dome",
+    "prop": "angle",
+    "from": 110,
+    "to": 0,
+    "ease": "Cubic.easeIn"
+   },
+   {
+    "at": 2550,
+    "dur": 200,
+    "target": "dome",
+    "prop": "angle",
+    "yoyo": 7,
+    "ease": "Sine.easeOut"
+   },
+   {
+    "at": 2750,
+    "dur": 500,
+    "target": "padlock",
+    "props": {
+     "y": "from -150",
+     "alpha": "from 0"
+    },
+    "ease": "Bounce.easeOut"
+   },
+   {
+    "at": 3150,
+    "dur": 750,
+    "target": "padlock",
+    "prop": "angle",
+    "note": "damped swing 14*exp(-4t)*sin(5*pi*t)"
+   }
+  ]
+ },
+ "doors": {
+  "front": {
+   "canvas": [
+    860,
+    900
+   ],
+   "opening": [
+    140,
+    200,
+    720,
+    860
+   ],
+   "opening_top_radius": 100,
+   "mask": "mask both halves with the opening (rounded-top rect) so they vanish into the frame",
+   "halves": {
+    "door_left": {
+     "slide": [
+      -330,
+      0
+     ]
+    },
+    "door_right": {
+     "slide": [
+      330,
+      0
+     ]
+    }
+   },
+   "draw_order": [
+    "doorway",
+    "door_left",
+    "door_right",
+    "frame"
+   ],
+   "parts": {
+    "doorway": "parts/door_front_doorway.png",
+    "door_left": "parts/door_front_door_left.png",
+    "door_right": "parts/door_front_door_right.png",
+    "frame": "parts/door_front_frame.png"
+   },
+   "tween": {
+    "dur_ms": 550,
+    "ease": "Cubic.easeInOut"
+   },
+   "floor_line_y": 872
+  },
+  "side_left_wall": {
+   "canvas": [
+    260,
+    1340
+   ],
+   "skew_matrix": [
+    0.24,
+    -0.5,
+    0,
+    1,
+    8,
+    450.0
+   ],
+   "opening_polygon": [
+    [
+     41.6,
+     1240.0
+    ],
+    [
+     41.6,
+     580.0
+    ],
+    [
+     180.8,
+     290.0
+    ],
+    [
+     180.8,
+     950.0
+    ]
+   ],
+   "halves": {
+    "door_left": {
+     "slide": [
+      -79.2,
+      165.0
+     ]
+    },
+    "door_right": {
+     "slide": [
+      79.2,
+      -165.0
+     ]
+    }
+   },
+   "draw_order": [
+    "slab",
+    "doorway",
+    "door_left",
+    "door_right",
+    "frame"
+   ],
+   "parts": {
+    "slab": "parts/door_side_slab.png",
+    "doorway": "parts/door_side_doorway.png",
+    "door_left": "parts/door_side_door_left.png",
+    "door_right": "parts/door_side_door_right.png",
+    "frame": "parts/door_side_frame.png"
+   },
+   "tween": {
+    "dur_ms": 550,
+    "ease": "Cubic.easeInOut"
+   }
+  },
+  "side_right_wall": {
+   "note": "mirror the left-wall door horizontally (door_side_r_*.png are pre-mirrored)"
+  }
+ }
+}

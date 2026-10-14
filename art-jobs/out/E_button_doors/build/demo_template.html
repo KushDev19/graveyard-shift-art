@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Emergency Button Demo</title>
+<style>
+:root{--bg:#1B1830;--panel:#3D2A4F;--ink:#F4E6C8;--amber:#F5A54A;--coral:#E8574A;--sea:#7FC8B8;--ol:#2A1E35}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.4 "Space Grotesk",system-ui,sans-serif}
+header{padding:16px 20px 0}
+h1{margin:0;font:700 22px/1.2 system-ui,sans-serif;letter-spacing:.06em;color:var(--amber)}
+p.sub{margin:4px 0 0;opacity:.75}
+.wrap{display:flex;flex-wrap:wrap;gap:16px;padding:16px 20px}
+.card{background:var(--panel);border:4px solid var(--ol);border-radius:18px;padding:12px}
+#stage{width:570px;max-width:100%;aspect-ratio:570/530;background:radial-gradient(ellipse at 50% 75%,#4a3a5e 0,#2E2340 70%);border-radius:12px}
+#stage svg{width:100%;height:auto;display:block}
+.ctl{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;align-items:center}
+button{font:700 14px system-ui,sans-serif;letter-spacing:.04em;background:var(--ink);color:var(--ol);border:3px solid var(--ol);border-radius:10px;padding:7px 12px;cursor:pointer}
+button.hot{background:var(--coral);color:#fff}
+button:active{transform:translateY(2px)}
+input[type=range]{flex:1;min-width:160px;accent-color:var(--amber)}
+label{display:flex;gap:6px;align-items:center}
+#t{font-family:ui-monospace,monospace;min-width:70px;text-align:right}
+.doors{display:flex;gap:12px;align-items:flex-end;background:#2F6F73;border-radius:12px;padding:10px}
+.doors svg{height:340px;width:auto;display:block}
+.doors .slide{transition:transform .55s cubic-bezier(.6,0,.25,1)}
+</style></head>
+<body>
+<header><h1>GRAVEYARD SHIFT · EMERGENCY BUTTON</h1>
+<p class="sub">Dome flips open on its back hinge, button squashes, coral flash, then it locks into cooldown.</p></header>
+<div class="wrap">
+ <div class="card">
+  <div id="stage"></div>
+  <div class="ctl">
+   <button class="hot" id="bPlay">▶ Play all</button>
+   <button id="bOpen">Open</button><button id="bPress">Press</button><button id="bLock">Lock</button><button id="bReset">Reset</button>
+   <label><input type="checkbox" id="slow"> slow-mo</label>
+  </div>
+  <div class="ctl"><input type="range" id="scrub" min="0" max="4000" value="0"><span id="t">0 ms</span></div>
+ </div>
+ <div class="card">
+  <div class="doors">
+<!--DOORS-->
+  </div>
+  <div class="ctl"><button id="bDoor">Open / close doors</button></div>
+ </div>
+</div>
+<script>
+/*CORE*/
+</script>
+<script>
+(() => {
+  const stage = document.getElementById('stage');
+  const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+  const seg = (t, a, b) => clamp((t - a) / (b - a));
+  const outBack = (x, s = 1.25) => 1 + (s + 1) * Math.pow(x - 1, 3) + s * Math.pow(x - 1, 2);
+  const outCubic = x => 1 - Math.pow(1 - x, 3), inCubic = x => x * x * x;
+  const smooth = x => x * x * (3 - 2 * x);
+  const outBounce = x => { const n = 7.5625, d = 2.75;
+    if (x < 1 / d) return n * x * x; if (x < 2 / d) return n * (x -= 1.5 / d) * x + .75;
+    if (x < 2.5 / d) return n * (x -= 2.25 / d) * x + .9375; return n * (x -= 2.625 / d) * x + .984375; };
+  const C = EB.COL;
+  // Timeline (ms): 0-650 open | 900-1180 press | 950-1600 flash | 1900-2400 release+dim | 2100-2750 close | 2750-3900 padlock
+  function stateAt(t) {
+    const s = { theta: 0, depth: 0, sx: 1, sy: 1, col: C.idle, glow: 0, halo: 0, flash: null, lock: { op: 0, dy: 0, rot: 0 } };
+    s.theta = 110 * outBack(seg(t, 0, 650));
+    s.col = EB.mixCol(C.idle, C.lit, smooth(seg(t, 200, 500)));
+    s.glow = smooth(seg(t, 300, 650)); s.halo = 0.75 * s.glow;
+    if (t >= 900) {                                    // press: squash down, rebound
+      const a = seg(t, 900, 1000), b = seg(t, 1000, 1180);
+      s.depth = b > 0 ? 18 - 4 * outCubic(b) : 18 * inCubic(a);
+      const sq = b > 0 ? 1 - outBack(b, 2) : a;
+      s.sx = 1 + 0.12 * sq; s.sy = 1 - 0.22 * sq;
+      s.halo = 0.75 + 0.6 * smooth(seg(t, 950, 1050));
+    }
+    if (t >= 950 && t < 1600) s.flash = seg(t, 950, 1600);
+    if (t >= 1900) {                                   // release and go dark
+      const r = outCubic(seg(t, 1900, 2250)), d = smooth(seg(t, 1900, 2400));
+      s.depth = 14 * (1 - r);
+      s.col = EB.mixCol(C.lit, C.disabled, d); s.glow = 1 - d; s.halo = 1.35 * (1 - d);
+    }
+    if (t >= 2100) {                                   // dome slams shut, small bounce
+      s.theta = t < 2550 ? 110 * (1 - inCubic(seg(t, 2100, 2550))) : 7 * Math.sin(Math.PI * seg(t, 2550, 2750));
+    }
+    if (t >= 2750) {                                   // padlock drops on and swings
+      const p = seg(t, 2750, 3250), q = seg(t, 3150, 3900);
+      s.lock = { op: clamp(p * 6), dy: -150 * (1 - outBounce(p)), rot: q > 0 ? 14 * Math.exp(-4 * q) * Math.sin(q * Math.PI * 5) : -8 * (1 - p) };
+    }
+    return s;
+  }
+  let T = 0;
+  function renderAt(t) { T = t; stage.innerHTML = EB.svg(stateAt(t)); scrub.value = t; tl.textContent = Math.round(t) + ' ms'; }
+  window.renderAt = renderAt; window.stateAt = stateAt;
+  const scrub = document.getElementById('scrub'), tl = document.getElementById('t'), slow = document.getElementById('slow');
+  let raf = 0;
+  function play(a, b) {
+    cancelAnimationFrame(raf); let last = performance.now(); T = a;
+    const step = now => { T += (now - last) * (slow.checked ? 0.25 : 1); last = now;
+      if (T >= b) { renderAt(b); return; } renderAt(T); raf = requestAnimationFrame(step); };
+    raf = requestAnimationFrame(step);
+  }
+  window.play = play;
+  const on = (id, f) => document.getElementById(id).onclick = f;
+  on('bPlay', () => play(0, 4000)); on('bOpen', () => play(0, 900)); on('bPress', () => play(900, 1900));
+  on('bLock', () => play(1900, 4000)); on('bReset', () => { cancelAnimationFrame(raf); renderAt(0); });
+  scrub.oninput = () => { cancelAnimationFrame(raf); renderAt(+scrub.value); };
+  renderAt(0);
+  // doors: halves slide by their data-slide vector (local units)
+  let open = false;
+  document.querySelectorAll('.doors [data-slide]').forEach(g => {
+    const w = document.createElementNS('http://www.w3.org/2000/svg', 'g'); w.setAttribute('class', 'slide');
+    g.parentNode.insertBefore(w, g); w.appendChild(g); });
+  on('bDoor', () => { open = !open;
+    document.querySelectorAll('.doors .slide').forEach(w => { const [x, y] = w.firstChild.dataset.slide.split(',').map(Number);
+      w.style.transform = open ? `translate(${x}px,${y}px)` : ''; }); });
+  window.setDoors = o => { if (o !== open) document.getElementById('bDoor').click(); };
+})();
+</script>
+</body></html>

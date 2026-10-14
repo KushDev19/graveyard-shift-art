@@ -1,0 +1,313 @@
+{
+ "galley_stool_01": {
+  "file": "objects/galley_stool_01.svg",
+  "x": 1782,
+  "y": 2170,
+  "w": 277,
+  "h": 337,
+  "mae": 4.23,
+  "kb": 67.1,
+  "ids": [
+   "stool_01"
+  ]
+ },
+ "galley_stool_02": {
+  "file": "objects/galley_stool_02.svg",
+  "x": 2194,
+  "y": 2170,
+  "w": 277,
+  "h": 339,
+  "mae": 4.19,
+  "kb": 62.7,
+  "ids": [
+   "stool_02"
+  ]
+ },
+ "galley_stool_03": {
+  "file": "objects/galley_stool_03.svg",
+  "x": 2614,
+  "y": 2170,
+  "w": 277,
+  "h": 337,
+  "mae": 4.15,
+  "kb": 60.5,
+  "ids": [
+   "stool_03"
+  ]
+ },
+ "galley_stool_04": {
+  "file": "objects/galley_stool_04.svg",
+  "x": 3030,
+  "y": 2170,
+  "w": 277,
+  "h": 340,
+  "mae": 4.0,
+  "kb": 61.6,
+  "ids": [
+   "stool_04"
+  ]
+ },
+ "galley_stool_05": {
+  "file": "objects/galley_stool_05.svg",
+  "x": 3450,
+  "y": 2170,
+  "w": 277,
+  "h": 337,
+  "mae": 4.2,
+  "kb": 67.0,
+  "ids": [
+   "stool_05"
+  ]
+ },
+ "galley_stool_06": {
+  "file": "objects/galley_stool_06.svg",
+  "x": 1268,
+  "y": 1906,
+  "w": 259,
+  "h": 335,
+  "mae": 4.13,
+  "kb": 49.9,
+  "ids": [
+   "stool_06"
+  ]
+ },
+ "galley_stool_07": {
+  "file": "objects/galley_stool_07.svg",
+  "x": 3977,
+  "y": 1906,
+  "w": 259,
+  "h": 335,
+  "mae": 4.15,
+  "kb": 55.7,
+  "ids": [
+   "stool_07"
+  ]
+ },
+ "galley_table": {
+  "file": "objects/galley_table.svg",
+  "x": 1544,
+  "y": 1636,
+  "w": 2416,
+  "h": 675,
+  "mae": 3.29,
+  "kb": 511.5,
+  "ids": [
+   "table"
+  ]
+ },
+ "galley_stool_08": {
+  "file": "objects/galley_stool_08.svg",
+  "x": 1831,
+  "y": 1650,
+  "w": 240,
+  "h": 87,
+  "mae": 3.79,
+  "kb": 20.5,
+  "ids": [
+   "stool_08"
+  ]
+ },
+ "galley_stool_09": {
+  "file": "objects/galley_stool_09.svg",
+  "x": 2234,
+  "y": 1650,
+  "w": 242,
+  "h": 87,
+  "mae": 3.57,
+  "kb": 24.1,
+  "ids": [
+   "stool_09"
+  ]
+ },
+ "galley_stool_10": {
+  "file": "objects/galley_stool_10.svg",
+  "x": 3028,
+  "y": 1650,
+  "w": 243,
+  "h": 87,
+  "mae": 4.39,
+  "kb": 20.1,
+  "ids": [
+   "stool_10"
+  ]
+ },
+ "galley_stool_11": {
+  "file": "objects/galley_stool_11.svg",
+  "x": 3434,
+  "y": 1650,
+  "w": 239,
+  "h": 87,
+  "mae": 3.36,
+  "kb": 21.9,
+  "ids": [
+   "stool_11"
+  ]
+ },
+ "galley_mugs": {
+  "file": "objects/galley_mugs.svg",
+  "x": 2391,
+  "y": 994,
+  "w": 618,
+  "h": 198,
+  "mae": 6.68,
+  "kb": 63.5,
+  "ids": [
+   "mug_1",
+   "mug_2"
+  ]
+ },
+ "galley_coffee_drip": {
+  "file": "objects/galley_coffee_drip.svg",
+  "x": 1856,
+  "y": 751,
+  "w": 225,
+  "h": 459,
+  "mae": 7.03,
+  "kb": 77.4,
+  "ids": [
+   "coffee_drip"
+  ]
+ },
+ "galley_espresso_machine": {
+  "file": "objects/galley_espresso_machine.svg",
+  "x": 2120,
+  "y": 774,
+  "w": 491,
+  "h": 438,
+  "mae": 4.33,
+  "kb": 88.0,
+  "ids": [
+   "espresso_machine"
+  ]
+ },
+ "galley_coffee_counter": {
+  "file": "objects/galley_coffee_counter.svg",
+  "x": 1780,
+  "y": 1058,
+  "w": 1288,
+  "h": 439,
+  "mae": 4.0,
+  "kb": 233.3,
+  "ids": [
+   "coffee_counter"
+  ]
+ },
+ "galley_plant_1": {
+  "file": "objects/galley_plant_1.svg",
+  "x": 3110,
+  "y": 941,
+  "w": 413,
+  "h": 495,
+  "mae": 4.18,
+  "kb": 133.7,
+  "ids": [
+   "plant_1"
+  ]
+ },
+ "galley_plant_2": {
+  "file": "objects/galley_plant_2.svg",
+  "x": 4618,
+  "y": 902,
+  "w": 333,
+  "h": 557,
+  "mae": 4.68,
+  "kb": 135.2,
+  "ids": [
+   "plant_2"
+  ]
+ },
+ "galley_vending_machine": {
+  "file": "objects/galley_vending_machine.svg",
+  "x": 618,
+  "y": 665,
+  "w": 584,
+  "h": 834,
+  "mae": 6.16,
+  "kb": 295.7,
+  "ids": [
+   "vending_machine"
+  ]
+ },
+ "galley_fridge": {
+  "file": "objects/galley_fridge.svg",
+  "x": 1198,
+  "y": 698,
+  "w": 493,
+  "h": 797,
+  "mae": 3.88,
+  "kb": 120.5,
+  "ids": [
+   "fridge"
+  ]
+ },
+ "galley_cork_board": {
+  "file": "objects/galley_cork_board.svg",
+  "x": 4127,
+  "y": 666,
+  "w": 616,
+  "h": 421,
+  "mae": 4.0,
+  "kb": 139.2,
+  "ids": [
+   "cork_board"
+  ]
+ },
+ "galley_lamp_1": {
+  "file": "objects/galley_lamp_1.svg",
+  "x": 957,
+  "y": 90,
+  "w": 253,
+  "h": 446,
+  "mae": 3.54,
+  "kb": 28.3,
+  "ids": [
+   "lamp_1"
+  ]
+ },
+ "galley_lamp_2": {
+  "file": "objects/galley_lamp_2.svg",
+  "x": 2111,
+  "y": 90,
+  "w": 253,
+  "h": 446,
+  "mae": 3.85,
+  "kb": 31.8,
+  "ids": [
+   "lamp_2"
+  ]
+ },
+ "galley_lamp_3": {
+  "file": "objects/galley_lamp_3.svg",
+  "x": 3140,
+  "y": 90,
+  "w": 252,
+  "h": 445,
+  "mae": 3.97,
+  "kb": 36.4,
+  "ids": [
+   "lamp_3"
+  ]
+ },
+ "galley_lamp_4": {
+  "file": "objects/galley_lamp_4.svg",
+  "x": 4295,
+  "y": 90,
+  "w": 252,
+  "h": 445,
+  "mae": 3.8,
+  "kb": 30.0,
+  "ids": [
+   "lamp_4"
+  ]
+ },
+ "shell": {
+  "file": "galley_shell.svg",
+  "mae": 5.49,
+  "kb": 1296.0
+ },
+ "room": {
+  "file": "galley_room.svg",
+  "mae": 3.85,
+  "kb": 3791.9
+ }
+}

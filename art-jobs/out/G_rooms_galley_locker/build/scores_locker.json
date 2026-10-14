@@ -1,0 +1,290 @@
+{
+ "locker_rug": {
+  "file": "objects/locker_rug.svg",
+  "x": 1991,
+  "y": 1646,
+  "w": 1523,
+  "h": 1013,
+  "mae": 3.58,
+  "kb": 834.7,
+  "ids": [
+   "rug"
+  ]
+ },
+ "locker_water_cooler": {
+  "file": "objects/locker_water_cooler.svg",
+  "x": 4978,
+  "y": 2039,
+  "w": 367,
+  "h": 796,
+  "mae": 4.24,
+  "kb": 107.0,
+  "ids": [
+   "water_cooler"
+  ]
+ },
+ "locker_coffee_machine": {
+  "file": "objects/locker_coffee_machine.svg",
+  "x": 4359,
+  "y": 2126,
+  "w": 519,
+  "h": 477,
+  "mae": 2.62,
+  "kb": 110.5,
+  "ids": [
+   "coffee_machine"
+  ]
+ },
+ "locker_mugs": {
+  "file": "objects/locker_mugs.svg",
+  "x": 3942,
+  "y": 2342,
+  "w": 396,
+  "h": 264,
+  "mae": 6.38,
+  "kb": 73.8,
+  "ids": [
+   "mugs"
+  ]
+ },
+ "locker_coffee_counter": {
+  "file": "objects/locker_coffee_counter.svg",
+  "x": 3888,
+  "y": 2410,
+  "w": 1099,
+  "h": 425,
+  "mae": 3.36,
+  "kb": 124.2,
+  "ids": [
+   "coffee_counter"
+  ]
+ },
+ "locker_plant": {
+  "file": "objects/locker_plant.svg",
+  "x": 150,
+  "y": 2222,
+  "w": 357,
+  "h": 613,
+  "mae": 3.88,
+  "kb": 148.5,
+  "ids": [
+   "plant"
+  ]
+ },
+ "locker_coat_rack_2": {
+  "file": "objects/locker_coat_rack_2.svg",
+  "x": 510,
+  "y": 1942,
+  "w": 269,
+  "h": 877,
+  "mae": 4.85,
+  "kb": 157.6,
+  "ids": [
+   "coat_rack_2"
+  ]
+ },
+ "locker_bench_side": {
+  "file": "objects/locker_bench_side.svg",
+  "x": 277,
+  "y": 1622,
+  "w": 454,
+  "h": 578,
+  "mae": 3.76,
+  "kb": 116.8,
+  "ids": [
+   "bench_side"
+  ]
+ },
+ "locker_bench_left": {
+  "file": "objects/locker_bench_left.svg",
+  "x": 1459,
+  "y": 1809,
+  "w": 1047,
+  "h": 432,
+  "mae": 3.32,
+  "kb": 180.9,
+  "ids": [
+   "bench_left"
+  ]
+ },
+ "locker_bench_right": {
+  "file": "objects/locker_bench_right.svg",
+  "x": 3000,
+  "y": 1808,
+  "w": 1046,
+  "h": 438,
+  "mae": 3.46,
+  "kb": 205.0,
+  "ids": [
+   "bench_right"
+  ]
+ },
+ "locker_coat_rack_1": {
+  "file": "objects/locker_coat_rack_1.svg",
+  "x": 622,
+  "y": 810,
+  "w": 309,
+  "h": 688,
+  "mae": 4.07,
+  "kb": 142.3,
+  "ids": [
+   "coat_rack_1"
+  ]
+ },
+ "locker_open_04": {
+  "file": "objects/locker_open_04.svg",
+  "x": 2746,
+  "y": 678,
+  "w": 441,
+  "h": 882,
+  "mae": 3.46,
+  "kb": 246.4,
+  "ids": [
+   "locker_04_door",
+   "locker_04"
+  ]
+ },
+ "locker_open_06": {
+  "file": "objects/locker_open_06.svg",
+  "x": 3230,
+  "y": 668,
+  "w": 253,
+  "h": 860,
+  "mae": 3.97,
+  "kb": 143.9,
+  "ids": [
+   "locker_06"
+  ]
+ },
+ "locker_lockers_row": {
+  "file": "objects/locker_lockers_row.svg",
+  "x": 1941,
+  "y": 667,
+  "w": 2090,
+  "h": 861,
+  "mae": 4.45,
+  "kb": 652.7,
+  "ids": [
+   "lockers"
+  ]
+ },
+ "locker_door_leaf_left": {
+  "file": "objects/locker_door_leaf_left.svg",
+  "x": 1086,
+  "y": 698,
+  "w": 321,
+  "h": 641,
+  "mae": 2.15,
+  "kb": 168.2,
+  "ids": [
+   "door_leaf_left"
+  ]
+ },
+ "locker_door_leaf_right": {
+  "file": "objects/locker_door_leaf_right.svg",
+  "x": 1403,
+  "y": 698,
+  "w": 336,
+  "h": 641,
+  "mae": 2.07,
+  "kb": 190.1,
+  "ids": [
+   "door_leaf_right"
+  ]
+ },
+ "locker_beacon": {
+  "file": "objects/locker_beacon.svg",
+  "x": 1298,
+  "y": 374,
+  "w": 213,
+  "h": 202,
+  "mae": 5.13,
+  "kb": 29.2,
+  "ids": [
+   "beacon"
+  ]
+ },
+ "locker_door_frame": {
+  "file": "objects/locker_door_frame.svg",
+  "x": 952,
+  "y": 486,
+  "w": 912,
+  "h": 893,
+  "mae": 3.79,
+  "kb": 198.9,
+  "ids": [
+   "door_frame"
+  ]
+ },
+ "locker_clock": {
+  "file": "objects/locker_clock.svg",
+  "x": 2527,
+  "y": 155,
+  "w": 449,
+  "h": 462,
+  "mae": 7.48,
+  "kb": 136.3,
+  "ids": [
+   "clock"
+  ]
+ },
+ "locker_cork_board": {
+  "file": "objects/locker_cork_board.svg",
+  "x": 134,
+  "y": 822,
+  "w": 393,
+  "h": 1287,
+  "mae": 5.16,
+  "kb": 219.3,
+  "ids": [
+   "cork_board"
+  ]
+ },
+ "locker_lamp_1": {
+  "file": "objects/locker_lamp_1.svg",
+  "x": 2111,
+  "y": 88,
+  "w": 252,
+  "h": 447,
+  "mae": 3.87,
+  "kb": 30.2,
+  "ids": [
+   "lamp_1"
+  ]
+ },
+ "locker_lamp_2": {
+  "file": "objects/locker_lamp_2.svg",
+  "x": 3139,
+  "y": 88,
+  "w": 251,
+  "h": 447,
+  "mae": 3.65,
+  "kb": 27.7,
+  "ids": [
+   "lamp_2"
+  ]
+ },
+ "locker_lamp_3": {
+  "file": "objects/locker_lamp_3.svg",
+  "x": 4293,
+  "y": 88,
+  "w": 252,
+  "h": 447,
+  "mae": 3.48,
+  "kb": 27.7,
+  "ids": [
+   "lamp_3"
+  ]
+ },
+ "shell": {
+  "file": "locker_shell.svg",
+  "mae": 7.85,
+  "kb": 633.5
+ },
+ "room": {
+  "file": "locker_room.svg",
+  "mae": 5.68,
+  "kb": 4960.2
+ },
+ "clock_assembled_mae": 5.26
+}

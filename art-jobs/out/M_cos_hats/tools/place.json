@@ -1,0 +1,82 @@
+{
+ "trucker_side": {
+  "s": 0.4,
+  "ox": 350,
+  "oy": 222
+ },
+ "trucker_front": {
+  "s": 0.4,
+  "ox": 320,
+  "oy": 222
+ },
+ "diner_side": {
+  "s": 0.43,
+  "ox": 320,
+  "oy": 232
+ },
+ "diner_front": {
+  "s": 0.43,
+  "ox": 320,
+  "oy": 232
+ },
+ "hardhat_side": {
+  "s": 0.4,
+  "ox": 330,
+  "oy": 225
+ },
+ "hardhat_front": {
+  "s": 0.4,
+  "ox": 320,
+  "oy": 225
+ },
+ "beanie_side": {
+  "s": 0.42,
+  "ox": 320,
+  "oy": 245
+ },
+ "beanie_front": {
+  "s": 0.42,
+  "ox": 320,
+  "oy": 245
+ },
+ "cowboy_side": {
+  "s": 0.42,
+  "ox": 320,
+  "oy": 232
+ },
+ "cowboy_front": {
+  "s": 0.42,
+  "ox": 320,
+  "oy": 232
+ },
+ "chef_side": {
+  "s": 0.47,
+  "ox": 310,
+  "oy": 240
+ },
+ "chef_front": {
+  "s": 0.47,
+  "ox": 320,
+  "oy": 240
+ },
+ "headphones_side": {
+  "w": 810,
+  "cx": 484,
+  "top": 103
+ },
+ "headphones_front": {
+  "top_visible": true
+ },
+ "flowercrown_side": {
+  "top_visible": true
+ },
+ "flowercrown_front": {
+  "top_visible": true
+ },
+ "afro_side": {
+  "w": 740
+ },
+ "afro_front": {
+  "w": 740
+ }
+}

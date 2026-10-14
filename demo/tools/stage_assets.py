@@ -31,7 +31,7 @@ for f in ["galley_table","locker_door_frame","locker_door_leaf_left","locker_doo
 cp(O/"G_rooms_galley_locker/locker_lights.svg", "rooms/locker_lights.svg")
 
 # stations
-for s in ["station_keypad_front","station_switchboard_front","timeclock_front"]:
+for s in ["station_keypad_front","station_switchboard_front","station_scope_front","station_tape_front","timeclock_front"]:
     cp(O/f"K_props_stations/{s}.svg", f"props/{s}.svg")
 
 # task panels

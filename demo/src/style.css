@@ -32,8 +32,8 @@ img { display: block; -webkit-user-drag: none; }
 .scene-bg { position: absolute; inset: 0; width: 1920px; height: 1080px; object-fit: cover; }
 
 /* ---------- HUD */
-.hud-left { position: absolute; left: 28px; top: 24px; width: 560px; display: flex; flex-direction: column; gap: 14px; }
-.teambar { position: relative; padding: 10px 18px 14px; background: rgba(27,24,48,.82); border: 3px solid var(--outline); border-radius: 18px; box-shadow: 0 0 0 3px rgba(127,200,184,.25); }
+.hud-left { position: absolute; left: 24px; top: 24px; width: 400px; display: flex; flex-direction: column; gap: 14px; }
+.teambar { position: absolute; left: 50%; top: 24px; width: 600px; transform: translateX(-50%); padding: 10px 18px 14px; background: rgba(27,24,48,.82); border: 3px solid var(--outline); border-radius: 18px; box-shadow: 0 0 0 3px rgba(127,200,184,.25); }
 .teambar-label { font: 400 22px 'Bungee'; color: var(--cream); letter-spacing: 1px; }
 .teambar-pct { position: absolute; right: 20px; top: 8px; font: 400 36px 'VT323'; color: var(--amber); }
 .teambar-trough { position: relative; width: 100%; height: 44px; margin-top: 4px; }
@@ -42,9 +42,9 @@ img { display: block; -webkit-user-drag: none; }
 .teambar-fill img { height: 100%; width: auto; max-width: none; }
 .taskpanel { padding: 12px 20px 16px; background: rgba(27,24,48,.86); border: 3px solid var(--outline); border-radius: 18px; box-shadow: 0 0 0 3px rgba(245,165,74,.22), inset 0 0 40px rgba(0,0,0,.4); }
 .taskpanel-title { font: 400 22px 'Bungee'; color: var(--amber); margin-bottom: 6px; letter-spacing: 1px; }
-.task { display: flex; align-items: center; gap: 14px; font: 400 34px/1.1 'VT323'; color: var(--amber); padding: 3px 0; text-shadow: 0 0 8px rgba(245,165,74,.5); }
+.task { display: flex; align-items: center; gap: 12px; font: 400 31px/1.05 'VT323'; color: var(--amber); padding: 3px 0; text-shadow: 0 0 8px rgba(245,165,74,.5); }
 .task-box { flex: 0 0 22px; height: 22px; border: 3px solid var(--amber); border-radius: 5px; position: relative; }
-.task-text em { display: block; font-style: normal; font-size: 26px; color: var(--seafoam); text-shadow: none; opacity: .9; }
+.task-text em { display: block; font-style: normal; font-size: 24px; color: var(--seafoam); text-shadow: none; opacity: .9; }
 .task.done { color: #7c7390; text-shadow: none; } .task.done .task-text { text-decoration: line-through; } .task.done .task-text em { color: #5d6f78; }
 .task.done .task-box { background: var(--seafoam); border-color: var(--seafoam); } .task.done .task-box::after { content: ''; position: absolute; left: 4px; top: -1px; width: 6px; height: 13px; border: solid var(--outline); border-width: 0 4px 4px 0; transform: rotate(40deg); }
 .meetleft { position: absolute; right: 30px; top: 24px; display: flex; align-items: center; gap: 12px; padding: 8px 20px 8px 10px; background: rgba(27,24,48,.84); border: 3px solid var(--outline); border-radius: 999px; box-shadow: 0 0 0 3px rgba(232,87,74,.35); }
@@ -136,3 +136,17 @@ img { display: block; -webkit-user-drag: none; }
 .eject-text { position: absolute; left: 0; right: 0; bottom: 190px; text-align: center; z-index: 9; }
 .eject-text b { display: block; font: 400 92px/1 'Bungee'; color: var(--cream); -webkit-text-stroke: 12px var(--outline); paint-order: stroke fill; letter-spacing: 3px; min-height: 92px; }
 .eject-text span { display: block; margin-top: 8px; font: 400 66px 'VT323'; color: var(--amber); -webkit-text-stroke: 8px var(--outline); paint-order: stroke fill; letter-spacing: 4px; min-height: 66px; }
+
+/* ---------- task panels */
+.tp-dim { position: absolute; inset: 0; background: rgba(13,11,25,.72); z-index: 6; pointer-events: auto; }
+.tp { position: absolute; z-index: 7; transform-origin: center; pointer-events: auto; }
+.tp-bg { position: absolute; inset: 0; width: 2048px; height: 1536px; }
+.tp-title { position: absolute; left: 0; right: 0; top: 36px; text-align: center; z-index: 8; font: 400 40px 'Bungee'; letter-spacing: 3px; color: var(--cream); text-shadow: 0 4px 0 var(--outline); pointer-events: none; }
+.tp-key { position: absolute; width: 240px; height: 240px; cursor: pointer; } .tp-key img { width: 240px; height: 240px; }
+.tp-key span { position: absolute; inset: 0; display: grid; place-items: center; padding-bottom: 14px; font: 400 104px 'Bungee'; color: var(--outline); text-shadow: 0 4px 0 rgba(255,255,255,.45); pointer-events: none; }
+.tp-key:hover { filter: brightness(1.15); }
+.tp-disp { position: absolute; display: grid; place-items: center; font: 400 130px/1 'VT323'; color: var(--amber); text-shadow: 0 0 22px rgba(245,165,74,.7); letter-spacing: 6px; pointer-events: none; } .tp-disp .bad { color: var(--coral); text-shadow: 0 0 22px rgba(232,87,74,.8); font-size: 100px; }
+.tp-needle, .tp-lamp { position: absolute; max-width: none; pointer-events: none; } .tp-plug { position: absolute; max-width: none; cursor: grab; z-index: 3; touch-action: none; } .tp-plug:active { cursor: grabbing; }
+.tp-cables { position: absolute; inset: 0; width: 2048px; height: 1536px; pointer-events: none; z-index: 2; }
+.station { position: absolute; pointer-events: none; } .station svg { display: block; overflow: visible; }
+.toast.ok { color: #1d5a4f; }

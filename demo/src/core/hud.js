@@ -9,7 +9,7 @@ export class Hud {
     this.root = el('div', 'hud', layer); gsap.set(this.root, { autoAlpha: 0 });
     // ---- top-left: team bar + task list
     this.left = el('div', 'hud-left', this.root);
-    const bar = el('div', 'teambar', this.left);
+    const bar = el('div', 'teambar', this.root);
     el('div', 'teambar-label', bar, 'TEAM TASKS');
     this.pct = el('div', 'teambar-pct', bar, '0%');
     const trough = el('div', 'teambar-trough', bar); img(A('ui/progress_trough.svg'), 'trough-img', trough);

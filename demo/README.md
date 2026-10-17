@@ -53,10 +53,12 @@ Crew: **You = Mint**. Impostors = **Grape** and **Cobalt**. Others: Tomato, Tang
 | 6 | Impostor eliminates | 0:30 | **US3** IMPOSTOR VIEW: fake task list never moves the bar; Eliminate lights near a lone Tomato, fallen marker + cooldown ring; second click "On cooldown" (error); race: only one of two simultaneous strikes counts |
 | 7 | Crew finds the body | 0:15 | **US2** Mint walks in, Report lights, BODY REPORTED splash |
 | 8 | Meeting and voting | 1:00 | **US2** everyone teleports to the Galley, Meeting Tablet ("Mint reported Tomato", Tomato eliminated), discussion 0:15 (vote disabled), vote Grape: select, confirm, locked ("Vote locked" if changed), others show VOTED (who, not whom), timer expiry (non-voters count as no vote), tie: "No one was ejected"; emergency button slam (meetings left 1 to 0), EMERGENCY MEETING splash, second vote ejects Grape ("1 Impostor remains"); table disabled once your meetings are used (edge) |
-| 9 | Ghost view | 0:15 | **US1/US2/US3** GHOST VIEW: desaturated world, ghost floats through a wall to finish a task, ghost chat "Only ghosts can see this", living view shows no ghost |
+| 9 | Ghost view | 0:15 | **US1/US2/US3** GHOST VIEW: desaturated world, ghost floats through a wall to finish a task, living view shows no ghost |
 | 10 | Win | 0:20 | **US1/US2/US3** task bar 100% (or last Impostor ejected): CREW WINS, cheering lineup with every role revealed, "Returning to lobby..." back to the Locker Room. `I`: IMPOSTORS WIN |
 
-Not shown (Desirable / Extension in the plan): vision fog, vents, sabotage, two-room tasks, completed-station map indicator, ghosts watching the vote, anonymous voting, cosmetics wardrobe UI, security cameras.
+Not shown (Medium or Low priority in the revised plan, or future work): vision fog, vents, sabotage, two-room tasks, completed-station map indicator, ghosts watching the vote, anonymous voting, ghost-only chat and voice, cosmetics wardrobe UI, security cameras.
+
+Scope note: press `P` for the presenter notes. A criterion tagged **Medium** (for example `[US2 error Medium]`) is Medium priority in the revised plan: it is built in Sprints 4 and 5 only after the required work is merged. Untagged criteria are High priority.
 
 ## Code map
 

@@ -36,8 +36,9 @@ export default {
   story: 'In the Covey.Town street, the player walks up to the glowing arcade cabinet. The prompt shows the lobby count, or a coral warning when a shift is already running.',
   criteria: [
     '[US3] Walking up to the arcade machine shows a prompt with the lobby count (e.g. 3/10); accepting moves the player into the spaceship lobby.',
-    '[US3 edge] Lobby full (10) or game in progress: the arcade prompt says so; no one can join.',
-    '[US3] Players in the match and players in town cannot see or hear each other.',
+    '[US3 edge] Lobby full (10) or game in progress: no one can join.',
+    '[US3 edge Medium] The arcade prompt says when the lobby is full or a game is in progress.',
+    '[US3 edge Medium] Players in the match and players in town cannot see or hear each other.',
   ],
   async enter(ctx) {
     const [canvas, frames] = await Promise.all([paintTown(), loadMisa()]); canvas.className = 'town-canvas'; ctx.world.appendChild(canvas);

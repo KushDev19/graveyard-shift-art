@@ -13,9 +13,9 @@ export default {
   id: 6, title: 'Impostor eliminates', chapter: 'US3',
   story: 'POV switch to an Impostor: a fake task list that looks real, and an Eliminate button that only lights near a lone Crewmate. The server validates range and cooldown.',
   criteria: [
-    '[US1 edge] Impostors see a fake task list that looks real; it never moves the bar.',
+    '[US1 edge Medium] Impostors see a fake task list that looks real; it never moves the bar.',
     '[US3 error] An Impostor in range of a living Crewmate can Eliminate: leaves a fallen-avatar marker, starts the Impostor\'s cooldown. The server rejects out-of-range or on-cooldown attempts.',
-    '[US3 race] Two Impostors target the same player at once: only one elimination registers, only that cooldown starts.',
+    '[US3 race Medium] Two Impostors target the same player at once: only one elimination registers, only that cooldown starts.',
     '[US3] Eliminated players become ghosts; living players cannot see or hear ghosts.',
     '[US2] A living player (including the Impostor who just made the kill) can report a fallen avatar within range to trigger a meeting.',
   ],

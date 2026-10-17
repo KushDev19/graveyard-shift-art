@@ -37,14 +37,14 @@ export default {
     '[US2] A living player triggers a meeting by reporting a fallen avatar OR via the emergency meeting table.',
     '[US2] Meeting start: movement stops, fallen avatars are cleared, all living players move to the meeting area.',
     '[US2] During a meeting all living players hear each other through video chat, wherever they stood.',
-    '[US2] Meeting UI shows all participants, alive/eliminated status, and who called the meeting.',
+    '[US2 Medium] Meeting UI shows all participants, alive/eliminated status, and who called the meeting.',
     '[US2] After the discussion timer each living player votes for a living player or skips.',
-    '[US2 error] No multiple votes, no changing a submitted vote ("Vote locked").',
+    '[US2 error Medium] No multiple votes, no changing a submitted vote ("Vote locked").',
     '[US2 edge] Voting timer expiry: non-voters count as casting no vote.',
     '[US2] Most votes is ejected and becomes a ghost; result shown to all. Eliminated players cannot vote.',
     '[US2 edge] Tie for most votes (or skip, or no votes): no one ejected, play resumes.',
-    '[US2 edge] Limited emergency meetings per player; after that the table no longer starts one.',
-    '[US2 error] A disconnecting player has their vote removed before counting.',
+    '[US2 edge Medium] Limited emergency meetings per player; after that the table no longer starts one.',
+    '[US2 error Medium] A disconnecting player has their vote removed before counting.',
   ],
   async enter(ctx) {
     const room = await ctx.room('galley'); const s = ctx.state = { room };

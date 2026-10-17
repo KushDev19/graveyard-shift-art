@@ -29,10 +29,11 @@ export default {
   story: 'Crewmate view: assigned task list with rooms, the shared team bar, stations that open mini-games (keypad, wiring), server-confirmed credit, and the edge cases.',
   criteria: [
     '[US1] View assigned task list, with the room of each task.',
-    '[US1] Approaching an assigned station and interacting opens its task interface; a station with no task for that player shows a message and opens nothing.',
+    '[US1] Approaching an assigned station and interacting opens its task interface.',
+    '[US1 edge Medium] A station with no task for that player shows a message and opens nothing.',
     '[US1] A task counts only after the server confirms it; completing one updates the shared team task bar for all players.',
-    '[US1] Completed tasks no longer show as incomplete to that player.',
-    '[US1 edge] Closing the task or walking away before finishing resets it, no credit.',
+    '[US1 Medium] Completed tasks no longer show as incomplete to that player.',
+    '[US1 edge Medium] Closing the task or walking away before finishing resets it, no credit.',
     '[US1] At least two mini-games: keypad entry (numbers in order) and wiring (match coloured wires).',
   ],
   async enter(ctx) {

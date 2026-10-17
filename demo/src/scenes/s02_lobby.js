@@ -38,7 +38,7 @@ export default {
     '[US3] First to join is host; if the host leaves, the next player who joins becomes host.',
     '[US3] A player can leave the lobby before the game starts and return to town.',
     '[US3 error] Only the host can start, and only with at least 4 players.',
-    '[US3] Players in the match and players in town cannot see or hear each other.',
+    '[US3 edge Medium] Players in the match and players in town cannot see or hear each other.',
   ],
   async enter(ctx) {
     const room = await ctx.room('locker'); const s = ctx.state = { room, pp: {} };

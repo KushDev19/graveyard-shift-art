@@ -72,10 +72,10 @@ img { display: block; -webkit-user-drag: none; }
 
 /* ---------- presenter chrome */
 .caption { position: absolute; left: 50%; bottom: 50px; transform: translateX(-50%); max-width: 1740px; padding: 8px 30px 10px; background: rgba(21,18,42,.9); border: 3px solid rgba(244,230,200,.28); border-radius: 16px; text-align: center; font: 700 30px/1.25 'Space Grotesk'; color: var(--cream); pointer-events: none; z-index: 14; box-shadow: 0 8px 30px rgba(0,0,0,.45); }
-.chapters { position: absolute; left: 0; right: 0; bottom: 0; height: 36px; display: flex; align-items: center; gap: 22px; padding: 0 28px; background: rgba(13,11,25,.9); border-top: 2px solid rgba(244,230,200,.15); font: 400 20px 'VT323'; letter-spacing: .5px; color: #8b83a3; z-index: 15; }
+.chapters { position: absolute; left: 0; right: 0; bottom: 0; height: 36px; display: flex; align-items: center; gap: 16px; padding: 0 28px; background: rgba(13,11,25,.9); border-top: 2px solid rgba(244,230,200,.15); font: 400 20px 'VT323'; letter-spacing: .5px; color: #8b83a3; z-index: 15; }
 .chap { display: flex; align-items: center; gap: 8px; } .chap b { font: 400 17px 'Bungee'; color: var(--seafoam); opacity: .75; letter-spacing: 1px; }
 .pip { width: 38px; height: 12px; border-radius: 99px; background: #3d2a4f; transition: all .25s; } .pip.done { background: #55747a; } .pip.on { background: var(--amber); width: 64px; box-shadow: 0 0 12px rgba(245,165,74,.7); }
-.chapters .now { margin-left: auto; color: var(--cream); font-size: 24px; } .chapters .hint { color: var(--seafoam); font-size: 22px; }
+.chapters .now { margin-left: auto; color: var(--cream); font-size: 22px; white-space: nowrap; } .chapters .hint { color: var(--seafoam); font-size: 20px; white-space: nowrap; }
 .autohint { position: absolute; right: 28px; bottom: 46px; font: 400 26px 'VT323'; color: var(--seafoam); background: rgba(13,11,25,.8); padding: 2px 16px; border-radius: 99px; border: 2px solid rgba(127,200,184,.4); z-index: 14; }
 .povbanner { position: absolute; left: 50%; top: 40%; transform: translate(-50%, -50%); padding: 20px 70px 24px; font: 400 96px/1 'Bungee'; letter-spacing: 4px; color: var(--cream); background: var(--plum); border: 8px solid var(--outline); border-radius: 26px; box-shadow: 0 12px 0 var(--outline), 0 0 0 14px rgba(244,230,200,.18); text-shadow: 0 6px 0 var(--outline); pointer-events: none; }
 .povbanner small { display: block; margin-top: 12px; font: 700 28px 'Space Grotesk'; letter-spacing: 2px; text-align: center; color: var(--seafoam); text-shadow: none; }
@@ -207,3 +207,17 @@ img { display: block; -webkit-user-drag: none; }
 .logo-wrap { position: absolute; left: 50%; top: 20px; transform: translateX(-50%); width: 1500px; height: 837px; pointer-events: none; }
 .title-tag { position: absolute; left: 50%; transform: translateX(-50%); top: 770px; white-space: nowrap; padding: 4px 34px 8px; background: rgba(27,24,48,.78); border-radius: 99px; text-align: center; font: 700 40px 'Space Grotesk'; letter-spacing: 1px; color: var(--cream); text-shadow: 0 3px 0 var(--outline), 0 0 24px rgba(42,30,53,.9); }
 .clockin { position: absolute; left: 50%; top: 860px; transform: translateX(-50%); padding: 14px 80px 20px; font: 400 66px 'Bungee'; letter-spacing: 4px; color: var(--outline); background: linear-gradient(#F7B867, #F5A54A); border: 6px solid var(--outline); border-radius: 99px; box-shadow: 0 10px 0 #b8702a, 0 10px 0 6px var(--outline), 0 0 60px rgba(245,165,74,.5); } .clockin:hover { filter: brightness(1.08); }
+
+/* closing card: scope after feedback (scene 11) */
+.scope-dim { position: absolute; inset: 0; background: linear-gradient(rgba(13,11,25,.82), rgba(13,11,25,.92)); }
+.scope-head { position: absolute; left: 0; right: 0; top: 64px; text-align: center; font: 400 78px/1 'Bungee'; letter-spacing: 4px; color: var(--cream); text-shadow: 0 6px 0 var(--outline); }
+.scope-col { position: absolute; top: 200px; width: 560px; height: 700px; padding: 26px 30px 30px; background: rgba(21,18,42,.94); border: 5px solid var(--amber); border-radius: 26px; box-shadow: 0 0 0 8px rgba(0,0,0,.25); }
+.scope-col.seafoam { border-color: var(--seafoam); } .scope-col.coral { border-color: var(--coral); }
+.scope-col b { display: block; font: 400 52px/1 'Bungee'; letter-spacing: 2px; color: var(--amber); }
+.scope-col.seafoam b { color: var(--seafoam); } .scope-col.coral b { color: #ffb4a8; }
+.scope-col span { display: block; margin-top: 8px; font: 400 34px 'VT323'; letter-spacing: 1px; color: var(--cream); opacity: .85; }
+.scope-col ul { list-style: none; margin-top: 18px; }
+.scope-col li { position: relative; padding: 9px 0 9px 34px; font: 500 28px/1.2 'Space Grotesk'; border-top: 1px solid rgba(244,230,200,.14); }
+.scope-col li::before { content: ''; position: absolute; left: 4px; top: 20px; width: 14px; height: 14px; border-radius: 50%; background: var(--amber); }
+.scope-col.seafoam li::before { background: var(--seafoam); } .scope-col.coral li::before { background: var(--coral); }
+.scope-foot { position: absolute; left: 80px; right: 80px; top: 944px; text-align: center; font: 700 30px 'Space Grotesk'; color: var(--seafoam); }

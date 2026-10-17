@@ -38,6 +38,7 @@ export class Director {
     else if (/^[0-9]$/.test(k)) this.goto(parseInt(k, 10));
     else if (k === 'w' || k === 'W') { this.ctx.winMode = 'crew'; this.goto(10); }
     else if (k === 'i' || k === 'I') { this.ctx.winMode = 'imp'; this.goto(10); }
+    else if (k === 's' || k === 'S') this.goto(11);
     else if (k === 'p' || k === 'P') this.toggleNotes();
     else if (k === 'c' || k === 'C') { const on = this.ctx.captions.toggle(); this.ctx.hud.toast(on ? 'Captions on' : 'Captions off', 'info', 1); }
     else if (k === 'r' || k === 'R') this.goto(this.si);

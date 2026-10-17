@@ -27,6 +27,7 @@ Refresh the staged art (only needed if `art-jobs/out` changes): `python3 tools/s
 | `1`-`9`, `0` | jump to scene 1-9 / title (scene 0) |
 | `W` | scene 10, Crew wins ending |
 | `I` | scene 10, alternate ending: **Impostors win** (living crew <= impostors) |
+| `S` | scene 11, the closing scope card (Must have / Desirable / Future) |
 | `P` | presenter notes: the acceptance criteria the current scene demonstrates |
 | `C` | toggle captions |
 | `M` | mute / unmute the background music (a soft lo-fi loop generated in the browser; starts on your first key press or click. To use a real track instead, drop it at `public/assets/audio/music.mp3`) |
@@ -38,7 +39,7 @@ Interactive beats (keypad, wiring, vote, Use / Report / Eliminate, CLOCK IN) can
 
 The stage is a fixed 1920x1080 scene, letterboxed and scaled to the window (checked at 1920x1080 and 1280x720).
 
-## Scenes (~5:00)
+## Scenes (~5:10)
 
 Crew: **You = Mint**. Impostors = **Grape** and **Cobalt**. Others: Tomato, Tangerine, Mustard, Lime, Sky, Bubblegum, Cream. Several wear hats / visors / toppers (`art-jobs/out/M_cos_hats`, `N_cos_rest`).
 
@@ -55,6 +56,7 @@ Crew: **You = Mint**. Impostors = **Grape** and **Cobalt**. Others: Tomato, Tang
 | 8 | Meeting and voting | 1:00 | **US2** everyone teleports to the Galley, Meeting Tablet ("Mint reported Tomato", Tomato eliminated), discussion 0:15 (vote disabled), vote Grape: select, confirm, locked ("Vote locked" if changed), others show VOTED (who, not whom), timer expiry (non-voters count as no vote), tie: "No one was ejected"; emergency button slam (meetings left 1 to 0), EMERGENCY MEETING splash, second vote ejects Grape ("1 Impostor remains"); table disabled once your meetings are used (edge) |
 | 9 | Ghost view | 0:15 | **US1/US2/US3** GHOST VIEW: desaturated world, ghost floats through a wall to finish a task, living view shows no ghost |
 | 10 | Win | 0:20 | **US1/US2/US3** task bar 100% (or last Impostor ejected): CREW WINS, cheering lineup with every role revealed, "Returning to lobby..." back to the Locker Room. `I`: IMPOSTORS WIN |
+| 11 | Scope after feedback | 0:10 | **Plan** closing card: the work in priority order (Must have, Desirable, Future), showing how the feedback on the preliminary plan was answered |
 
 Not shown (Medium or Low priority in the revised plan, or future work): vision fog, vents, sabotage, two-room tasks, completed-station map indicator, ghosts watching the vote, anonymous voting, ghost-only chat and voice, cosmetics wardrobe UI, security cameras.
 

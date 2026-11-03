@@ -1,0 +1,482 @@
+{
+ "rooms": {
+  "Cafeteria": {
+   "poly_area": 3637392.855,
+   "walled_pct": 0.1723002432358394,
+   "floor_area": 3631102.0050000004,
+   "specks_dropped": 0,
+   "components": 1,
+   "walkable_area": 3220900.6399999997
+  },
+  "CafeToUpperEngineHallway": {
+   "poly_area": 569530.38,
+   "walled_pct": 0.6064283402243612,
+   "floor_area": 566107.1,
+   "specks_dropped": 0,
+   "components": 1,
+   "walkable_area": 566107.1000000001
+  },
+  "UpperToLowerEngineHallway": {
+   "poly_area": 328369.95500000025,
+   "walled_pct": 7.434197372973457,
+   "floor_area": 303957.57500000007,
+   "specks_dropped": 0,
+   "components": 1,
+   "walkable_area": 303957.5750000001
+  },
+  "Security": {
+   "poly_area": 557274.3500000002,
+   "walled_pct": 14.659921779151201,
+   "floor_area": 475585.4350000002,
+   "specks_dropped": 0,
+   "components": 1,
+   "walkable_area": 475585.435
+  },
+  "Reactor": {
+   "poly_area": 1071645.9700000002,
+   "walled_pct": 28.62295866154732,
+   "floor_area": 764915.595,
+   "specks_dropped": 0,
+   "components": 1,
+   "walkable_area": 764915.595
+  },
+  "LowerEngineToStorageHallway": {
+   "poly_area": 710409.2949999999,
+   "walled_pct": 1.3598121493054325,
+   "floor_area": 700769.9250000003,
+   "specks_dropped": 0,
+   "components": 1,
+   "walkable_area": 700769.9250000003
+  },
+  "Storage": {
+   "poly_area": 1746321.420000001,
+   "walled_pct": 5.576018724463226,
+   "floor_area": 1648703.6500000001,
+   "specks_dropped": 1,
+   "components": 1,
+   "walkable_area": 1384615.2099999997
+  },
+  "Electrical": {
+   "poly_area": 824900.1700000003,
+   "walled_pct": 16.617862084568245,
+   "floor_area": 687820.4399999998,
+   "specks_dropped": 0,
+   "components": 1,
+   "walkable_area": 687820.44
+  },
+  "StorageToShieldsHallway": {
+   "poly_area": 406589.6500000003,
+   "walled_pct": 3.334109405738363,
+   "floor_area": 393051.39500000014,
+   "specks_dropped": 0,
+   "components": 1,
+   "walkable_area": 393051.3950000002
+  },
+  "CafeteriaToStorageHallway": {
+   "poly_area": 257007.00500000012,
+   "walled_pct": 1.8064862497392253,
+   "floor_area": 252385.92500000013,
+   "specks_dropped": 0,
+   "components": 1,
+   "walkable_area": 252385.92500000013
+  },
+  "Admin": {
+   "poly_area": 842550.8350000003,
+   "walled_pct": 11.02957933760577,
+   "floor_area": 749623.0150000001,
+   "specks_dropped": 0,
+   "components": 1,
+   "walkable_area": 706293.41
+  },
+  "Communications": {
+   "poly_area": 640999.3849999998,
+   "walled_pct": 28.538803532995363,
+   "floor_area": 458065.855,
+   "specks_dropped": 0,
+   "components": 1,
+   "walkable_area": 458065.855
+  },
+  "Shields": {
+   "poly_area": 714867.695,
+   "walled_pct": 34.3742207979622,
+   "floor_area": 469132.16499999986,
+   "specks_dropped": 0,
+   "components": 1,
+   "walkable_area": 469132.16499999986
+  },
+  "ShieldsToWeaponsHallway": {
+   "poly_area": 1020687.7350000006,
+   "walled_pct": 6.863836801388641,
+   "floor_area": 950596.2,
+   "specks_dropped": 0,
+   "components": 1,
+   "walkable_area": 950596.2000000003
+  },
+  "O2": {
+   "poly_area": 400248.485,
+   "walled_pct": 49.74609263133045,
+   "floor_area": 201138.79999999993,
+   "specks_dropped": 0,
+   "components": 1,
+   "walkable_area": 201138.79999999987
+  },
+  "Navigation": {
+   "poly_area": 528280.805,
+   "walled_pct": 26.027004634837258,
+   "floor_area": 390739.64000000025,
+   "specks_dropped": 1,
+   "components": 1,
+   "walkable_area": 362654.64500000025
+  },
+  "CafeteriaToWeaponsHallway": {
+   "poly_area": 138337.075,
+   "walled_pct": 11.176205730077061,
+   "floor_area": 122876.40999999999,
+   "specks_dropped": 0,
+   "components": 1,
+   "walkable_area": 122876.40999999999
+  },
+  "Weapons": {
+   "poly_area": 732193.3699999999,
+   "walled_pct": 37.76307882355686,
+   "floor_area": 455688.72000000015,
+   "specks_dropped": 0,
+   "components": 1,
+   "walkable_area": 451714.5650000002
+  },
+  "LowerEngine": {
+   "poly_area": 822471.845,
+   "walled_pct": 38.88849147002525,
+   "floor_area": 502625.6400000001,
+   "specks_dropped": 0,
+   "components": 1,
+   "walkable_area": 502625.6400000001
+  },
+  "UpperEngine": {
+   "poly_area": 848580.2799999999,
+   "walled_pct": 36.873188777034436,
+   "floor_area": 535681.6349999999,
+   "specks_dropped": 0,
+   "components": 1,
+   "walkable_area": 535681.6349999999
+  },
+  "Lobby": {
+   "poly_area": 168884.0500000002,
+   "walled_pct": 19.09540487606288,
+   "floor_area": 136637.8949999999,
+   "specks_dropped": 0,
+   "components": 1,
+   "walkable_area": 136637.89499999993
+  },
+  "MedBay": {
+   "poly_area": 890713.5450000003,
+   "walled_pct": 9.503561539564844,
+   "floor_area": 806060.6199999999,
+   "specks_dropped": 0,
+   "components": 1,
+   "walkable_area": 806060.6199999999
+  }
+ },
+ "stations": [
+  {
+   "name": "UnlockManifolds",
+   "c": [
+    1177.5215346581342,
+    2497.9107196116247
+   ],
+   "p": [
+    1177.5,
+    2497.9
+   ],
+   "moved": 0.0,
+   "rooms": [
+    "Reactor"
+   ]
+  },
+  {
+   "name": "FixWiring1",
+   "c": [
+    2434.5936782427652,
+    2953.273053993233
+   ],
+   "p": [
+    2434.6,
+    2953.3
+   ],
+   "moved": 0.0,
+   "rooms": [
+    "Security"
+   ]
+  },
+  {
+   "name": "FixWiring2",
+   "c": [
+    3601.438835415097,
+    3448.670761568202
+   ],
+   "p": [
+    3601.4,
+    3448.7
+   ],
+   "moved": 0.0,
+   "rooms": [
+    "Electrical"
+   ]
+  },
+  {
+   "name": "FixWiring3",
+   "c": [
+    4885.394599786014,
+    3706.132502997779
+   ],
+   "p": [
+    4885.4,
+    3706.1
+   ],
+   "moved": 0.0,
+   "rooms": [
+    "Storage"
+   ]
+  },
+  {
+   "name": "FixWiring4",
+   "c": [
+    5473.898524292752,
+    3275.262215641946
+   ],
+   "p": [
+    5473.9,
+    3275.3
+   ],
+   "moved": 0.0,
+   "rooms": [
+    "Admin"
+   ]
+  },
+  {
+   "name": "FixWiring5",
+   "c": [
+    7843.167396503338,
+    2840.9974119008875
+   ],
+   "p": [
+    7843.2,
+    2841.0
+   ],
+   "moved": 0.0,
+   "rooms": [
+    "ShieldsToWeaponsHallway"
+   ]
+  },
+  {
+   "name": "FixWiring6",
+   "c": [
+    4286.446488987103,
+    1180.5963672737735
+   ],
+   "p": [
+    4286.4,
+    1180.6
+   ],
+   "moved": 0.0,
+   "rooms": [
+    "Cafeteria"
+   ]
+  },
+  {
+   "name": "Fuel",
+   "c": [
+    4712.595787505012,
+    4620.614355920717
+   ],
+   "p": [
+    4712.6,
+    4620.6
+   ],
+   "moved": 0.0,
+   "rooms": [
+    "Storage"
+   ]
+  },
+  {
+   "name": "Leaves",
+   "c": [
+    5372.842837676946,
+    5106.191573155609
+   ],
+   "p": [
+    5372.8,
+    5106.2
+   ],
+   "moved": 0.0,
+   "rooms": [
+    "Storage"
+   ]
+  },
+  {
+   "name": "SabotageLights",
+   "c": [
+    3473.2036883250103,
+    3934.184950813861
+   ],
+   "p": [
+    3473.2,
+    3934.2
+   ],
+   "moved": 0.0,
+   "rooms": [
+    "Electrical"
+   ]
+  },
+  {
+   "name": "FuelEngine",
+   "c": [
+    1925.6455463359305,
+    2184.7456738038168
+   ],
+   "p": [
+    1925.6,
+    2184.7
+   ],
+   "moved": 0.0,
+   "rooms": [
+    "UpperEngine"
+   ]
+  },
+  {
+   "name": "FuelLowerEngine",
+   "c": [
+    1918.600725496534,
+    4379.076791294042
+   ],
+   "p": [
+    1918.6,
+    4379.1
+   ],
+   "moved": 0.0,
+   "rooms": [
+    "LowerEngine"
+   ]
+  },
+  {
+   "name": "StartReactor",
+   "c": [
+    1304.597476684524,
+    3109.7567129994864
+   ],
+   "p": [
+    1304.6,
+    3109.8
+   ],
+   "moved": 0.0,
+   "rooms": [
+    "Reactor"
+   ]
+  },
+  {
+   "name": "DownloadData1",
+   "c": [
+    3468.1151479286937,
+    3452.714784516365
+   ],
+   "p": [
+    3468.1,
+    3452.7
+   ],
+   "moved": 0.0,
+   "rooms": [
+    "Electrical"
+   ]
+  },
+  {
+   "name": "DownloadData6",
+   "c": [
+    5831.046482389421,
+    1255.26161078115
+   ],
+   "p": [
+    5831.0,
+    1255.3
+   ],
+   "moved": 0.0,
+   "rooms": [
+    "Cafeteria"
+   ]
+  },
+  {
+   "name": "DownloadData3",
+   "c": [
+    5686.688181405916,
+    3264.3861583285
+   ],
+   "p": [
+    5686.7,
+    3264.4
+   ],
+   "moved": 0.0,
+   "rooms": [
+    "Admin"
+   ]
+  },
+  {
+   "name": "SwipeCard",
+   "c": [
+    6250.18930346829,
+    3665.4258099380163
+   ],
+   "p": [
+    6250.2,
+    3665.4
+   ],
+   "moved": 0.0,
+   "rooms": [
+    "Admin"
+   ]
+  },
+  {
+   "name": "DownloadData2",
+   "c": [
+    5941.662089845949,
+    4667.793335799212
+   ],
+   "p": [
+    5941.7,
+    4667.8
+   ],
+   "moved": 0.0,
+   "rooms": [
+    "Communications"
+   ]
+  },
+  {
+   "name": "DownloadData4",
+   "c": [
+    8282.082831533728,
+    2589.1771414770883
+   ],
+   "p": [
+    8282.1,
+    2589.2
+   ],
+   "moved": 0.0,
+   "rooms": [
+    "Navigation"
+   ]
+  },
+  {
+   "name": "DownloadData5",
+   "c": [
+    6785.946972223413,
+    1423.6918416465417
+   ],
+   "p": [
+    6785.9,
+    1423.7
+   ],
+   "moved": 0.0,
+   "rooms": [
+    "Weapons"
+   ]
+  }
+ ]
+}

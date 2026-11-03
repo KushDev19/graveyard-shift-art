@@ -206,5 +206,205 @@
    1845.0
   ],
   "scale": 2.220059
+ },
+ "LOCKER": {
+  "size_ok": true,
+  "off_palette_px": 0,
+  "crop_same_as_v1": true,
+  "band_outside_px": 0,
+  "bbox_ok": true,
+  "bbox_dx": [
+   1,
+   1,
+   1,
+   0
+  ],
+  "doorways": 1,
+  "props": 0,
+  "stations": 0,
+  "pieces": 1,
+  "dropped_short": 0,
+  "dropped_near_door": 0,
+  "mapRect": [
+   4768.83,
+   388.53,
+   541.14,
+   541.14
+  ],
+  "scale": 7.569262
+ },
+ "GALLEY": {
+  "size_ok": true,
+  "off_palette_px": 0,
+  "crop_same_as_v1": true,
+  "band_outside_px": 0,
+  "bbox_ok": true,
+  "bbox_dx": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "doorways": 4,
+  "props": 5,
+  "stations": 2,
+  "pieces": 2,
+  "dropped_short": 1,
+  "dropped_near_door": 0,
+  "mapRect": [
+   3849.89,
+   637.24,
+   2521.42,
+   2521.42
+  ],
+  "scale": 1.624484
+ },
+ "RADIO": {
+  "size_ok": true,
+  "off_palette_px": 0,
+  "crop_same_as_v1": true,
+  "band_outside_px": 0,
+  "bbox_ok": true,
+  "bbox_dx": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "doorways": 1,
+  "props": 0,
+  "stations": 1,
+  "pieces": 1,
+  "dropped_short": 5,
+  "dropped_near_door": 0,
+  "mapRect": [
+   5336.19,
+   4386.52,
+   1230.62,
+   984.56
+  ],
+  "scale": 3.32839
+ },
+ "DISPATCH": {
+  "size_ok": true,
+  "off_palette_px": 0,
+  "crop_same_as_v1": true,
+  "band_outside_px": 0,
+  "bbox_ok": true,
+  "bbox_dx": [
+   0,
+   0,
+   1,
+   1
+  ],
+  "doorways": 1,
+  "props": 1,
+  "stations": 3,
+  "pieces": 1,
+  "dropped_short": 0,
+  "dropped_near_door": 0,
+  "mapRect": [
+   5286.82,
+   3007.84,
+   1356.56,
+   1085.31
+  ],
+  "scale": 3.019402
+ },
+ "SWITCH": {
+  "size_ok": true,
+  "off_palette_px": 0,
+  "crop_same_as_v1": true,
+  "band_outside_px": 0,
+  "bbox_ok": true,
+  "bbox_dx": [
+   1,
+   1,
+   1,
+   0
+  ],
+  "doorways": 1,
+  "props": 0,
+  "stations": 3,
+  "pieces": 2,
+  "dropped_short": 0,
+  "dropped_near_door": 0,
+  "mapRect": [
+   3248.58,
+   3186.37,
+   1175.15,
+   1566.86
+  ],
+  "scale": 2.614139
+ },
+ "WATCH": {
+  "size_ok": true,
+  "off_palette_px": 0,
+  "crop_same_as_v1": true,
+  "band_outside_px": 0,
+  "bbox_ok": true,
+  "bbox_dx": [
+   0,
+   1,
+   1,
+   1
+  ],
+  "doorways": 1,
+  "props": 0,
+  "stations": 1,
+  "pieces": 2,
+  "dropped_short": 2,
+  "dropped_near_door": 1,
+  "mapRect": [
+   2209.51,
+   2334.31,
+   977.08,
+   1221.28
+  ],
+  "scale": 3.353869
+ },
+ "SICKBAY": {
+  "size_ok": true,
+  "off_palette_px": 0,
+  "crop_same_as_v1": true,
+  "band_outside_px": 0,
+  "bbox_ok": true,
+  "bbox_dx": [
+   0,
+   0,
+   1,
+   1
+  ],
+  "doorways": 1,
+  "props": 0,
+  "stations": 0,
+  "pieces": 7,
+  "dropped_short": 4,
+  "dropped_near_door": 0,
+  "mapRect": [
+   3073.02,
+   1969.97,
+   1375.16,
+   1375.16
+  ],
+  "scale": 2.978562
+ },
+ "SHIP": {
+  "size_ok": true,
+  "off_palette_px": 0,
+  "crop_same_as_v1": true,
+  "bbox_ok": true,
+  "bbox_dx": null,
+  "band_outside_px": null,
+  "doorways": 22,
+  "props": 10,
+  "stations": 20,
+  "mapRect": [
+   -208.93,
+   0.0,
+   9259.87,
+   6174
+  ],
+  "scale": 0.442339
  }
 }

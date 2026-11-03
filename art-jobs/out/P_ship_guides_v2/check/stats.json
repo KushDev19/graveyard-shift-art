@@ -1,0 +1,90 @@
+{
+ "DEFLECTOR": {
+  "size_ok": true,
+  "off_palette_px": 0,
+  "crop_same_as_v1": true,
+  "bbox_ok": true,
+  "bbox_dx": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "doorways": 2,
+  "props": 0,
+  "stations": 0,
+  "mapRect": [
+   6307.89,
+   3716.94,
+   1202.43,
+   1202.43
+  ],
+  "scale": 3.406441
+ },
+ "DISPATCH": {
+  "size_ok": true,
+  "off_palette_px": 0,
+  "crop_same_as_v1": true,
+  "bbox_ok": true,
+  "bbox_dx": [
+   0,
+   0,
+   0,
+   1
+  ],
+  "doorways": 1,
+  "props": 1,
+  "stations": 3,
+  "mapRect": [
+   5286.82,
+   3007.84,
+   1356.56,
+   1085.31
+  ],
+  "scale": 3.019402
+ },
+ "SWITCH": {
+  "size_ok": true,
+  "off_palette_px": 0,
+  "crop_same_as_v1": true,
+  "bbox_ok": true,
+  "bbox_dx": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "doorways": 1,
+  "props": 0,
+  "stations": 3,
+  "mapRect": [
+   3248.58,
+   3186.37,
+   1175.15,
+   1566.86
+  ],
+  "scale": 2.614139
+ },
+ "SICKBAY": {
+  "size_ok": true,
+  "off_palette_px": 0,
+  "crop_same_as_v1": true,
+  "bbox_ok": true,
+  "bbox_dx": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "doorways": 1,
+  "props": 0,
+  "stations": 0,
+  "mapRect": [
+   3073.02,
+   1969.97,
+   1375.16,
+   1375.16
+  ],
+  "scale": 2.978562
+ }
+}

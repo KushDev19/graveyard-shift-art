@@ -8,6 +8,7 @@ Doorways, room polygons, crops, props, stations and the mitred band construction
 ## Known flaws
 
 - Short band pieces that are not touching a doorway stay: REACTOR keeps a small block on the step wall above the neck (286 px, 344 px from the door), and SICKBAY keeps its two side pieces beside the neck (222 and 277 px, 64 and 44 px from the door). They read as normal back wall, but if you want them gone, raise `DOOR_PIECE` or `TOUCH_DOOR` in `make_guides_v4.py`.
+- LOWER's top-right band piece (a short tilted wall, 310 px) has a slanted, slightly kinked lower end; it follows the polygon but looks less tidy than the other bands.
 - Where a band end is cut along a tilted neck wall (RADIO left piece, DEFLECTOR) the end is slanted, as the wall is; this is the wall's real shape, not a gap.
 - Under a top doorway the floor shows as a light strip through the band (GALLEY, DEFLECTOR, SICKBAY) by design (the band never covers a doorway).
 - The closing is a square window, so it rounds nothing; it only fills gaps under 16 map px wide.

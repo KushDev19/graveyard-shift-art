@@ -1,0 +1,210 @@
+{
+ "LOCKER": {
+  "size_ok": true,
+  "off_palette_px": 0,
+  "crop_same_as_v1": true,
+  "band_outside_px": 0,
+  "bbox_ok": true,
+  "bbox_dx": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "doorways": 1,
+  "props": 0,
+  "stations": 0,
+  "pieces": 1,
+  "dropped_short": 0,
+  "dropped_near_door": 0,
+  "mapRect": [
+   4768.83,
+   388.53,
+   541.14,
+   541.14
+  ],
+  "scale": 7.569262
+ },
+ "GALLEY": {
+  "size_ok": true,
+  "off_palette_px": 0,
+  "crop_same_as_v1": true,
+  "band_outside_px": 0,
+  "bbox_ok": true,
+  "bbox_dx": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "doorways": 4,
+  "props": 5,
+  "stations": 2,
+  "pieces": 2,
+  "dropped_short": 0,
+  "dropped_near_door": 0,
+  "mapRect": [
+   3849.89,
+   637.24,
+   2521.42,
+   2521.42
+  ],
+  "scale": 1.624484
+ },
+ "HYDRO": {
+  "size_ok": true,
+  "off_palette_px": 0,
+  "crop_same_as_v1": true,
+  "band_outside_px": 0,
+  "bbox_ok": true,
+  "bbox_dx": [
+   0,
+   1,
+   1,
+   0
+  ],
+  "doorways": 1,
+  "props": 0,
+  "stations": 0,
+  "pieces": 1,
+  "dropped_short": 0,
+  "dropped_near_door": 1,
+  "mapRect": [
+   5854.92,
+   2261.62,
+   903.96,
+   903.96
+  ],
+  "scale": 4.531174
+ },
+ "DEFLECTOR": {
+  "size_ok": true,
+  "off_palette_px": 0,
+  "crop_same_as_v1": true,
+  "band_outside_px": 0,
+  "bbox_ok": true,
+  "bbox_dx": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "doorways": 2,
+  "props": 0,
+  "stations": 0,
+  "pieces": 0,
+  "dropped_short": 1,
+  "dropped_near_door": 2,
+  "mapRect": [
+   6307.89,
+   3716.94,
+   1202.43,
+   1202.43
+  ],
+  "scale": 3.406441
+ },
+ "RADIO": {
+  "size_ok": true,
+  "off_palette_px": 0,
+  "crop_same_as_v1": true,
+  "band_outside_px": 0,
+  "bbox_ok": true,
+  "bbox_dx": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "doorways": 1,
+  "props": 0,
+  "stations": 1,
+  "pieces": 0,
+  "dropped_short": 2,
+  "dropped_near_door": 1,
+  "mapRect": [
+   5336.19,
+   4386.52,
+   1230.62,
+   984.56
+  ],
+  "scale": 3.32839
+ },
+ "REACTOR": {
+  "size_ok": true,
+  "off_palette_px": 0,
+  "crop_same_as_v1": true,
+  "band_outside_px": 0,
+  "bbox_ok": true,
+  "bbox_dx": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "doorways": 1,
+  "props": 0,
+  "stations": 2,
+  "pieces": 2,
+  "dropped_short": 0,
+  "dropped_near_door": 1,
+  "mapRect": [
+   813.18,
+   2084.95,
+   1383.75,
+   1845.0
+  ],
+  "scale": 2.220059
+ },
+ "WATCH": {
+  "size_ok": true,
+  "off_palette_px": 0,
+  "crop_same_as_v1": true,
+  "band_outside_px": 0,
+  "bbox_ok": true,
+  "bbox_dx": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "doorways": 1,
+  "props": 0,
+  "stations": 1,
+  "pieces": 2,
+  "dropped_short": 0,
+  "dropped_near_door": 0,
+  "mapRect": [
+   2209.51,
+   2334.31,
+   977.08,
+   1221.28
+  ],
+  "scale": 3.353869
+ },
+ "SICKBAY": {
+  "size_ok": true,
+  "off_palette_px": 0,
+  "crop_same_as_v1": true,
+  "band_outside_px": 0,
+  "bbox_ok": true,
+  "bbox_dx": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "doorways": 1,
+  "props": 0,
+  "stations": 0,
+  "pieces": 1,
+  "dropped_short": 2,
+  "dropped_near_door": 2,
+  "mapRect": [
+   3073.02,
+   1969.97,
+   1375.16,
+   1375.16
+  ],
+  "scale": 2.978562
+ }
+}

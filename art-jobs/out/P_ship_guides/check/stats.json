@@ -1,0 +1,76 @@
+{
+ "LOCKER": {
+  "size_ok": true,
+  "palette_ok": true,
+  "extra_colors": [],
+  "bbox_ok": true,
+  "bbox_dx": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "light_only_bbox_inset": [
+   31,
+   702,
+   -6,
+   -1
+  ],
+  "doorways": 1,
+  "props": 0,
+  "stations": 0,
+  "mapRect": [
+   4768.83,
+   388.53,
+   541.14,
+   541.14
+  ],
+  "scale": 7.569262
+ },
+ "GALLEY": {
+  "size_ok": true,
+  "palette_ok": true,
+  "extra_colors": [],
+  "bbox_ok": true,
+  "bbox_dx": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "light_only_bbox_inset": [
+   5,
+   135,
+   -5,
+   0
+  ],
+  "doorways": 4,
+  "props": 5,
+  "stations": 2,
+  "mapRect": [
+   3849.89,
+   637.24,
+   2521.42,
+   2521.42
+  ],
+  "scale": 1.624484
+ },
+ "SHIP": {
+  "size_ok": true,
+  "palette_ok": true,
+  "extra_colors": [],
+  "bbox_ok": true,
+  "bbox_dx": null,
+  "note": "n/a for SHIP",
+  "doorways": 45,
+  "props": 10,
+  "stations": 20,
+  "mapRect": [
+   -208.93,
+   0.0,
+   9259.87,
+   6174
+  ],
+  "scale": 0.442339
+ }
+}

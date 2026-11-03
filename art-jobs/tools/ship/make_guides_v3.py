@@ -406,7 +406,7 @@ def build(ship, gid, area_name, out_size):
         cv.poly_mask(door, amber); img = paint(img, amber, AMBER)
         nd = len(rect_list) + 1; props = ship.props; stations = ship.stations
     else:
-        room = ship.rooms[area_name]
+        room = np.round(ship.rooms[area_name], 1)     # same 0.1 px rounding as the JSON roomPolygon
         for nm, p in ship.rooms.items():
             if nm != area_name: img = paint(img, cv.poly_mask(p), DARK)
         own = cv.poly_mask(room); img = paint(img, own, LIGHT)

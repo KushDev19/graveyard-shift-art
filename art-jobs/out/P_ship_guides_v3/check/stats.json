@@ -59,16 +59,16 @@
   "bbox_ok": true,
   "bbox_dx": [
    0,
-   1,
-   1,
+   0,
+   0,
    0
   ],
   "doorways": 1,
   "props": 0,
   "stations": 0,
-  "pieces": 1,
+  "pieces": 2,
   "dropped_short": 0,
-  "dropped_near_door": 1,
+  "dropped_near_door": 0,
   "mapRect": [
    5854.92,
    2261.62,
@@ -92,9 +92,9 @@
   "doorways": 2,
   "props": 0,
   "stations": 0,
-  "pieces": 0,
+  "pieces": 2,
   "dropped_short": 1,
-  "dropped_near_door": 2,
+  "dropped_near_door": 0,
   "mapRect": [
    6307.89,
    3716.94,
@@ -118,9 +118,9 @@
   "doorways": 1,
   "props": 0,
   "stations": 1,
-  "pieces": 0,
+  "pieces": 1,
   "dropped_short": 2,
-  "dropped_near_door": 1,
+  "dropped_near_door": 0,
   "mapRect": [
    5336.19,
    4386.52,
@@ -144,9 +144,9 @@
   "doorways": 1,
   "props": 0,
   "stations": 2,
-  "pieces": 2,
+  "pieces": 3,
   "dropped_short": 0,
-  "dropped_near_door": 1,
+  "dropped_near_door": 0,
   "mapRect": [
    813.18,
    2084.95,
@@ -196,9 +196,9 @@
   "doorways": 1,
   "props": 0,
   "stations": 0,
-  "pieces": 1,
+  "pieces": 3,
   "dropped_short": 2,
-  "dropped_near_door": 2,
+  "dropped_near_door": 0,
   "mapRect": [
    3073.02,
    1969.97,
@@ -206,5 +206,204 @@
    1375.16
   ],
   "scale": 2.978562
+ },
+ "TURRET": {
+  "size_ok": true,
+  "off_palette_px": 0,
+  "crop_same_as_v1": true,
+  "band_outside_px": 0,
+  "bbox_ok": true,
+  "bbox_dx": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "doorways": 1,
+  "props": 1,
+  "stations": 1,
+  "pieces": 1,
+  "dropped_short": 0,
+  "dropped_near_door": 0,
+  "mapRect": [
+   6317.72,
+   1193.47,
+   1194.86,
+   1194.86
+  ],
+  "scale": 3.428005
+ },
+ "BRIDGE": {
+  "size_ok": true,
+  "off_palette_px": 0,
+  "crop_same_as_v1": true,
+  "band_outside_px": 0,
+  "bbox_ok": true,
+  "bbox_dx": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "doorways": 1,
+  "props": 2,
+  "stations": 1,
+  "pieces": 1,
+  "dropped_short": 1,
+  "dropped_near_door": 0,
+  "mapRect": [
+   7856.69,
+   2331.03,
+   928.02,
+   1159.95
+  ],
+  "scale": 3.531189
+ },
+ "CARGO": {
+  "size_ok": true,
+  "off_palette_px": 0,
+  "crop_same_as_v1": true,
+  "band_outside_px": 0,
+  "bbox_ok": true,
+  "bbox_dx": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "doorways": 3,
+  "props": 1,
+  "stations": 3,
+  "pieces": 1,
+  "dropped_short": 1,
+  "dropped_near_door": 0,
+  "mapRect": [
+   4145.7,
+   3368.25,
+   1415.51,
+   2123.0
+  ],
+  "scale": 1.929342
+ },
+ "DISPATCH": {
+  "size_ok": true,
+  "off_palette_px": 0,
+  "crop_same_as_v1": true,
+  "band_outside_px": 0,
+  "bbox_ok": true,
+  "bbox_dx": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "doorways": 1,
+  "props": 1,
+  "stations": 3,
+  "pieces": 1,
+  "dropped_short": 0,
+  "dropped_near_door": 0,
+  "mapRect": [
+   5286.82,
+   3007.84,
+   1356.56,
+   1085.31
+  ],
+  "scale": 3.019402
+ },
+ "SWITCH": {
+  "size_ok": true,
+  "off_palette_px": 0,
+  "crop_same_as_v1": true,
+  "band_outside_px": 0,
+  "bbox_ok": true,
+  "bbox_dx": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "doorways": 1,
+  "props": 0,
+  "stations": 3,
+  "pieces": 1,
+  "dropped_short": 0,
+  "dropped_near_door": 0,
+  "mapRect": [
+   3248.58,
+   3186.37,
+   1175.15,
+   1566.86
+  ],
+  "scale": 2.614139
+ },
+ "LOWER": {
+  "size_ok": true,
+  "off_palette_px": 0,
+  "crop_same_as_v1": true,
+  "band_outside_px": 0,
+  "bbox_ok": true,
+  "bbox_dx": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "doorways": 2,
+  "props": 0,
+  "stations": 1,
+  "pieces": 2,
+  "dropped_short": 0,
+  "dropped_near_door": 0,
+  "mapRect": [
+   1511.44,
+   3529.59,
+   1228.72,
+   1228.72
+  ],
+  "scale": 3.333561
+ },
+ "UPPER": {
+  "size_ok": true,
+  "off_palette_px": 0,
+  "crop_same_as_v1": true,
+  "band_outside_px": 0,
+  "bbox_ok": true,
+  "bbox_dx": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "doorways": 2,
+  "props": 0,
+  "stations": 1,
+  "pieces": 1,
+  "dropped_short": 0,
+  "dropped_near_door": 0,
+  "mapRect": [
+   1513.65,
+   1308.9,
+   1220.41,
+   1220.41
+  ],
+  "scale": 3.356255
+ },
+ "SHIP": {
+  "size_ok": true,
+  "off_palette_px": 0,
+  "crop_same_as_v1": true,
+  "bbox_ok": true,
+  "bbox_dx": null,
+  "doorways": 22,
+  "props": 10,
+  "stations": 20,
+  "mapRect": [
+   -208.93,
+   0.0,
+   9259.87,
+   6174
+  ],
+  "scale": 0.442339
  }
 }
